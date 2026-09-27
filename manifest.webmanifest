@@ -1,0 +1,15 @@
+{
+  "name": "PS4 Jailbreak Tracker",
+  "short_name": "PS4 Tracker",
+  "description": "Tracker de jailbreak, HEN, exploits e pesquisa do PS4.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#080b10",
+  "theme_color": "#080b10",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
