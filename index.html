@@ -8,110 +8,93 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <title>PS4 Jailbreak Tracker V5</title>
+
 <style>
 :root{--bg:#080b10;--panel:#101620;--panel2:#151d28;--text:#f4f7fb;--muted:#8f9baa;--line:#222d3b;--green:#5ee6b3;--yellow:#ffd166;--red:#ff6b6b;--blue:#6ea8fe}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -10%,#182234 0,#080b10 35%);color:var(--text);font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:62px}
-button,input,select{font:inherit}button{cursor:pointer}.wrap{max-width:1050px;margin:auto;padding:0 16px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 80% -10%,#182234 0,#080b10 35%);color:var(--text);font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:62px}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.wrap{max-width:1050px;margin:auto;padding:0 16px}
 header{position:sticky;top:0;z-index:10;background:rgba(8,11,16,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.top{padding:16px 0 12px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:22px}.brand span:first-child{font-size:26px}.version{font-size:11px;color:var(--muted);border:1px solid #283444;padding:3px 6px;border-radius:999px}.sub{color:var(--muted);margin-top:2px}
-.toolbar{display:flex;gap:9px;margin:13px 0;overflow:auto}.search{flex:1;min-width:210px;background:#0d131c;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:12px 13px;outline:none}.search:focus{border-color:#41546e}
-.chip,.select,.action{background:#0d131c;border:1px solid var(--line);color:#dfe7ef;border-radius:11px;padding:10px 12px;white-space:nowrap}.action{font-weight:700}.action.primary{border-color:#376854;background:#10231c;color:#aaf0d3}
-main{padding:22px 0 70px}.hero{display:grid;grid-template-columns:1.35fr .65fr;gap:12px}.heroCard{background:linear-gradient(145deg,#152033,#0f151e);border:1px solid #2a3a50;border-radius:18px;padding:20px}.eyebrow{font-size:12px;color:var(--green);font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:28px;line-height:1.12;margin:7px 0}.hero p{color:#b9c4d0;margin:0}.pulse{margin-top:16px;display:flex;align-items:center;gap:9px}.pulseDot{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(94,230,179,.09)}
-.stat{display:flex;flex-direction:column;justify-content:center}.big{font-size:34px;font-weight:850}.muted{color:var(--muted);font-size:13px}
-h2{font-size:20px;margin:28px 0 12px}.fwgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.fw{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:15px}.fwtop{display:flex;justify-content:space-between;align-items:center}.fwname{font-size:20px;font-weight:850}.badge{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:3px 7px;color:#b8c4d1}.fwdesc{color:var(--muted);margin-top:8px}.bar{height:5px;background:#202a37;border-radius:9px;margin-top:12px;overflow:hidden}.fill{height:100%;border-radius:9px;background:var(--green)}.fill.y{background:var(--yellow)}.fill.r{background:var(--red)}
-.filters{display:flex;gap:8px;overflow:auto;padding-bottom:3px}.filters button.active{border-color:#49627f;background:#172231}
-.news{display:grid;gap:11px}.item{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}.item.new{border-color:#285d4d;box-shadow:0 0 0 1px rgba(94,230,179,.06)}.itemhead{display:flex;justify-content:space-between;gap:10px}.meta{color:var(--muted);font-size:12px}.newtag{color:#08110d;background:var(--green);font-weight:850;padding:3px 7px;border-radius:999px;font-size:10px}.title{font-size:17px;font-weight:800;margin:8px 0 5px}.desc{color:#c1cad5}.tags{margin-top:11px;display:flex;gap:6px;flex-wrap:wrap}.tag{font-size:11px;color:#b8c5d2;border:1px solid var(--line);padding:4px 7px;border-radius:999px}.source{display:inline-block;margin-top:12px;color:#9fc1ff;text-decoration:none}.empty{color:var(--muted);padding:24px 4px;text-align:center}
-.timeline{border-left:1px solid #2b3746;margin:0 0 0 8px;padding-left:20px}.tl{position:relative;margin-bottom:20px}.tl:before{content:"";position:absolute;left:-25px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px #101620}.tl strong{display:block}.tl small{color:var(--muted)}
-.notice{margin-top:14px;padding:13px 14px;border:1px solid #29384b;background:#0d141e;border-radius:14px;color:#b8c4d1;font-size:13px}.notice b{color:#e9f0f7}
-.bottom{position:fixed;bottom:0;left:0;right:0;background:rgba(8,11,16,.94);backdrop-filter:blur(15px);border-top:1px solid var(--line);padding:9px max(16px,env(safe-area-inset-left)) max(9px,env(safe-area-inset-bottom));display:flex;justify-content:center;z-index:20}.bottom span{font-size:12px;color:var(--muted)}
-@media(max-width:700px){.hero{grid-template-columns:1fr}.fwgrid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:25px}.toolbar{align-items:center}.select{max-width:125px}}
-@media(min-width:701px){.news{grid-template-columns:1fr 1fr}}
+.top{padding:16px 0 12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:22px}
+.brand span:first-child{font-size:26px}
+.version{font-size:11px;color:var(--muted);border:1px solid #283444;padding:3px 6px;border-radius:999px}
+.sub{color:var(--muted);margin-top:2px}
+.toolbar{display:flex;gap:9px;margin:13px 0;overflow:auto}
+.search{flex:1;min-width:210px;background:#0d131c;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:12px 13px;outline:none}
+.search:focus{border-color:#41546e}
+.chip,.select,.action{background:#0d131c;border:1px solid var(--line);color:#dfe7ef;border-radius:11px;padding:10px 12px;white-space:nowrap}
+.action{font-weight:700}
+.action.primary{border-color:#376854;background:#10231c;color:#aaf0d3}
+main{padding:22px 0 70px}
+.hero{display:grid;grid-template-columns:1.35fr .65fr;gap:12px}
+.heroCard{background:linear-gradient(145deg,#152033,#0f151e);border:1px solid #2a3a50;border-radius:18px;padding:20px}
+.eyebrow{font-size:12px;color:var(--green);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.hero h1{font-size:28px;line-height:1.12;margin:7px 0}
+.hero p{color:#b9c4d0;margin:0}
+.pulse{margin-top:16px;display:flex;align-items:center;gap:9px}
+.pulseDot{width:10px;height:10px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(94,230,179,.09)}
+.stat{display:flex;flex-direction:column;justify-content:center}
+.big{font-size:34px;font-weight:850}
+.muted{color:var(--muted);font-size:13px}
+h2{font-size:20px;margin:28px 0 12px}
+.fwgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.fw{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:15px}
+.fwtop{display:flex;justify-content:space-between;align-items:center}
+.fwname{font-size:20px;font-weight:850}
+.badge{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:3px 7px;color:#b8c4d1}
+.fwdesc{color:var(--muted);margin-top:8px}
+.bar{height:5px;background:#202a37;border-radius:9px;margin-top:12px;overflow:hidden}
+.fill{height:100%;border-radius:9px;background:var(--green)}
+.fill.y{background:var(--yellow)}
+.fill.r{background:var(--red)}
+.filters{display:flex;gap:8px;overflow:auto;padding-bottom:3px}
+.filters button.active{border-color:#49627f;background:#172231}
+.news{display:grid;gap:11px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}
+.item.new{border-color:#285d4d;box-shadow:0 0 0 1px rgba(94,230,179,.06)}
+.item.radar{border-color:#594d27;box-shadow:0 0 0 1px rgba(255,209,102,.05)}
+.itemhead{display:flex;justify-content:space-between;gap:10px}
+.meta{color:var(--muted);font-size:12px}
+.newtag{color:#08110d;background:var(--green);font-weight:850;padding:3px 7px;border-radius:999px;font-size:10px}
+.radartag{color:#171207;background:var(--yellow);font-weight:850;padding:3px 7px;border-radius:999px;font-size:10px}
+.title{font-size:17px;font-weight:800;margin:8px 0 5px}
+.desc{color:#c1cad5}
+.tags{margin-top:11px;display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:11px;color:#b8c5d2;border:1px solid var(--line);padding:4px 7px;border-radius:999px}
+.source{display:inline-block;margin-top:12px;color:#9fc1ff;text-decoration:none}
+.empty{color:var(--muted);padding:24px 4px;text-align:center}
+.timeline{border-left:1px solid #2b3746;margin:0 0 0 8px;padding-left:20px}
+.tl{position:relative;margin-bottom:20px}
+.tl:before{content:"";position:absolute;left:-25px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px #101620}
+.tl strong{display:block}
+.tl small{color:var(--muted)}
+.notice{margin-top:14px;padding:13px 14px;border:1px solid #29384b;background:#0d141e;border-radius:14px;color:#b8c4d1;font-size:13px}
+.notice b{color:#e9f0f7}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:rgba(8,11,16,.94);backdrop-filter:blur(15px);border-top:1px solid var(--line);padding:9px max(16px,env(safe-area-inset-left)) max(9px,env(safe-area-inset-bottom));display:flex;justify-content:center;z-index:20}
+.bottom span{font-size:12px;color:var(--muted)}
+@media(max-width:700px){
+.hero{grid-template-columns:1fr}
+.fwgrid{grid-template-columns:repeat(2,1fr)}
+.hero h1{font-size:25px}
+.toolbar{align-items:center}
+.select{max-width:125px}
+}
+@media(min-width:701px){
+.news{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
+
 <body>
-<header><div class="wrap top">
+
+<header>
+<div class="wrap top">
 <div class="brand"><span>🎮</span> PS4 Jailbreak Tracker <span class="version">V5 PWA</span></div>
 <div class="sub">Jailbreak · Homebrew · Exploits · Pesquisa · Android</div>
+
 <div class="toolbar">
-<input class="search" id="q" placeholder="🔎  Buscar firmware, dev, exploit...">
-<select class="select" id="sort"><option value="new">Mais recentes</option><option value="old">Mais antigos</option></select>
-<button class="action primary" id="notifyBtn">🔔 Notificações</button>
-</div>
-</div></header>
-
-<main class="wrap">
-<section class="hero">
-<div class="heroCard">
-<div class="eyebrow">Monitor em destaque</div>
-<h1>PS4 Firmware 14.00</h1>
-<p>Acompanhe avanços novos: pesquisa, PoC, sucesso privado e releases públicos, com distinção entre informação confirmada e pesquisa.</p>
-<div class="pulse"><i class="pulseDot"></i><b id="onlineState">PWA pronta</b><span class="muted">· pode ser instalada no Android</span></div>
-<div class="notice"><b>🔔 Notificações:</b> o botão acima permite testar a permissão de notificações. O envio automático de novidades exige um serviço online de push/backend — esta V5 já deixa o aplicativo preparado para essa próxima etapa.</div>
-</div>
-<div class="heroCard stat"><div class="muted">Novidades registradas</div><div class="big" id="count">0</div><div class="muted">na base local desta versão</div></div>
-</section>
-
-<h2>Firmware</h2><section class="fwgrid" id="firmwares"></section>
-<h2>Novidades</h2>
-<div class="filters" id="filters">
-<button class="chip active" data-f="Todos">Todos</button><button class="chip" data-f="PS4">🎮 PS4</button><button class="chip" data-f="14.00">14.00</button><button class="chip" data-f="13.52">13.52</button><button class="chip" data-f="HEN">HEN</button><button class="chip" data-f="Exploit">Exploit</button><button class="chip" data-f="Release">Release</button>
-</div>
-<section class="news" id="news" style="margin-top:12px"></section>
-<h2>Linha do tempo — 14.00</h2><section class="timeline" id="timeline"></section>
-</main>
-<div class="bottom"><span>V5 PWA · instalável no Android · offline · notificações preparadas</span></div>
-
-<script>
-const fw=[
-["9.00","🟢","Jailbreak disponível","green",100],["11.00","🟢","Jailbreak disponível","green",100],["12.02","🟢","Jailbreak disponível","green",100],
-["13.52","🟢","Cena ativa / HEN","green",92],["14.00","🟡","Pesquisa / avanços","yellow",35],["14.xx","⚪","Sem confirmação","red",5]
-];
-const data=[
-{platform:"PS4",d:"27/09/2026",t:"Status atual: 13.52 continua como firmware explorável",fw:"13.52",k:"Pesquisa",x:"Registro informativo baseado nas fontes usadas na V4; o tracker separa status conhecido de pesquisa sobre firmwares superiores.",tags:["13.52","PS4","NOVO"],s:"ConsoleMods Wiki",u:"https://consolemods.org/wiki/PS4%3AGetting_Started"},
-{platform:"PS4",d:"24/09/2026",t:"Pesquisa técnica relacionada ao firmware 14.00",fw:"14.00",k:"Exploit",x:"Projeto de pesquisa com offsets e investigação técnica. Isso não equivale, por si só, a um jailbreak público confirmado.",tags:["14.00","Exploit"],s:"GitHub · ps4-suid-scanner",u:"https://github.com/adri22235/ps4-suid-scanner"},
-{platform:"PS4",d:"21/09/2026",t:"Método baseado no navegador para 13.00–13.52",fw:"13.52",k:"Exploit",x:"Notícia sobre método baseado no navegador cobrindo a faixa indicada; o tracker preserva o link da fonte para conferência.",tags:["13.52","Exploit"],s:"GamerSky / Twisted Voxel",u:"https://www.gamersky.com/news/202609/2213478.shtml"},
-{platform:"PS4",d:"16/09/2026",t:"Sony lança firmware 14.00",fw:"14.00",k:"Release",x:"Atualização de software de sistema do PS4 registrada na base do tracker.",tags:["14.00","Release"],s:"PSX Brasil",u:"https://psxbrasil.com.br/ps4-recebe-atualizacao-do-software-de-sistema-14-00/"},
-{platform:"PS4",d:"16/06/2026",t:"Firmware 13.52 trouxe correções de segurança",fw:"13.52",k:"Firmware",x:"Atualização 13.52 e informações de segurança registradas na fonte.",tags:["13.52","Firmware"],s:"PlayStation LifeStyle",u:"https://www.playstationlifestyle.net/2026/06/16/ps4-system-software-update-13-52-june-16-2026/"}
-];
-const timeline=[
-["27/09/2026","Status atual: 13.52","Firmware com cena ativa / informação de exploração registrada"],
-["24/09/2026","Pesquisa técnica em 14.00","Projeto/estudo técnico; não tratar como jailbreak público"],
-["21/09/2026","Método baseado no navegador","Faixa informada: 13.00–13.52"],
-["16/09/2026","Firmware 14.00","Atualização de software do PS4"]
-];
-let filter="Todos";
-function renderFW(){document.getElementById("firmwares").innerHTML=fw.map(a=>`<div class="fw"><div class="fwtop"><div class="fwname">${a[0]}</div><span class="badge">${a[1]}</span></div><div class="fwdesc">${a[2]}</div><div class="bar"><div class="fill ${a[3]=="yellow"?"y":a[3]=="red"?"r":""}" style="width:${a[4]}%"></div></div></div>`).join("")}
-function render(){
-let q=document.getElementById("q").value.toLowerCase();
-let arr=data.filter(a=>(filter=="Todos"||(filter=="PS4"?a.platform=="PS4":a.fw==filter||a.k==filter||a.tags.includes(filter)))&&(a.t+" "+a.x+" "+a.fw+" "+a.k+" "+a.tags.join(" ")).toLowerCase().includes(q));
-if(document.getElementById("sort").value=="old")arr=[...arr].reverse();
-document.getElementById("count").textContent=arr.length;
-document.getElementById("news").innerHTML=arr.length?arr.map(a=>`<article class="item ${a.tags.includes("NOVO")?"new":""}"><div class="itemhead"><div class="meta">🎮 ${a.platform} · ${a.d} · FW ${a.fw} · ${a.k}</div>${a.tags.includes("NOVO")?'<span class="newtag">NOVO</span>':""}</div><div class="title">${a.t}</div><div class="desc">${a.x}</div><div class="tags">${a.tags.map(z=>`<span class="tag">${z}</span>`).join("")}</div><a class="source" href="${a.u}" target="_blank" rel="noopener noreferrer">↗ ${a.s}</a></article>`).join(""):'<div class="empty">Nenhuma novidade encontrada.</div>';
-}
-document.getElementById("filters").onclick=e=>{if(e.target.tagName=="BUTTON"){document.querySelectorAll("#filters button").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");filter=e.target.dataset.f;render()}};
-document.getElementById("q").oninput=render;document.getElementById("sort").onchange=render;
-document.getElementById("timeline").innerHTML=timeline.map(a=>`<div class="tl"><small>${a[0]}</small><strong>${a[1]}</strong><span class="muted">${a[2]}</span></div>`).join("");
-renderFW();render();
-
-async function testNotification(){
- if(!("Notification" in window)){alert("Seu navegador não oferece notificações nesta página.");return}
- const p=await Notification.requestPermission();
- if(p!=="granted"){alert("Permissão de notificação não concedida.");return}
- if("serviceWorker" in navigator){
-   const reg=await navigator.serviceWorker.ready;
-   await reg.showNotification("PS4 Jailbreak Tracker",{
-     body:"🔔 Notificações estão funcionando. O próximo passo é ligar o envio automático de novidades.",
-     icon:"icon.svg",badge:"icon.svg",tag:"ps4-tracker-test"
-   });
- }else new Notification("PS4 Jailbreak Tracker",{body:"Notificação de teste funcionando."});
-}
-document.getElementById("notifyBtn").onclick=testNotification;
-
-if("serviceWorker" in navigator){
- window.addEventListener("load",async()=>{try{
-  await navigator.serviceWorker.register("./sw.js");
-  document.getElementById("onlineState").textContent="PWA pronta";
- }catch(e){document.getElementById("onlineState").textContent="Modo web";}});
-}
-</script>
-</body></html>
+<input class="search" id="q" placeholder 
