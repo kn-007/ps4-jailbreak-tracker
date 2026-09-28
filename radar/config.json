@@ -1,0 +1,35 @@
+{
+  "name": "PS4 14v Radar",
+  "max_items": 100,
+  "queries": [
+    "\"PS4 14.00\"",
+    "\"PS4 14.0\"",
+    "\"14.00\" PS4",
+    "\"PS4 firmware 14.00\"",
+    "\"PS4 14.00\" exploit",
+    "\"PS4 14.00\" kernel",
+    "\"PS4 14.00\" WebKit",
+    "\"PS4 14.00\" payload"
+  ],
+  "keywords_required": [
+    "ps4",
+    "14.00"
+  ],
+  "keywords_optional": [
+    "14.0",
+    "firmware",
+    "exploit",
+    "kernel",
+    "webkit",
+    "payload",
+    "jailbreak",
+    "hen",
+    "offset",
+    "vulnerability",
+    "primitive",
+    "syscall",
+    "rop",
+    "chain",
+    "debug"
+  ]
+}
