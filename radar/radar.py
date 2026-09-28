@@ -90,10 +90,25 @@ def clean(text):
 def is_target_firmware(text):
     text = clean(text).lower()
 
-    has_ps4 = re.search(r"\bps4\b", text)
-    has_1400 = re.search(r"\b14\.00\b", text)
+    # Precisa mencionar PS4
+    if not re.search(r"\bps4\b", text):
+        return False
 
-    return bool(has_ps4 and has_1400)
+    # Precisa mencionar firmware 14.00 de forma explícita
+    firmware_patterns = [
+        r"\bps4\s*(?:firmware|fw)\s*14\.00\b",
+        r"\bfirmware\s*(?:version\s*)?14\.00\b",
+        r"\bversion\s*14\.00\b",
+        r"\bv(?:ersion)?\s*14\.00\b",
+        r"\b14\.00\s*(?:firmware|fw)\b",
+        r"\b14\.00\s*(?:exploit|jailbreak|hen|webkit|kernel|payload)\b",
+        r"\b14\.00\b.*\b(?:exploit|jailbreak|hen|webkit|kernel|payload|vulnerability|primitive|offset)\b",
+    ]
+
+    return any(
+        re.search(pattern, text)
+        for pattern in firmware_patterns
+    )
 
 
 def find_relevant_keywords(text, config):
