@@ -1,8 +1,8 @@
 {
-  "version": 2,
+  "version": 3,
   "target_firmware": "14.00",
-  "updated_at": "2026-09-28T11:32:30.416831+00:00",
-  "new_items_this_run": 7,
+  "updated_at": "2026-09-28T11:52:28.416656+00:00",
+  "new_items_this_run": 0,
   "searches_performed": 20,
   "errors": [
     "repository search: PS4 exploit firmware 14.00: HTTP Error 403: rate limit exceeded",
@@ -28,14 +28,15 @@
       "url": "https://github.com/mohammidharaz9002/Ps4-WebKit-r-w-14.00",
       "updated_at": "2026-09-25T02:25:22Z",
       "source": "GitHub",
-      "score": 23,
+      "score": 24,
       "reasons": [
         "PS4",
         "14.00",
         "webkit",
         "vulnerability",
-        "14.0",
-        "primitive"
+        "primitive",
+        "memory corruption",
+        "14.0"
       ]
     },
     {
@@ -47,14 +48,15 @@
       "url": "https://github.com/mohammidharaz/Ps4-WebKit-r-w-14.00",
       "updated_at": "2026-09-24T13:26:04Z",
       "source": "GitHub",
-      "score": 23,
+      "score": 24,
       "reasons": [
         "PS4",
         "14.00",
         "webkit",
         "vulnerability",
-        "14.0",
-        "primitive"
+        "primitive",
+        "memory corruption",
+        "14.0"
       ]
     },
     {
@@ -66,14 +68,14 @@
       "url": "https://github.com/anthropics/claude-code/issues/96527",
       "updated_at": "2026-09-23T23:41:57Z",
       "source": "GitHub",
-      "score": 23,
+      "score": 21,
       "reasons": [
         "PS4",
         "14.00",
         "hen",
-        "firmware",
+        "offset",
         "14.0",
-        "offset"
+        "firmware"
       ]
     },
     {
@@ -85,31 +87,14 @@
       "url": "https://github.com/anthropics/claude-code/issues/96528",
       "updated_at": "2026-09-23T23:41:33Z",
       "source": "GitHub",
-      "score": 23,
+      "score": 21,
       "reasons": [
         "PS4",
         "14.00",
         "hen",
-        "firmware",
+        "offset",
         "14.0",
-        "offset"
-      ]
-    },
-    {
-      "id": "issue:5510693244",
-      "type": "issue",
-      "title": "eBay Espagne : jeu vidéo ALEX KIDD In Miracle World Dx PS4 Playstation 4 Rétro Master system",
-      "summary": "![photo](https://i.ebayimg.com/images/g/~40AAeSwE6lqrAp5/s-l225.jpg) **Plateforme :** eBay Espagne **Recherche :** Master System **Catégorie eBay :** Jeux **Prix :** 14.00 EUR **Score de pertinence :** 4.0 **Mots-clés correspondants :** Master System, PlayStation 1, PlayStation 2, PlayStation 3 **Lien de l'annonce :** https://www.ebay.es/itm/237077991986?_skw=Master+System&hash=item3732f31232:g:~40AAeSwE6lqrAp5 --- Choisis une étiquette ci-contre pour valider cette annonce : très-intéressant, intéressant, sans-intérêt, faux-positif ou à-revoir-plus-tard. <!-- veille-meta: {\"mots_cles\": [\"Master System\", \"PlayStation 1\", \"PlayStation 2\", \"PlayStation 3\"], \"mot_cle_recherche\": \"Master System\", \"score\": 4.0, \"marketplace\": \"Espagne\"} -->",
-      "author": "github-actions[bot]",
-      "url": "https://github.com/Aur-Dev-re/veille-jeux-retro/issues/57034",
-      "updated_at": "2026-09-19T13:59:23Z",
-      "source": "GitHub",
-      "score": 18,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "eta",
-        "14.0"
+        "firmware"
       ]
     },
     {
@@ -136,6 +121,22 @@
       "author": "G55P12",
       "url": "https://github.com/G55P12/ps4-jb-fw-14.00",
       "updated_at": "2026-09-20T05:50:16Z",
+      "source": "GitHub",
+      "score": 16,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "14.0"
+      ]
+    },
+    {
+      "id": "issue:5510693244",
+      "type": "issue",
+      "title": "eBay Espagne : jeu vidéo ALEX KIDD In Miracle World Dx PS4 Playstation 4 Rétro Master system",
+      "summary": "![photo](https://i.ebayimg.com/images/g/~40AAeSwE6lqrAp5/s-l225.jpg) **Plateforme :** eBay Espagne **Recherche :** Master System **Catégorie eBay :** Jeux **Prix :** 14.00 EUR **Score de pertinence :** 4.0 **Mots-clés correspondants :** Master System, PlayStation 1, PlayStation 2, PlayStation 3 **Lien de l'annonce :** https://www.ebay.es/itm/237077991986?_skw=Master+System&hash=item3732f31232:g:~40AAeSwE6lqrAp5 --- Choisis une étiquette ci-contre pour valider cette annonce : très-intéressant, intéressant, sans-intérêt, faux-positif ou à-revoir-plus-tard. <!-- veille-meta: {\"mots_cles\": [\"Master System\", \"PlayStation 1\", \"PlayStation 2\", \"PlayStation 3\"], \"mot_cle_recherche\": \"Master System\", \"score\": 4.0, \"marketplace\": \"Espagne\"} -->",
+      "author": "github-actions[bot]",
+      "url": "https://github.com/Aur-Dev-re/veille-jeux-retro/issues/57034",
+      "updated_at": "2026-09-19T13:59:23Z",
       "source": "GitHub",
       "score": 16,
       "reasons": [
