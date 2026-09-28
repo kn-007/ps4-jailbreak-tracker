@@ -1,13 +1,10 @@
 {
   "version": 3,
   "target_firmware": "14.00",
-  "updated_at": "2026-09-28T12:38:25.718380+00:00",
+  "updated_at": "2026-09-28T12:49:42.193394+00:00",
   "new_items_this_run": 0,
   "searches_performed": 20,
-  "errors": [
-    "issue search: PS4 exploit firmware 14.00: HTTP Error 403: Forbidden",
-    "issue search: PS4 jailbreak firmware 14.00: HTTP Error 403: Forbidden"
-  ],
+  "errors": [],
   "items": [
     {
       "id": "repo:1386511057",
