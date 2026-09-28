@@ -1,7 +1,148 @@
 {
-  "version": 1,
-  "updated_at": null,
-  "new_items_this_run": 0,
-  "errors": [],
-  "items": []
+  "version": 2,
+  "target_firmware": "14.00",
+  "updated_at": "2026-09-28T11:32:30.416831+00:00",
+  "new_items_this_run": 7,
+  "searches_performed": 20,
+  "errors": [
+    "repository search: PS4 exploit firmware 14.00: HTTP Error 403: rate limit exceeded",
+    "repository search: PS4 jailbreak firmware 14.00: HTTP Error 403: rate limit exceeded",
+    "repository search: \"PS4 14.00\": HTTP Error 403: rate limit exceeded",
+    "repository search: \"PS4 14.0\": HTTP Error 403: rate limit exceeded",
+    "repository search: \"14.00\" PS4: HTTP Error 403: rate limit exceeded",
+    "repository search: \"PS4 firmware 14.00\": HTTP Error 403: rate limit exceeded",
+    "repository search: \"PS4 14.00\" exploit: HTTP Error 403: rate limit exceeded",
+    "repository search: \"PS4 14.00\" kernel: HTTP Error 403: rate limit exceeded",
+    "repository search: \"PS4 14.00\" WebKit: HTTP Error 403: rate limit exceeded",
+    "repository search: \"PS4 14.00\" payload: HTTP Error 403: rate limit exceeded",
+    "issue search: PS4 exploit firmware 14.00: HTTP Error 403: rate limit exceeded",
+    "issue search: PS4 jailbreak firmware 14.00: HTTP Error 403: rate limit exceeded"
+  ],
+  "items": [
+    {
+      "id": "repo:1386511057",
+      "type": "repository",
+      "title": "mohammidharaz9002/Ps4-WebKit-r-w-14.00",
+      "summary": "PS4 WebKit security research exploring JavaScriptCore memory corruption and controlled read/write primitives for educational and vulnerability-analysis purposes.",
+      "author": "mohammidharaz9002",
+      "url": "https://github.com/mohammidharaz9002/Ps4-WebKit-r-w-14.00",
+      "updated_at": "2026-09-25T02:25:22Z",
+      "source": "GitHub",
+      "score": 23,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "vulnerability",
+        "14.0",
+        "primitive"
+      ]
+    },
+    {
+      "id": "repo:1385557683",
+      "type": "repository",
+      "title": "mohammidharaz/Ps4-WebKit-r-w-14.00",
+      "summary": "PS4 WebKit security research exploring JavaScriptCore memory corruption and controlled read/write primitives for educational and vulnerability-analysis purposes.",
+      "author": "mohammidharaz",
+      "url": "https://github.com/mohammidharaz/Ps4-WebKit-r-w-14.00",
+      "updated_at": "2026-09-24T13:26:04Z",
+      "source": "GitHub",
+      "score": 23,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "vulnerability",
+        "14.0",
+        "primitive"
+      ]
+    },
+    {
+      "id": "issue:5560840845",
+      "type": "issue",
+      "title": "Opus 4.6 regression symptom 15: model forgets file paths and repo context within same conversation",
+      "summary": "## Follow-up to #96308 — Additional regression symptom ### Symptom 15: Model loses memory of file paths and repository context within the same conversation Since ~Sep 16, 2026, Claude no longer remembers basic context like file paths and repository locations that were established earlier in the same conversation. ### Example 1: Forgets repo paths When generating git commands for the user's own repositories, the model outputs generic placeholder paths like `~/ruta/ps4-suid-scanner` instead of the actual paths it previously knew. Before the regression, Claude remembered working directory paths throughout the conversation without the user having to repeat them. ### Example 2: Fails to check user's own repos before claiming something doesn't exist User asked about PS4 firmware 14.00 offsets. Claude stated the offsets don't exist in the scene, while the user had ALREADY committed 1400_offsets.txt to their own repo (adri22235/ps4-13xx-research) minutes earlier in the same session. Before the",
+      "author": "adri22235",
+      "url": "https://github.com/anthropics/claude-code/issues/96527",
+      "updated_at": "2026-09-23T23:41:57Z",
+      "source": "GitHub",
+      "score": 23,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "hen",
+        "firmware",
+        "14.0",
+        "offset"
+      ]
+    },
+    {
+      "id": "issue:5560871676",
+      "type": "issue",
+      "title": "Opus 4.6 regression symptom 8: model forgets file paths and repo context within same conversation",
+      "summary": "## Follow-up to #96308 — Additional regression symptom ### Symptom 8: Model loses memory of file paths and repository context within the same conversation Since ~Sep 16, 2026, Claude no longer remembers basic context like file paths and repository locations that were established earlier in the same conversation. ### Example 1: Forgets repo paths When generating git commands for the user's own repositories, the model outputs generic placeholder paths like `~/ruta/ps4-suid-scanner` instead of the actual paths it previously knew. Before the regression, Claude remembered working directory paths throughout the conversation without the user having to repeat them. ### Example 2: Fails to check user's own repos before claiming something doesn't exist User asked about PS4 firmware 14.00 offsets. Claude stated the offsets don't exist in the scene, while the user had ALREADY committed 1400_offsets.txt to their own repo (adri22235/ps4-13xx-research) minutes earlier in the same session. Before the ",
+      "author": "adri22235",
+      "url": "https://github.com/anthropics/claude-code/issues/96528",
+      "updated_at": "2026-09-23T23:41:33Z",
+      "source": "GitHub",
+      "score": 23,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "hen",
+        "firmware",
+        "14.0",
+        "offset"
+      ]
+    },
+    {
+      "id": "issue:5510693244",
+      "type": "issue",
+      "title": "eBay Espagne : jeu vidéo ALEX KIDD In Miracle World Dx PS4 Playstation 4 Rétro Master system",
+      "summary": "![photo](https://i.ebayimg.com/images/g/~40AAeSwE6lqrAp5/s-l225.jpg) **Plateforme :** eBay Espagne **Recherche :** Master System **Catégorie eBay :** Jeux **Prix :** 14.00 EUR **Score de pertinence :** 4.0 **Mots-clés correspondants :** Master System, PlayStation 1, PlayStation 2, PlayStation 3 **Lien de l'annonce :** https://www.ebay.es/itm/237077991986?_skw=Master+System&hash=item3732f31232:g:~40AAeSwE6lqrAp5 --- Choisis une étiquette ci-contre pour valider cette annonce : très-intéressant, intéressant, sans-intérêt, faux-positif ou à-revoir-plus-tard. <!-- veille-meta: {\"mots_cles\": [\"Master System\", \"PlayStation 1\", \"PlayStation 2\", \"PlayStation 3\"], \"mot_cle_recherche\": \"Master System\", \"score\": 4.0, \"marketplace\": \"Espagne\"} -->",
+      "author": "github-actions[bot]",
+      "url": "https://github.com/Aur-Dev-re/veille-jeux-retro/issues/57034",
+      "updated_at": "2026-09-19T13:59:23Z",
+      "source": "GitHub",
+      "score": 18,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "eta",
+        "14.0"
+      ]
+    },
+    {
+      "id": "issue:5605800136",
+      "type": "pull_request",
+      "title": "PS4 system software update",
+      "summary": "Version: 14.00 - We've improved system software performance and stability.",
+      "author": "kalaposfos13",
+      "url": "https://github.com/shadps4-emu/shadPS4/pull/5154",
+      "updated_at": "2026-09-27T20:43:44Z",
+      "source": "GitHub",
+      "score": 16,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "14.0"
+      ]
+    },
+    {
+      "id": "repo:1377973489",
+      "type": "repository",
+      "title": "G55P12/ps4-jb-fw-14.00",
+      "summary": "",
+      "author": "G55P12",
+      "url": "https://github.com/G55P12/ps4-jb-fw-14.00",
+      "updated_at": "2026-09-20T05:50:16Z",
+      "source": "GitHub",
+      "score": 16,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "14.0"
+      ]
+    }
+  ]
 }
