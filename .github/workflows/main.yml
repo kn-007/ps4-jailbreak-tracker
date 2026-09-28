@@ -12,6 +12,9 @@ jobs:
   radar:
     runs-on: ubuntu-latest
 
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Baixar repositorio
         uses: actions/checkout@v4
