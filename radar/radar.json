@@ -1,22 +1,12 @@
 {
   "version": 3,
   "target_firmware": "14.00",
-  "updated_at": "2026-09-28T11:52:28.416656+00:00",
+  "updated_at": "2026-09-28T12:03:25.131141+00:00",
   "new_items_this_run": 0,
   "searches_performed": 20,
   "errors": [
-    "repository search: PS4 exploit firmware 14.00: HTTP Error 403: rate limit exceeded",
-    "repository search: PS4 jailbreak firmware 14.00: HTTP Error 403: rate limit exceeded",
-    "repository search: \"PS4 14.00\": HTTP Error 403: rate limit exceeded",
-    "repository search: \"PS4 14.0\": HTTP Error 403: rate limit exceeded",
-    "repository search: \"14.00\" PS4: HTTP Error 403: rate limit exceeded",
-    "repository search: \"PS4 firmware 14.00\": HTTP Error 403: rate limit exceeded",
-    "repository search: \"PS4 14.00\" exploit: HTTP Error 403: rate limit exceeded",
-    "repository search: \"PS4 14.00\" kernel: HTTP Error 403: rate limit exceeded",
-    "repository search: \"PS4 14.00\" WebKit: HTTP Error 403: rate limit exceeded",
-    "repository search: \"PS4 14.00\" payload: HTTP Error 403: rate limit exceeded",
-    "issue search: PS4 exploit firmware 14.00: HTTP Error 403: rate limit exceeded",
-    "issue search: PS4 jailbreak firmware 14.00: HTTP Error 403: rate limit exceeded"
+    "issue search: PS4 exploit firmware 14.00: HTTP Error 403: Forbidden",
+    "issue search: PS4 jailbreak firmware 14.00: HTTP Error 403: Forbidden"
   ],
   "items": [
     {
