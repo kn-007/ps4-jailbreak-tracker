@@ -82,7 +82,6 @@ def score_item(item, config):
     score = 15
     reasons = ["PS4", "14.00"]
 
-    # Termos importantes recebem pontuação extra
     important_keywords = [
         "exploit",
         "jailbreak",
@@ -109,7 +108,6 @@ def score_item(item, config):
             if keyword not in [r.lower() for r in reasons]:
                 reasons.append(keyword)
 
-    # Mantém também as palavras configuradas no config.json
     for keyword in config.get("keywords_optional", []):
         keyword = keyword.lower().strip()
 
@@ -234,10 +232,8 @@ def main():
 
     queries = []
 
-    # Primeiro usa as buscas novas
     queries.extend(SEARCH_VARIANTS)
 
-    # Depois adiciona as buscas personalizadas do config.json
     for query in config.get("queries", []):
         if query not in queries:
             queries.append(query)
@@ -356,7 +352,7 @@ def main():
     print(f"Itens armazenados: {len(ordered)}")
     print("=" * 50)
 
-        if errors:
+    if errors:
         print(f"Avisos: {len(errors)}")
 
         for error in errors:
