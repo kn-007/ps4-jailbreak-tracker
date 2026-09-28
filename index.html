@@ -1,0 +1,1219 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#05070b">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-512.png" type="image/png">
+<title>P$4 14.00</title>
+
+<style>
+:root{
+  --bg:#05070b;
+  --card:#0c1017;
+  --card2:#111722;
+  --line:#1c2633;
+  --text:#f4f7fb;
+  --muted:#8290a1;
+  --blue:#269cff;
+  --blue2:#0d3154;
+  --green:#55e6ad;
+  --yellow:#ffd166;
+  --red:#ff5d67;
+}
+
+body[data-theme="blue"]{
+  --bg:#020913;
+  --card:#061426;
+  --card2:#091c32;
+  --line:#12385e;
+  --blue:#149cff;
+  --blue2:#063b6e;
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  min-height:100%;
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+body{
+  padding-bottom:86px;
+  transition:.25s;
+}
+
+button,input{font:inherit}
+
+button{cursor:pointer}
+
+.app{
+  width:100%;
+  max-width:620px;
+  margin:auto;
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 85% 0,#123b63 0,transparent 30%),
+    var(--bg);
+}
+
+/* TOPO */
+
+.top{
+  padding:18px 17px 10px;
+}
+
+.topline{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:.03em;
+}
+
+.logo b{
+  color:var(--blue);
+}
+
+.theme{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:white;
+  font-size:17px;
+}
+
+.subtitle{
+  margin-top:4px;
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* HERO */
+
+.hero{
+  margin:10px 15px 0;
+  height:210px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  overflow:hidden;
+  position:relative;
+  background:
+    radial-gradient(circle at 80% 35%,#124c83 0,transparent 35%),
+    linear-gradient(135deg,#111823,#05070b);
+}
+
+.hero:after{
+  content:"⚔";
+  position:absolute;
+  right:20px;
+  bottom:-25px;
+  font-size:145px;
+  line-height:1;
+  transform:rotate(-18deg);
+  opacity:.12;
+}
+
+.heroContent{
+  position:absolute;
+  z-index:2;
+  left:20px;
+  bottom:19px;
+}
+
+.heroSmall{
+  color:var(--blue);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  margin:5px 0;
+  font-size:28px;
+  line-height:1;
+}
+
+.hero p{
+  margin:0;
+  max-width:280px;
+  color:#aeb9c7;
+  font-size:12px;
+}
+
+.live{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  margin-top:12px;
+  font-size:11px;
+  color:var(--green);
+}
+
+.dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--green);
+  box-shadow:0 0 12px var(--green);
+}
+
+/* SEÇÕES */
+
+.section{
+  padding:0 15px;
+}
+
+.sectionTitle{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin:22px 2px 10px;
+}
+
+.sectionTitle h2{
+  margin:0;
+  font-size:17px;
+}
+
+.sectionTitle span{
+  color:var(--muted);
+  font-size:11px;
+}
+
+/* NAVEGAÇÃO PRINCIPAL */
+
+.tabs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-top:16px;
+}
+
+.tab{
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--card);
+  color:var(--muted);
+  padding:12px 6px;
+  text-align:center;
+}
+
+.tab strong{
+  display:block;
+  color:var(--text);
+  font-size:13px;
+}
+
+.tab small{
+  font-size:10px;
+}
+
+.tab.active{
+  border-color:var(--blue);
+  background:var(--blue2);
+  color:#bfe3ff;
+}
+
+/* RADAR */
+
+.radarBox{
+  border:1px solid #554b27;
+  background:
+    linear-gradient(145deg,#17150d,#0c1017);
+  border-radius:18px;
+  padding:15px;
+}
+
+.radarTop{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.radarName{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:850;
+}
+
+.radarIcon{
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  display:grid;
+  place-items:center;
+  background:#2b2612;
+}
+
+.radarCount{
+  color:var(--yellow);
+  font-weight:900;
+}
+
+.radarDesc{
+  color:var(--muted);
+  font-size:12px;
+  margin-top:8px;
+}
+
+.radarStatus{
+  margin-top:12px;
+  padding-top:11px;
+  border-top:1px solid #292719;
+  font-size:11px;
+  color:#bfc6cf;
+}
+
+/* FILTROS */
+
+.filters{
+  display:flex;
+  gap:7px;
+  overflow:auto;
+  padding-bottom:3px;
+}
+
+.filter{
+  flex:none;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--muted);
+  border-radius:999px;
+  padding:8px 12px;
+  font-size:11px;
+}
+
+.filter.active{
+  background:var(--blue2);
+  border-color:var(--blue);
+  color:#d9efff;
+}
+
+/* CARDS */
+
+.news{
+  display:grid;
+  gap:9px;
+}
+
+.item{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:17px;
+  padding:14px;
+}
+
+.item.radar{
+  border-color:#594d27;
+}
+
+.item.new{
+  border-color:#245844;
+}
+
+.item.newradar{
+  border-color:#7a3e32;
+}
+
+.itemTop{
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+}
+
+.meta{
+  color:var(--muted);
+  font-size:10px;
+}
+
+.badge{
+  border-radius:999px;
+  padding:3px 7px;
+  font-size:9px;
+  font-weight:900;
+}
+
+.badge.info{
+  background:#172638;
+  color:#9fcfff;
+}
+
+.badge.radar{
+  background:#302b14;
+  color:var(--yellow);
+}
+
+.badge.new{
+  background:#17372b;
+  color:var(--green);
+}
+
+.badge.alert{
+  background:#421d20;
+  color:#ff858d;
+}
+
+.title{
+  margin-top:8px;
+  font-size:14px;
+  font-weight:800;
+}
+
+.desc{
+  color:#9da9b8;
+  font-size:12px;
+  line-height:1.45;
+  margin-top:4px;
+}
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  margin-top:9px;
+}
+
+.tag{
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:3px 6px;
+  color:#8290a1;
+  font-size:9px;
+}
+
+.source{
+  display:inline-block;
+  margin-top:10px;
+  color:#67b7ff;
+  font-size:11px;
+  text-decoration:none;
+}
+
+/* FIRMWARE */
+
+.firmwares{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+
+.fw{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:15px;
+  padding:12px;
+}
+
+.fw.active{
+  border-color:var(--blue);
+  background:var(--blue2);
+}
+
+.fw b{
+  display:block;
+  font-size:17px;
+}
+
+.fw span{
+  display:block;
+  margin-top:3px;
+  color:var(--muted);
+  font-size:9px;
+}
+
+.fwbar{
+  height:3px;
+  margin-top:10px;
+  border-radius:10px;
+  background:#202a37;
+  overflow:hidden;
+}
+
+.fwbar i{
+  display:block;
+  height:100%;
+  background:var(--blue);
+}
+
+/* PESQUISA */
+
+.search{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--card);
+  color:var(--text);
+  padding:12px 14px;
+  outline:none;
+}
+
+.search:focus{
+  border-color:var(--blue);
+}
+
+.empty{
+  padding:25px;
+  text-align:center;
+  color:var(--muted);
+}
+
+/* BARRA INFERIOR */
+
+.bottom{
+  position:fixed;
+  z-index:20;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:620px;
+  padding:8px 14px calc(8px + env(safe-area-inset-bottom));
+  background:rgba(5,7,11,.94);
+  backdrop-filter:blur(18px);
+  border-top:1px solid var(--line);
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:6px;
+}
+
+.bottom button{
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  padding:6px;
+  font-size:10px;
+}
+
+.bottom button span{
+  display:block;
+  font-size:18px;
+  margin-bottom:2px;
+}
+
+.bottom button.active{
+  color:var(--blue);
+}
+
+@media(min-width:621px){
+  body{
+    background:#000;
+  }
+
+  .app{
+    box-shadow:0 0 80px #000;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <header class="top">
+
+    <div class="topline">
+      <div class="logo">
+        P$4 <b>14.00</b>
+      </div>
+
+      <button class="theme" id="themeToggle">🔵</button>
+    </div>
+
+    <div class="subtitle">
+      PS4 Jailbreak Tracker
+    </div>
+
+    <div class="tabs">
+
+      <button class="tab active" data-main="radar">
+        📡
+        <strong>Radar</strong>
+        <small>14.00</small>
+      </button>
+
+      <button class="tab" data-main="ps4">
+        🎮
+        <strong>PS4</strong>
+        <small>Tudo</small>
+      </button>
+
+      <button class="tab" data-main="fw14">
+        🎯
+        <strong>14.00</strong>
+        <small>Avanços</small>
+      </button>
+
+    </div>
+
+  </header>
+
+  <section class="hero">
+
+    <div class="heroContent">
+      <div class="heroSmall">Monitoramento ativo</div>
+
+      <h1>P$4 14.00</h1>
+
+      <p>
+        Jailbreak, HEN, exploits, pesquisas
+        e descobertas relacionadas ao firmware.
+      </p>
+
+      <div class="live">
+        <span class="dot"></span>
+        <span id="onlineState">Iniciando Radar...</span>
+      </div>
+    </div>
+
+  </section>
+
+  <main>
+
+    <section class="section">
+
+      <div class="sectionTitle">
+        <h2>📡 Radar PS4 14.00</h2>
+        <span id="totalCount">0 encontrados</span>
+      </div>
+
+      <div class="radarBox">
+
+        <div class="radarTop">
+
+          <div class="radarName">
+            <div class="radarIcon">📡</div>
+            Radar ativo
+          </div>
+
+          <div class="radarCount" id="radarCount">
+            0
+          </div>
+
+        </div>
+
+        <div class="radarDesc">
+          Monitoramento automático de resultados públicos
+          relacionados especificamente ao PS4 14.00.
+        </div>
+
+        <div class="radarStatus" id="radarStatus">
+          Aguardando dados...
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="sectionTitle">
+        <h2>Pesquisar</h2>
+      </div>
+
+      <input
+        class="search"
+        id="q"
+        placeholder="Pesquisar PS4, HEN, exploit..."
+        autocomplete="off"
+      >
+
+    </section>
+
+    <section class="section">
+
+      <div class="sectionTitle">
+        <h2>Filtros</h2>
+      </div>
+
+      <div class="filters">
+
+        <button class="filter active" data-filter="Todos">
+          Todos
+        </button>
+
+        <button class="filter" data-filter="PS4">
+          PS4
+        </button>
+
+        <button class="filter" data-filter="HEN">
+          HEN
+        </button>
+
+        <button class="filter" data-filter="Exploit">
+          Exploit
+        </button>
+
+        <button class="filter" data-filter="14.00">
+          14.00
+        </button>
+
+        <button class="filter" data-filter="Radar">
+          📡 Radar
+        </button>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="sectionTitle">
+        <h2>Firmwares</h2>
+      </div>
+
+      <div class="firmwares">
+
+        <div class="fw">
+          <b>9.00</b>
+          <span>Conhecido</span>
+          <div class="fwbar">
+            <i style="width:100%"></i>
+          </div>
+        </div>
+
+        <div class="fw">
+          <b>11.00</b>
+          <span>Monitorado</span>
+          <div class="fwbar">
+            <i style="width:70%"></i>
+          </div>
+        </div>
+
+        <div class="fw active">
+          <b>14.00</b>
+          <span>RADAR</span>
+          <div class="fwbar">
+            <i style="width:25%"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section">
+
+      <div class="sectionTitle">
+        <h2>Últimas informações</h2>
+      </div>
+
+      <div class="news" id="news"></div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<nav class="bottom">
+
+  <button class="active" data-main="radar">
+    <span>📡</span>
+    Radar
+  </button>
+
+  <button data-main="ps4">
+    <span>🎮</span>
+    PS4
+  </button>
+
+  <button data-main="fw14">
+    <span>🎯</span>
+    14.00
+  </button>
+
+</nav>
+
+<script>
+"use strict";
+
+const data = [
+  {
+    id:"news-1",
+    title:"PS4 Jailbreak Tracker",
+    summary:"Monitoramento de jailbreak, HEN, exploits e pesquisas relacionadas ao PS4.",
+    date:"Atualização",
+    tags:["PS4","Exploit"]
+  },
+  {
+    id:"news-2",
+    title:"Acompanhamento de HEN",
+    summary:"Informações públicas sobre HEN e desenvolvimento relacionado ao PS4.",
+    date:"Monitoramento",
+    tags:["PS4","HEN"]
+  },
+  {
+    id:"news-3",
+    title:"Pesquisa de exploits",
+    summary:"Acompanhamento de pesquisas públicas envolvendo segurança e exploits do PS4.",
+    date:"Monitoramento",
+    tags:["PS4","Exploit"]
+  }
+];
+
+let currentFilter="Todos";
+let currentMain="radar";
+let radarItems=[];
+
+const newsEl=document.getElementById("news");
+const searchEl=document.getElementById("q");
+const totalEl=document.getElementById("totalCount");
+const stateEl=document.getElementById("onlineState");
+const radarCount=document.getElementById("radarCount");
+const radarStatus=document.getElementById("radarStatus");
+const themeToggle=document.getElementById("themeToggle");
+
+function cleanText(v){
+  return String(v||"").replace(/\s+/g," ").trim();
+}
+
+function escapeHTML(v){
+  return String(v||"")
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+}
+
+function parseDate(v){
+  if(!v)return 0;
+  const t=Date.parse(v);
+  return Number.isNaN(t)?0:t;
+}
+
+function formatDate(v){
+  if(!v)return "Radar";
+
+  const d=new Date(v);
+
+  if(Number.isNaN(d.getTime()))
+    return "Radar";
+
+  return d.toLocaleDateString("pt-BR",{
+    day:"2-digit",
+    month:"2-digit",
+    year:"numeric"
+  });
+}
+
+function getAllItems(){
+  return [...data,...radarItems];
+}
+
+function matchesSearch(item,q){
+  if(!q)return true;
+
+  const text=[
+    item.title,
+    item.summary,
+    item.date,
+    ...(item.tags||[])
+  ].join(" ").toLowerCase();
+
+  return text.includes(q.toLowerCase());
+}
+
+function matchesFilter(item){
+
+  if(currentFilter==="Todos")
+    return true;
+
+  if(currentFilter==="Radar")
+    return item.radar===true;
+
+  return (item.tags||[]).some(
+    tag =>
+      String(tag).toLowerCase()===
+      currentFilter.toLowerCase()
+  );
+}
+
+function matchesMain(item){
+
+  if(currentMain==="radar")
+    return item.radar===true;
+
+  if(currentMain==="fw14")
+    return (item.tags||[]).includes("14.00");
+
+  return true;
+}
+
+function render(){
+
+  const query=cleanText(searchEl.value);
+
+  const filtered=getAllItems()
+    .filter(matchesMain)
+    .filter(item=>matchesFilter(item))
+    .filter(item=>matchesSearch(item,query))
+    .sort((a,b)=>{
+
+      if(a.isNew&&!b.isNew)return -1;
+      if(!a.isNew&&b.isNew)return 1;
+
+      return parseDate(b.updated_at||b.date)
+        -parseDate(a.updated_at||a.date);
+
+    });
+
+  totalEl.textContent=
+    filtered.length+" encontrados";
+
+  if(!filtered.length){
+
+    newsEl.innerHTML=`
+      <div class="empty">
+        Nenhum resultado encontrado.
+      </div>
+    `;
+
+    return;
+  }
+
+  newsEl.innerHTML=filtered.map(item=>{
+
+    const radar=item.radar===true;
+    const isNewRadar=radar&&item.isNew===true;
+
+    const tags=(item.tags||[])
+      .map(
+        tag=>
+        `<span class="tag">${escapeHTML(tag)}</span>`
+      )
+      .join("");
+
+    let cls="item";
+
+    if(isNewRadar)
+      cls+=" newradar";
+    else if(radar)
+      cls+=" radar";
+    else
+      cls+=" new";
+
+    let badge="";
+
+    if(isNewRadar)
+      badge=`<span class="badge alert">🚨 NOVO</span>`;
+    else if(radar)
+      badge=`<span class="badge radar">📡 RADAR</span>`;
+    else
+      badge=`<span class="badge info">INFO</span>`;
+
+    return `
+      <article class="${cls}">
+
+        <div class="itemTop">
+          <span class="meta">
+            ${escapeHTML(
+              item.date||
+              formatDate(item.updated_at)
+            )}
+          </span>
+
+          ${badge}
+        </div>
+
+        <div class="title">
+          ${escapeHTML(item.title)}
+        </div>
+
+        <div class="desc">
+          ${escapeHTML(item.summary)}
+        </div>
+
+        <div class="tags">
+          ${tags}
+        </div>
+
+        ${
+          item.url
+          ? `
+            <a
+              class="source"
+              href="${escapeHTML(item.url)}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver fonte →
+            </a>
+          `
+          :""
+        }
+
+      </article>
+    `;
+
+  }).join("");
+}
+
+async function carregarRadar(){
+
+  try{
+
+    stateEl.textContent="Consultando Radar...";
+
+    const response=await fetch(
+      "./radar/radar.json?t="+Date.now(),
+      {cache:"no-store"}
+    );
+
+    if(!response.ok)
+      throw new Error("HTTP "+response.status);
+
+    const radar=await response.json();
+
+    const items=
+      Array.isArray(radar.items)
+      ?radar.items
+      :[];
+
+    const newItems=
+      Array.isArray(radar.new_items)
+      ?radar.new_items
+      :[];
+
+    const newIds=new Set(
+      newItems
+        .map(item=>item&&item.id)
+        .filter(Boolean)
+    );
+
+    radarItems=items.map(item=>{
+
+      const reasons=
+        Array.isArray(item.reasons)
+        ?item.reasons
+        :[];
+
+      const tags=[
+        "PS4",
+        "14.00",
+        "Radar",
+        ...reasons
+      ];
+
+      return{
+
+        id:"radar-"+String(
+          item.id||
+          item.url||
+          Math.random()
+        ),
+
+        radarId:item.id||"",
+
+        title:
+          cleanText(item.title)||
+          "Resultado do Radar",
+
+        summary:
+          cleanText(item.summary)||
+          "Resultado encontrado pelo Radar PS4 14.00.",
+
+        date:formatDate(item.updated_at),
+
+        updated_at:item.updated_at||"",
+
+        tags:[...new Set(tags)],
+
+        url:item.url||"",
+
+        radar:true,
+
+        isNew:newIds.has(item.id)
+
+      };
+
+    });
+
+    radarCount.textContent=radarItems.length;
+
+    const novos=
+      radarItems.filter(
+        item=>item.isNew
+      ).length;
+
+    radarStatus.textContent=
+      novos
+      ?`🚨 ${novos} novo${novos>1?"s":""} encontrado${novos>1?"s":""} nesta atualização.`
+      :"Radar funcionando · nenhum novo achado nesta atualização.";
+
+    stateEl.textContent=
+      "📡 Radar online · "+
+      radarItems.length+
+      " encontrados";
+
+    render();
+
+  }catch(error){
+
+    radarItems=[];
+
+    radarCount.textContent="0";
+
+    radarStatus.textContent=
+      "Radar indisponível · exibindo informações locais.";
+
+    stateEl.textContent=
+      "Radar indisponível";
+
+    render();
+
+    console.warn(
+      "Radar PS4 14.00:",
+      error
+    );
+
+  }
+}
+
+/* FILTROS */
+
+document
+  .querySelectorAll(".filter")
+  .forEach(button=>{
+
+    button.addEventListener(
+      "click",
+      ()=>{
+
+        document
+          .querySelectorAll(".filter")
+          .forEach(
+            b=>b.classList.remove("active")
+          );
+
+        button.classList.add("active");
+
+        currentFilter=
+          button.dataset.filter||"Todos";
+
+        render();
+
+      }
+    );
+
+  });
+
+/* ABAS */
+
+document
+  .querySelectorAll("[data-main]")
+  .forEach(button=>{
+
+    button.addEventListener(
+      "click",
+      ()=>{
+
+        currentMain=
+          button.dataset.main||"radar";
+
+        document
+          .querySelectorAll("[data-main]")
+          .forEach(
+            b=>b.classList.remove("active")
+          );
+
+        document
+          .querySelectorAll(
+            `[data-main="${currentMain}"]`
+          )
+          .forEach(
+            b=>b.classList.add("active")
+          );
+
+        render();
+
+      }
+    );
+
+  });
+
+/* PESQUISA */
+
+searchEl.addEventListener(
+  "input",
+  render
+);
+
+/* TEMA */
+
+function applyTheme(theme){
+
+  document.body.dataset.theme=theme;
+
+  localStorage.setItem(
+    "ps4-theme",
+    theme
+  );
+
+  themeToggle.textContent=
+    theme==="blue"
+    ?"⚫"
+    :"🔵";
+}
+
+applyTheme(
+  localStorage.getItem("ps4-theme")||"black"
+);
+
+themeToggle.addEventListener(
+  "click",
+  ()=>{
+
+    const current=
+      document.body.dataset.theme||"black";
+
+    applyTheme(
+      current==="blue"
+      ?"black"
+      :"blue"
+    );
+
+  }
+);
+
+/* INICIALIZAÇÃO */
+
+render();
+carregarRadar();
+
+if("serviceWorker" in navigator){
+
+  window.addEventListener(
+    "load",
+    ()=>{
+      navigator.serviceWorker
+        .register("./sw.js")
+        .catch(
+          error=>
+            console.warn(
+              "Service Worker:",
+              error
+            )
+        );
+    }
+  );
+
+}
+</script>
+
+</body>
+        </html>
