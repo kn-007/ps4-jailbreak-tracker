@@ -332,7 +332,7 @@ def main():
             for issue in data.get("items", []):
                 add_issue(items, issue, config)
 
-            time.sleep(0.4)
+            time.sleep(6)
 
         except Exception as e:
             errors.append(
