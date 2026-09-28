@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import json
 import os
 import re
@@ -38,21 +39,6 @@ def clean(text):
 
 
 def is_target_firmware(text):
-    """
-    Aceita somente PS4 14.00.
-
-    Exemplos aceitos:
-      PS4 14.00
-      PS4 firmware 14.00
-      firmware 14.00 PS4
-
-    Exemplos rejeitados:
-      PS4 14.0
-      PS4 13.00
-      PS4 15.00
-      PS4 14.01
-    """
-
     text = clean(text).lower()
 
     has_ps4 = re.search(r"\bps4\b", text)
@@ -73,14 +59,8 @@ def score_item(item, config):
     if not is_target_firmware(blob):
         return 0, []
 
-    score = 0
-    reasons = []
-
-    score += 5
-    reasons.append("PS4")
-
-    score += 10
-    reasons.append("14.00")
+    score = 15
+    reasons = ["PS4", "14.00"]
 
     for keyword in config.get("keywords_optional", []):
         keyword = keyword.lower()
@@ -116,4 +96,155 @@ def load_existing():
     if not os.path.exists(OUTPUT_PATH):
         return {
             "version": 1,
-            "updated_at": None
+            "updated_at": None,
+            "new_items_this_run": 0,
+            "errors": [],
+            "items": []
+        }
+
+    try:
+        with open(OUTPUT_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {
+            "version": 1,
+            "updated_at": None,
+            "new_items_this_run": 0,
+            "errors": [],
+            "items": []
+        }
+
+
+def main():
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+        config = json.load(f)
+
+    existing = load_existing()
+
+    old_items = existing.get("items", [])
+
+    old_ids = {
+        item.get("id")
+        for item in old_items
+        if item.get("id")
+    }
+
+    items = {}
+    errors = []
+
+    for query in config.get("queries", []):
+        try:
+            data = search_query(query)
+
+            for repo in data.get("items", []):
+                item = {
+                    "id": f"repo:{repo['id']}",
+                    "type": "repository",
+                    "title": clean(repo.get("full_name")),
+                    "summary": clean(repo.get("description")),
+                    "author": repo.get("owner", {}).get("login", ""),
+                    "url": repo.get("html_url"),
+                    "updated_at": repo.get("updated_at"),
+                    "source": "GitHub"
+                }
+
+                score, reasons = score_item(item, config)
+
+                if score >= 15:
+                    item["score"] = score
+                    item["reasons"] = reasons
+                    items[item["id"]] = item
+
+            time.sleep(0.4)
+
+        except Exception as e:
+            errors.append(
+                f"repository search: {query}: {e}"
+            )
+
+    for query in config.get("queries", [])[:6]:
+        try:
+            data = search_issues(query)
+
+            for issue in data.get("items", []):
+                item = {
+                    "id": f"issue:{issue['id']}",
+                    "type": (
+                        "pull_request"
+                        if "pull_request" in issue
+                        else "issue"
+                    ),
+                    "title": clean(issue.get("title")),
+                    "summary": clean(issue.get("body"))[:1000],
+                    "author": issue.get("user", {}).get("login", ""),
+                    "url": issue.get("html_url"),
+                    "updated_at": issue.get("updated_at"),
+                    "source": "GitHub"
+                }
+
+                score, reasons = score_item(item, config)
+
+                if score >= 15:
+                    item["score"] = score
+                    item["reasons"] = reasons
+                    items[item["id"]] = item
+
+            time.sleep(0.4)
+
+        except Exception as e:
+            errors.append(
+                f"issue search: {query}: {e}"
+            )
+
+    new_items = [
+        item
+        for item_id, item in items.items()
+        if item_id not in old_ids
+    ]
+
+    merged = {
+        item.get("id"): item
+        for item in old_items
+        if item.get("id")
+    }
+
+    merged.update(items)
+
+    ordered = sorted(
+        merged.values(),
+        key=lambda item: (
+            item.get("updated_at") or "",
+            item.get("score", 0)
+        ),
+        reverse=True
+    )
+
+    ordered = ordered[:config.get("max_items", 100)]
+
+    result = {
+        "version": 1,
+        "target_firmware": TARGET_FIRMWARE,
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "new_items_this_run": len(new_items),
+        "errors": errors,
+        "items": ordered
+    }
+
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(
+            result,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+    print(f"Radar PS4 {TARGET_FIRMWARE} concluído.")
+    print(f"Itens novos: {len(new_items)}")
+    print(f"Itens relevantes encontrados: {len(items)}")
+
+    if errors:
+        print(f"Avisos: {len(errors)}")
+
+
+if __name__ == "__main__":
+    main()
