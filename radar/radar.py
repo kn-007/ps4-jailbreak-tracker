@@ -356,11 +356,11 @@ def main():
     print(f"Itens armazenados: {len(ordered)}")
     print("=" * 50)
 
-    if errors:
-    print(f"Avisos: {len(errors)}")
+        if errors:
+        print(f"Avisos: {len(errors)}")
 
-    for error in errors:
-        print(f"- {error}")
+        for error in errors:
+            print(f"- {error}")
 
 
 if __name__ == "__main__":
