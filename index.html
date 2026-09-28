@@ -769,6 +769,16 @@ async function carregarRadar(){
       ? radar.items
       : [];
 
+    const newItems = Array.isArray(radar.new_items)
+      ? radar.new_items
+      : [];
+
+    const newIds = new Set(
+      newItems
+        .map(item => item && item.id)
+        .filter(Boolean)
+    );
+
     radarItems = items.map(item => {
 
       const reasons = Array.isArray(item.reasons)
@@ -784,22 +794,40 @@ async function carregarRadar(){
 
       return {
         id:"radar-" + String(item.id || item.url || Math.random()),
+
+        radarId:item.id || "",
+
         title:cleanText(item.title) || "Resultado do Radar",
+
         summary:
           cleanText(item.summary) ||
           "Resultado encontrado pelo Radar PS4 14.00.",
+
         date:formatDate(item.updated_at),
+
         updated_at:item.updated_at || "",
+
         tags:[...new Set(tags)],
+
         url:item.url || "",
-        radar:true
+
+        radar:true,
+
+        isNew:newIds.has(item.id)
       };
     });
+
+    const novos = radarItems.filter(
+      item => item.isNew
+    ).length;
 
     stateEl.textContent =
       "📡 Radar atualizado · " +
       radarItems.length +
-      " encontrados";
+      " encontrados" +
+      (novos
+        ? " · 🚨 " + novos + " novo" + (novos > 1 ? "s" : "")
+        : "");
 
     render();
 
@@ -817,14 +845,7 @@ async function carregarRadar(){
       error
     );
   }
-}
-
-document.querySelectorAll(".filters button").forEach(button => {
-
-  button.addEventListener("click",() => {
-
-    document
-      .querySelectorAll(".filters button")
+  }
       .forEach(btn => btn.classList.remove("active"));
 
     button.classList.add("active");
