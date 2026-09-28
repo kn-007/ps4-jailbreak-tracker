@@ -1,4 +1,4 @@
-const CACHE = "ps4-tracker-v6";
+const CACHE = "ps4-tracker-v7";
 
 const ASSETS = [
   "./",
