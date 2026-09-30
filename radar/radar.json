@@ -1,9 +1,29 @@
 {
   "version": 3,
   "target_firmware": "14.00",
-  "updated_at": "2026-09-30T06:19:36.441783+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-09-30T12:22:38.324322+00:00",
+  "new_items_this_run": 1,
+  "new_items": [
+    {
+      "id": "issue:5645279559",
+      "type": "pull_request",
+      "title": "README e docs em inglês/português/espanhol, pesquisa de PKG/fPKG e correção do modo rápido do E2E",
+      "summary": "## README em três idiomas - `README.md` agora é em inglês, o padrão que o GitHub mostra. O português foi para `README.pt-BR.md` e há também `README.es.md`. - Cada README tem um seletor de idioma no topo. - A interface ainda é só em português (o inglês é a Fase 4). Por isso o inglês e o espanhol avisam isso e mostram os nomes dos botões como aparecem no app, com a tradução. ## Docs em três idiomas - `docs/en/` e `docs/es/` trazem arquitetura, FTP-PS5, testes, roadmap e PKG-PS5. - O português (`docs/*.md`) continua sendo o original. Todas as docs têm seletor de idioma, e cada README aponta para as docs no seu idioma. ## Pesquisa de PKG/fPKG e Fase 6 no roadmap - `docs/PKG-PS5.md` reúne, com fontes: - jailbreak por firmware (até o Relapse 7.00–13.60; 14.00 sem jailbreak público); - fPKG de PS4 e de PS5 por firmware (kstuff, kstuff 1.6.6 e kstuff-lite 1.11: o fPKG de PS5 só vai até 11.60); - instaladores de pacote: etaHEN DPI v1/v2, ezRemote DPI, pkg-sender, ps5upload; - formatos de imagem",
+      "author": "bps2414",
+      "url": "https://github.com/bps2414/ferry/pull/2",
+      "updated_at": "2026-09-30T11:16:55Z",
+      "source": "GitHub",
+      "score": 23,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "jailbreak",
+        "hen",
+        "14.0",
+        "firmware"
+      ]
+    }
+  ],
   "searches_performed": 20,
   "errors": [],
   "items": [
@@ -45,6 +65,25 @@
         "primitive",
         "memory corruption",
         "14.0"
+      ]
+    },
+    {
+      "id": "issue:5645279559",
+      "type": "pull_request",
+      "title": "README e docs em inglês/português/espanhol, pesquisa de PKG/fPKG e correção do modo rápido do E2E",
+      "summary": "## README em três idiomas - `README.md` agora é em inglês, o padrão que o GitHub mostra. O português foi para `README.pt-BR.md` e há também `README.es.md`. - Cada README tem um seletor de idioma no topo. - A interface ainda é só em português (o inglês é a Fase 4). Por isso o inglês e o espanhol avisam isso e mostram os nomes dos botões como aparecem no app, com a tradução. ## Docs em três idiomas - `docs/en/` e `docs/es/` trazem arquitetura, FTP-PS5, testes, roadmap e PKG-PS5. - O português (`docs/*.md`) continua sendo o original. Todas as docs têm seletor de idioma, e cada README aponta para as docs no seu idioma. ## Pesquisa de PKG/fPKG e Fase 6 no roadmap - `docs/PKG-PS5.md` reúne, com fontes: - jailbreak por firmware (até o Relapse 7.00–13.60; 14.00 sem jailbreak público); - fPKG de PS4 e de PS5 por firmware (kstuff, kstuff 1.6.6 e kstuff-lite 1.11: o fPKG de PS5 só vai até 11.60); - instaladores de pacote: etaHEN DPI v1/v2, ezRemote DPI, pkg-sender, ps5upload; - formatos de imagem",
+      "author": "bps2414",
+      "url": "https://github.com/bps2414/ferry/pull/2",
+      "updated_at": "2026-09-30T11:16:55Z",
+      "source": "GitHub",
+      "score": 23,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "jailbreak",
+        "hen",
+        "14.0",
+        "firmware"
       ]
     },
     {
