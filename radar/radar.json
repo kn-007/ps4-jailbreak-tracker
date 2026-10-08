@@ -1,9 +1,27 @@
 {
   "version": 3,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-08T12:20:41.370346+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-10-08T18:18:05.791587+00:00",
+  "new_items_this_run": 1,
+  "new_items": [
+    {
+      "id": "repo:1410411650",
+      "type": "repository",
+      "title": "xmaksxyt-code/XEMIXJB2",
+      "summary": "PS4 14.00 JAILBREAK TEST V2",
+      "author": "xmaksxyt-code",
+      "url": "https://github.com/xmaksxyt-code/XEMIXJB2",
+      "updated_at": "2026-10-08T13:47:12Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "jailbreak",
+        "14.0"
+      ]
+    }
+  ],
   "searches_performed": 20,
   "errors": [],
   "items": [
@@ -102,6 +120,23 @@
         "offset",
         "14.0",
         "firmware"
+      ]
+    },
+    {
+      "id": "repo:1410411650",
+      "type": "repository",
+      "title": "xmaksxyt-code/XEMIXJB2",
+      "summary": "PS4 14.00 JAILBREAK TEST V2",
+      "author": "xmaksxyt-code",
+      "url": "https://github.com/xmaksxyt-code/XEMIXJB2",
+      "updated_at": "2026-10-08T13:47:12Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "jailbreak",
+        "14.0"
       ]
     },
     {
