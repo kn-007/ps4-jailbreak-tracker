@@ -1,26 +1,25 @@
 {
   "version": 3,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-10T00:23:37.598766+00:00",
+  "updated_at": "2026-10-10T06:18:43.856000+00:00",
   "new_items_this_run": 1,
   "new_items": [
     {
-      "id": "issue:5783655726",
-      "type": "pull_request",
-      "title": "Harden scanner bounds checks and correct research evidence",
-      "summary": "## Summary - Validate getdents entry lengths before reading names or advancing through the native buffer. - Reject overlong paths before copying into native buffers. - Abort scanning cleanly when required native functions are unavailable. - Detect incomplete USB report writes. - Correct documentation that overstates CVE/Orbis applicability; add public FreeBSD advisory and upstream-source references. - Mark PS4-specific kernel and MP4 claims as unconfirmed where the repository lacks reproducible evidence. - Preserve the current upstream README scope, including the 14.00 research files. ## Validation status Static review only. No CI workflow or runnable test suite was found in the public repository, and the BD-J scanner has not been run on target hardware. The ABI-specific stat field offsets still require verification against the exact firmware. The change does not add or improve kernel exploit functionality.",
-      "author": "ayoubnoob543-lab",
-      "url": "https://github.com/adri22235/ps4-suid-scanner/pull/4",
-      "updated_at": "2026-10-09T20:19:13Z",
+      "id": "issue:5786972801",
+      "type": "issue",
+      "title": "Goldhen 14.00",
+      "summary": "Hi SiSTR0, please 🙏❤️ I have a PS4 on firmware 14.00, and I've been waiting for a jailbreak for a long time. Please, if possible, could you support firmware 14.00 too? 🙏🥺 I really appreciate all your hard work, and I know developing a jailbreak takes a lot of time and effort. Please don't forget about us 14.00 users! Even a small update about your plans would make me very happy. Thank you so much, SiSTR0! ❤️🙏",
+      "author": "mahmudalmo2-ctrl",
+      "url": "https://github.com/GoldHEN/GoldHEN/issues/400",
+      "updated_at": "2026-10-10T01:47:01Z",
       "source": "GitHub",
-      "score": 27,
+      "score": 26,
       "reasons": [
         "PS4",
         "14.00",
-        "exploit",
+        "jailbreak",
         "hen",
-        "kernel",
-        "offset",
+        "goldhen",
         "14.0",
         "firmware"
       ]
@@ -46,6 +45,26 @@
         "hen",
         "kernel",
         "offset",
+        "14.0",
+        "firmware"
+      ]
+    },
+    {
+      "id": "issue:5786972801",
+      "type": "issue",
+      "title": "Goldhen 14.00",
+      "summary": "Hi SiSTR0, please 🙏❤️ I have a PS4 on firmware 14.00, and I've been waiting for a jailbreak for a long time. Please, if possible, could you support firmware 14.00 too? 🙏🥺 I really appreciate all your hard work, and I know developing a jailbreak takes a lot of time and effort. Please don't forget about us 14.00 users! Even a small update about your plans would make me very happy. Thank you so much, SiSTR0! ❤️🙏",
+      "author": "mahmudalmo2-ctrl",
+      "url": "https://github.com/GoldHEN/GoldHEN/issues/400",
+      "updated_at": "2026-10-10T01:47:01Z",
+      "source": "GitHub",
+      "score": 26,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "jailbreak",
+        "hen",
+        "goldhen",
         "14.0",
         "firmware"
       ]
