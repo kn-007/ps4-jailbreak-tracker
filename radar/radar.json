@@ -1,12 +1,55 @@
 {
   "version": 3,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-09T18:17:38.207674+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-10-10T00:23:37.598766+00:00",
+  "new_items_this_run": 1,
+  "new_items": [
+    {
+      "id": "issue:5783655726",
+      "type": "pull_request",
+      "title": "Harden scanner bounds checks and correct research evidence",
+      "summary": "## Summary - Validate getdents entry lengths before reading names or advancing through the native buffer. - Reject overlong paths before copying into native buffers. - Abort scanning cleanly when required native functions are unavailable. - Detect incomplete USB report writes. - Correct documentation that overstates CVE/Orbis applicability; add public FreeBSD advisory and upstream-source references. - Mark PS4-specific kernel and MP4 claims as unconfirmed where the repository lacks reproducible evidence. - Preserve the current upstream README scope, including the 14.00 research files. ## Validation status Static review only. No CI workflow or runnable test suite was found in the public repository, and the BD-J scanner has not been run on target hardware. The ABI-specific stat field offsets still require verification against the exact firmware. The change does not add or improve kernel exploit functionality.",
+      "author": "ayoubnoob543-lab",
+      "url": "https://github.com/adri22235/ps4-suid-scanner/pull/4",
+      "updated_at": "2026-10-09T20:19:13Z",
+      "source": "GitHub",
+      "score": 27,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "exploit",
+        "hen",
+        "kernel",
+        "offset",
+        "14.0",
+        "firmware"
+      ]
+    }
+  ],
   "searches_performed": 20,
   "errors": [],
   "items": [
+    {
+      "id": "issue:5783655726",
+      "type": "pull_request",
+      "title": "Harden scanner bounds checks and correct research evidence",
+      "summary": "## Summary - Validate getdents entry lengths before reading names or advancing through the native buffer. - Reject overlong paths before copying into native buffers. - Abort scanning cleanly when required native functions are unavailable. - Detect incomplete USB report writes. - Correct documentation that overstates CVE/Orbis applicability; add public FreeBSD advisory and upstream-source references. - Mark PS4-specific kernel and MP4 claims as unconfirmed where the repository lacks reproducible evidence. - Preserve the current upstream README scope, including the 14.00 research files. ## Validation status Static review only. No CI workflow or runnable test suite was found in the public repository, and the BD-J scanner has not been run on target hardware. The ABI-specific stat field offsets still require verification against the exact firmware. The change does not add or improve kernel exploit functionality.",
+      "author": "ayoubnoob543-lab",
+      "url": "https://github.com/adri22235/ps4-suid-scanner/pull/4",
+      "updated_at": "2026-10-09T20:19:13Z",
+      "source": "GitHub",
+      "score": 27,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "exploit",
+        "hen",
+        "kernel",
+        "offset",
+        "14.0",
+        "firmware"
+      ]
+    },
     {
       "id": "repo:1386511057",
       "type": "repository",
