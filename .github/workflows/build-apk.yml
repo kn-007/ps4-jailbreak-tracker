@@ -35,9 +35,10 @@ jobs:
         run: |
           npm init -y
           npm install @capacitor/core@7 @capacitor/android@7
-          npm install --save-dev @capacitor/cli@7
+          npm install --save-dev @capacitor/cli@7 @capacitor/assets
           npx cap init "PS4 Jailbreak" com.kn007.ps4tracker --web-dir www
           npx cap add android
+          npx capacitor-assets generate --android
           npx cap sync android
 
       - name: Configurar Java
