@@ -22,7 +22,6 @@ steps:
   - name: Preparar arquivos do aplicativo
     run: |
       mkdir -p www
-
       rsync -av ./ www/ \
         --exclude='/.git/' \
         --exclude='/.github/' \
@@ -31,7 +30,6 @@ steps:
         --exclude='/android/' \
         --exclude='/package.json' \
         --exclude='/package-lock.json'
-
       test -f www/index.html
 
   - name: Configurar Capacitor
@@ -39,7 +37,6 @@ steps:
       npm init -y
       npm install @capacitor/core@7 @capacitor/android@7
       npm install --save-dev @capacitor/cli@7
-
       npx cap init "PS4 Jailbreak" com.kn007.ps4tracker --web-dir www
       npx cap add android
       npx cap sync android
