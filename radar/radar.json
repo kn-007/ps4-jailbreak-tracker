@@ -1,31 +1,29 @@
 {
-  "version": 3,
+  "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-11T06:19:09.581919+00:00",
+  "updated_at": "2026-10-11T08:17:51.223153+00:00",
   "new_items_this_run": 0,
   "new_items": [],
-  "searches_performed": 20,
+  "searches_performed": 16,
   "errors": [],
   "items": [
     {
-      "id": "issue:5783655726",
-      "type": "pull_request",
-      "title": "Harden scanner bounds checks and correct research evidence",
-      "summary": "## Summary - Validate getdents entry lengths before reading names or advancing through the native buffer. - Reject overlong paths before copying into native buffers. - Abort scanning cleanly when required native functions are unavailable. - Detect incomplete USB report writes. - Correct documentation that overstates CVE/Orbis applicability; add public FreeBSD advisory and upstream-source references. - Mark PS4-specific kernel and MP4 claims as unconfirmed where the repository lacks reproducible evidence. - Preserve the current upstream README scope, including the 14.00 research files. ## Validation status Static review only. No CI workflow or runnable test suite was found in the public repository, and the BD-J scanner has not been run on target hardware. The ABI-specific stat field offsets still require verification against the exact firmware. The change does not add or improve kernel exploit functionality.",
-      "author": "ayoubnoob543-lab",
-      "url": "https://github.com/adri22235/ps4-suid-scanner/pull/4",
-      "updated_at": "2026-10-09T20:19:13Z",
+      "id": "repo:1385557683",
+      "type": "repository",
+      "title": "mohammidharaz/Ps4-WebKit-r-w-14.00",
+      "summary": "PS4 WebKit security research exploring JavaScriptCore memory corruption and controlled read/write primitives for educational and vulnerability-analysis purposes.",
+      "author": "mohammidharaz",
+      "url": "https://github.com/mohammidharaz/Ps4-WebKit-r-w-14.00",
+      "updated_at": "2026-09-24T13:26:04Z",
       "source": "GitHub",
-      "score": 27,
+      "score": 30,
       "reasons": [
         "PS4",
         "14.00",
-        "exploit",
-        "hen",
-        "kernel",
-        "offset",
-        "14.0",
-        "firmware"
+        "webkit",
+        "primitive",
+        "memory corruption",
+        "vulnerability"
       ]
     },
     {
@@ -69,26 +67,6 @@
       ]
     },
     {
-      "id": "repo:1385557683",
-      "type": "repository",
-      "title": "mohammidharaz/Ps4-WebKit-r-w-14.00",
-      "summary": "PS4 WebKit security research exploring JavaScriptCore memory corruption and controlled read/write primitives for educational and vulnerability-analysis purposes.",
-      "author": "mohammidharaz",
-      "url": "https://github.com/mohammidharaz/Ps4-WebKit-r-w-14.00",
-      "updated_at": "2026-09-24T13:26:04Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "webkit",
-        "vulnerability",
-        "primitive",
-        "memory corruption",
-        "14.0"
-      ]
-    },
-    {
       "id": "issue:5645279559",
       "type": "pull_request",
       "title": "README e docs em inglês/português/espanhol, pesquisa de PKG/fPKG e correção do modo rápido do E2E",
@@ -105,6 +83,24 @@
         "hen",
         "14.0",
         "firmware"
+      ]
+    },
+    {
+      "id": "issue:5783655726",
+      "type": "pull_request",
+      "title": "Harden scanner bounds checks and correct research evidence",
+      "summary": "## Summary - Validate getdents entry lengths before reading names or advancing through the native buffer. - Reject overlong paths before copying into native buffers. - Abort scanning cleanly when required native functions are unavailable. - Detect incomplete USB report writes. - Correct documentation that overstates CVE/Orbis applicability; add public FreeBSD advisory and upstream-source references. - Mark PS4-specific kernel and MP4 claims as unconfirmed where the repository lacks reproducible evidence. - Preserve the current upstream README scope, including the 14.00 research files. ## Validation status Static review only. No CI workflow or runnable test suite was found in the public repository, and the BD-J scanner has not been run on target hardware. The ABI-specific stat field offsets still require verification against the exact firmware. The change does not add or improve kernel ex",
+      "author": "ayoubnoob543-lab",
+      "url": "https://github.com/adri22235/ps4-suid-scanner/pull/4",
+      "updated_at": "2026-10-09T20:19:13Z",
+      "source": "GitHub",
+      "score": 22,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "offset",
+        "hen"
       ]
     },
     {
