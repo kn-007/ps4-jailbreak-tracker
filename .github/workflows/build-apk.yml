@@ -1,62 +1,61 @@
 name: Gerar APK PS4 Jailbreak
 
 on:
-workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
-contents: read
+  contents: read
 
 jobs:
-build-apk:
-runs-on: ubuntu-latest
+  build-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
 
-steps:
-  - name: Baixar repositorio
-    uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-  - name: Configurar Node.js
-    uses: actions/setup-node@v4
-    with:
-      node-version: "20"
+      - name: Preparar arquivos do aplicativo
+        run: |
+          mkdir -p www
+          rsync -av ./ www/ \
+            --exclude='/.git/' \
+            --exclude='/.github/' \
+            --exclude='/www/' \
+            --exclude='/node_modules/' \
+            --exclude='/android/' \
+            --exclude='/package.json' \
+            --exclude='/package-lock.json'
+          test -f www/index.html
 
-  - name: Preparar arquivos do aplicativo
-    run: |
-      mkdir -p www
-      rsync -av ./ www/ \
-        --exclude='/.git/' \
-        --exclude='/.github/' \
-        --exclude='/www/' \
-        --exclude='/node_modules/' \
-        --exclude='/android/' \
-        --exclude='/package.json' \
-        --exclude='/package-lock.json'
-      test -f www/index.html
+      - name: Configurar Capacitor
+        run: |
+          npm init -y
+          npm install @capacitor/core@7 @capacitor/android@7
+          npm install --save-dev @capacitor/cli@7
+          npx cap init "PS4 Jailbreak" com.kn007.ps4tracker --web-dir www
+          npx cap add android
+          npx cap sync android
 
-  - name: Configurar Capacitor
-    run: |
-      npm init -y
-      npm install @capacitor/core@7 @capacitor/android@7
-      npm install --save-dev @capacitor/cli@7
-      npx cap init "PS4 Jailbreak" com.kn007.ps4tracker --web-dir www
-      npx cap add android
-      npx cap sync android
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
 
-  - name: Configurar Java
-    uses: actions/setup-java@v4
-    with:
-      distribution: temurin
-      java-version: "21"
+      - name: Compilar APK
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug
 
-  - name: Compilar APK
-    run: |
-      cd android
-      chmod +x gradlew
-      ./gradlew assembleDebug
-
-  - name: Disponibilizar APK para download
-    uses: actions/upload-artifact@v4
-    with:
-      name: PS4-Jailbreak-APK
-      path: android/app/build/outputs/apk/debug/app-debug.apk
-      if-no-files-found: error
-      retention-days: 30
+      - name: Disponibilizar APK para download
+        uses: actions/upload-artifact@v4
+        with:
+          name: PS4-Jailbreak-APK
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 30
