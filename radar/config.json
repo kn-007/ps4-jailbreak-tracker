@@ -1,1 +1,36 @@
-
+{
+  "name": "PS4 14.00 Radar",
+  "max_items": 80,
+  "queries": [
+    "\"PS4 14.00\"",
+    "\"PS4\" \"14.00\"",
+    "PS4 firmware 14.00",
+    "PS4 14.00 exploit",
+    "PS4 14.00 WebKit",
+    "PS4 14.00 kernel",
+    "PS4 14.00 offset",
+    "PS4 14.00 primitive",
+    "PS4 14.00 payload",
+    "\"14.00\" WebKit PS4",
+    "\"14.00\" offset PS4"
+  ],
+  "keywords_required": [
+    "ps4",
+    "14.00"
+  ],
+  "keywords_optional": [
+    "webkit",
+    "kernel",
+    "offset",
+    "primitive",
+    "exploit",
+    "payload",
+    "rop",
+    "chain",
+    "syscall",
+    "vulnerability",
+    "jailbreak",
+    "hen",
+    "goldhen"
+  ]
+}
