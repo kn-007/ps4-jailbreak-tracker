@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-11T21:57:25.910610+00:00",
+  "updated_at": "2026-10-11T22:30:41.317678+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -14,7 +14,7 @@
       "summary": "PS4 WebKit security research exploring JavaScriptCore memory corruption and controlled read/write primitives for educational and vulnerability-analysis purposes.",
       "author": "mohammidharaz",
       "url": "https://github.com/mohammidharaz/Ps4-WebKit-r-w-14.00",
-      "updated_at": "2026-09-24T13:26:04Z",
+      "updated_at": "2026-10-11T22:05:10Z",
       "source": "GitHub",
       "score": 30,
       "reasons": [
