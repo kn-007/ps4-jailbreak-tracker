@@ -3,13 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0b0b0d" />
   <title>PS4 14.00 Radar</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --bg: #0b0b0d;
+      --card: #141416;
+      --border: #222226;
+      --text: #e8e8ea;
+      --text-secondary: #9a9aa0;
+      --accent: #3b82f6;
+      --accent-dim: #1e3a5f;
+      --success: #22c55e;
+      --radius: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .app {
+      max-width: 640px;
+      margin: 0 auto;
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 16px 12px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(11, 11, 13, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+
+    .header h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    .status {
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 0.75rem;
+      color: var(--success);
+      background: rgba(34, 197, 94, 0.12);
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    .last-update {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 6px;
+      padding: 12px 16px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+
+    .tab.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    /* Lista */
+    .list {
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* Card */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      transition: border-color 0.15s ease;
+      cursor: pointer;
+    }
+
+    .card:active {
+      border-color: #333;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 550;
+      color: var(--text);
+      line-height: 1.35;
+      flex: 1;
+      padding-right: 12px;
+    }
+
+    .card-time {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    .card-summary {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: #1c1c20;
+      color: var(--text-secondary);
+      border: 1px solid #2a2a2e;
+    }
+
+    .tag.high {
+      background: var(--accent-dim);
+      color: #93c5fd;
+      border-color: #1e40af;
+    }
+
+    .tag.webkit { color: #c4b5fd; }
+    .tag.kernel { color: #86efac; }
+    .tag.exploit { color: #fca5a5; }
+    .tag.offset { color: #fcd34d; }
+    .tag.primitive { color: #67e8f9; }
+
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
   <div class="app">
 
-    <!-- Header limpo -->
     <header class="header">
       <div class="header-left">
         <h1>PS4 14.00</h1>
@@ -20,7 +208,6 @@
       </div>
     </header>
 
-    <!-- Filtros -->
     <nav class="tabs">
       <button class="tab active" data-filter="all">Todos</button>
       <button class="tab" data-filter="high">Relevantes</button>
@@ -28,13 +215,97 @@
       <button class="tab" data-filter="kernel">Kernel</button>
     </nav>
 
-    <!-- Lista de resultados -->
     <main class="list" id="list">
-      <!-- Os cards serão inseridos aqui via JS -->
+      <!-- Cards serão inseridos aqui via JavaScript -->
     </main>
 
   </div>
 
-  <script src="app.js"></script>
+  <script>
+    // ====================== CONFIG ======================
+    const RADAR_URL = "./radar/radar.json";
+
+    // ====================== HELPERS ======================
+    function formatTime(iso) {
+      if (!iso) return "—";
+      const date = new Date(iso);
+      const now = new Date();
+      const diff = (now - date) / 1000;
+
+      if (diff < 60) return "agora";
+      if (diff < 3600) return Math.floor(diff / 60) + " min";
+      if (diff < 86400) return Math.floor(diff / 3600) + " h";
+      return Math.floor(diff / 86400) + " d";
+    }
+
+    function createCard(item) {
+      const tags = (item.reasons || [])
+        .filter(r => !["PS4", "14.00"].includes(r))
+        .slice(0, 5)
+        .map(r => {
+          const cls = r.toLowerCase().replace(/\s+/g, "-");
+          return `<span class="tag \( {cls}"> \){r}</span>`;
+        })
+        .join("");
+
+      return `
+        <article class="card" onclick="window.open('${item.url}', '_blank')">
+          <div class="card-header">
+            <h3 class="card-title">${item.title || "Sem título"}</h3>
+            <span class="card-time">${formatTime(item.updated_at)}</span>
+          </div>
+          <p class="card-summary">${item.summary || ""}</p>
+          <div class="card-tags">${tags}</div>
+        </article>
+      `;
+    }
+
+    // ====================== RENDER ======================
+    async function loadRadar() {
+      const list = document.getElementById("list");
+      const lastUpdate = document.getElementById("last-update");
+      const status = document.getElementById("status");
+
+      try {
+        const res = await fetch(RADAR_URL + "?t=" + Date.now());
+        const data = await res.json();
+
+        // Atualiza status
+        if (data.updated_at) {
+          lastUpdate.textContent = formatTime(data.updated_at);
+        }
+
+        const items = data.items || [];
+
+        if (items.length === 0) {
+          list.innerHTML = `<div class="empty">Nenhum resultado encontrado</div>`;
+          return;
+        }
+
+        list.innerHTML = items.map(createCard).join("");
+
+      } catch (err) {
+        console.error(err);
+        list.innerHTML = `<div class="empty">Erro ao carregar dados do radar</div>`;
+        status.textContent = "Erro";
+        status.style.color = "#f87171";
+      }
+    }
+
+    // ====================== TABS ======================
+    document.querySelectorAll(".tab").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        // Aqui você pode filtrar os cards se quiser (filtro por data-filter)
+      });
+    });
+
+    // ====================== INIT ======================
+    loadRadar();
+
+    // Atualiza a cada 2 minutos
+    setInterval(loadRadar, 2 * 60 * 1000);
+  </script>
 </body>
 </html>
