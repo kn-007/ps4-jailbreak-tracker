@@ -18,6 +18,10 @@ TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 TARGET_FIRMWARE = "14.00"
 
+# ---- Notificação via ntfy ----
+NTFY_TOPIC = "ps4radar-kn007"
+NTFY_URL = f"https://ntfy.sh/{NTFY_TOPIC}"
+
 
 # ---------------------------------------------------------
 # QUERIES MAIS PRECISAS
@@ -226,6 +230,30 @@ def add_issue(items, issue):
         items[item["id"]] = item
 
 
+def enviar_notificacao(titulo, mensagem, url=None):
+    """Envia notificação via ntfy.sh"""
+    try:
+        headers = {
+            "Title": titulo,
+            "Priority": "high",
+            "Tags": "video_game,rotating_light",
+        }
+        if url:
+            headers["Click"] = url
+
+        req = Request(
+            NTFY_URL,
+            data=mensagem.encode("utf-8"),
+            headers=headers,
+            method="POST",
+        )
+
+        with urlopen(req, timeout=15) as response:
+            print(f"Notificação enviada (status {response.status})")
+    except Exception as e:
+        print(f"Falha ao enviar notificação: {e}")
+
+
 def main():
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         config = json.load(f)
@@ -290,6 +318,18 @@ def main():
 
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
+
+    # ---- Envia notificação se houver itens novos ----
+    if new_items:
+        print(f"\nEnviando notificação ({len(new_items)} itens novos)...")
+        top = new_items[0]
+        titulo = f"PS4 {TARGET_FIRMWARE}: {len(new_items)} novidade(s)!"
+        mensagem = f"{top.get('title', 'Algo novo')}"
+        if top.get("reasons"):
+            mensagem += f"\n[{', '.join(top.get('reasons', [])[:5])}]"
+        enviar_notificacao(titulo, mensagem, url=top.get("url"))
+    else:
+        print("\nNenhum item novo — sem notificação.")
 
     print("\n" + "=" * 50)
     print(f"Radar PS4 {TARGET_FIRMWARE} finalizado")
