@@ -1,24 +1,11 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-13T18:39:17.604915+00:00",
+  "updated_at": "2026-10-13T19:13:33.132136+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
-  "errors": [
-    "repo: \"14.00\" kernel PS4: HTTP Error 403: Forbidden",
-    "repo: \"PS4 14.00\": HTTP Error 403: Forbidden",
-    "issue: PS4 14.00: HTTP Error 403: Forbidden",
-    "issue: \"PS4\" \"14.00\": HTTP Error 403: Forbidden",
-    "issue: PS4 firmware 14.00: HTTP Error 403: Forbidden",
-    "issue: PS4 14.00 exploit: HTTP Error 403: Forbidden",
-    "issue: PS4 14.00 jailbreak: HTTP Error 403: Forbidden",
-    "issue: PS4 14.00 WebKit: HTTP Error 403: Forbidden",
-    "issue: PS4 14.00 kernel: HTTP Error 403: Forbidden",
-    "issue: PS4 14.00 offset: HTTP Error 403: Forbidden",
-    "issue: PS4 14.00 primitive: HTTP Error 403: Forbidden",
-    "issue: PS4 14.00 payload: HTTP Error 403: Forbidden"
-  ],
+  "errors": [],
   "items": [
     {
       "id": "repo:1385557683",
