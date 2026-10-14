@@ -1,11 +1,13 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-14T00:55:29.761151+00:00",
+  "updated_at": "2026-10-14T01:41:17.148198+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
-  "errors": [],
+  "errors": [
+    "repo: PS4 14.00 HEN: HTTP Error 500: Internal Server Error"
+  ],
   "items": [
     {
       "id": "repo:1385557683",
