@@ -1,11 +1,13 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-17T10:40:33.029326+00:00",
+  "updated_at": "2026-10-17T11:05:04.946789+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
-  "errors": [],
+  "errors": [
+    "issue: PS4 14.00: HTTP Error 502: Bad Gateway"
+  ],
   "items": [
     {
       "id": "repo:1385557683",
