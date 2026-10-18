@@ -1,27 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-18T14:40:13.403695+00:00",
-  "new_items_this_run": 1,
-  "new_items": [
-    {
-      "id": "repo:1424441965",
-      "type": "repository",
-      "title": "aztecyt2022/ps4-payloads-for-12.52-and-up.",
-      "summary": "these payloads are still being tested and are in early versions of adding the offsets and \"porting\" of the files. UPDATED FROM 12.52 TO 14.00",
-      "author": "aztecyt2022",
-      "url": "https://github.com/aztecyt2022/ps4-payloads-for-12.52-and-up.",
-      "updated_at": "2026-10-18T14:38:51Z",
-      "source": "GitHub",
-      "score": 20,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "offset",
-        "payload"
-      ]
-    }
-  ],
+  "updated_at": "2026-10-18T15:04:43.263158+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -166,7 +148,7 @@
       "summary": "these payloads are still being tested and are in early versions of adding the offsets and \"porting\" of the files. UPDATED FROM 12.52 TO 14.00",
       "author": "aztecyt2022",
       "url": "https://github.com/aztecyt2022/ps4-payloads-for-12.52-and-up.",
-      "updated_at": "2026-10-18T14:38:51Z",
+      "updated_at": "2026-10-18T14:42:36Z",
       "source": "GitHub",
       "score": 20,
       "reasons": [
