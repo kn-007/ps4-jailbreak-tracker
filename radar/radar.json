@@ -1,12 +1,99 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-19T16:52:29.827014+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-10-19T17:43:04.686002+00:00",
+  "new_items_this_run": 2,
+  "new_items": [
+    {
+      "id": "issue:5928268886",
+      "type": "pull_request",
+      "title": "R&D FW14: inspect public GoldHEN and PS4-HEN payloads and document PUP block diff",
+      "summary": "Measured **actual public binary payloads** without running them: Raw13G-hosted `goldhen.bin` (293,120 B, sha256 df3f27c1...) and Scene-Collective `hen.bin` prerelease-182 (500,448 B, sha256 c05f6097...). Records sizes, SHA-256, header signatures and selected version strings, without sharing payloads or inferring FW14 jailbreak. Documents two distinct projects and limitations of static metadata. Adds actual Sony PUP 13.52 vs 14.00 encrypted 16 KiB block counts: entry1 545/19900 equal, entry2 20/10821 equal; no claim that these are kernel instruction patch rates. **CI verified:** https://github.com/DanieleDellUomo/ps4-exploit-launcher/actions/runs/39292331439 **PUP count verified:** https://github.com/DanieleDellUomo/ps4-exploit-launcher/actions/runs/39292062992",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/12",
+      "updated_at": "2026-10-19T17:16:14Z",
+      "source": "GitHub",
+      "score": 31,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit",
+        "payload",
+        "jailbreak",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
+      "id": "issue:5928196213",
+      "type": "pull_request",
+      "title": "FW14 R&D: compare HEN 13.52/14.00 sources, GoldHEN releases, encrypted PUP blocks",
+      "summary": "## Technical research - Pin Scene-Collective PS4-HEN commit `d077fb4`, compare FW 13.52 and FW14 designated initializer offsets, verify `MAX_FW=1400` and the actual `case 1400` dispatch. Preserve field-by-field JSON audit, sentinel checks. - Audit **official** GoldHEN releases metadata separately from PS4-HEN open-source support: GoldHEN's upstream repository does not contain full 2.4b18.x source, and HEN FW14 tables do not supply a kernel exploit. - Compare Sony 13.52/14.00 verified encrypted PUP entries using 16 KiB ciphertext SHA-256 block maps, counting identity at the same position or any position. **NO decryption, no dump of proprietary kernel, no redistribution of firmware, no payloads**. - Explain exact blocker and why forcing 13.52 kernel patch offsets onto FW14 is unsafe. ## Tests HEN source/release CI: https://github.com/DanieleDellUomo/ps4-exploit-launcher/actions/runs/392914",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/11",
+      "updated_at": "2026-10-19T17:12:02Z",
+      "source": "GitHub",
+      "score": 39,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "offset",
+        "rop",
+        "exploit",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
+    {
+      "id": "issue:5928196213",
+      "type": "pull_request",
+      "title": "FW14 R&D: compare HEN 13.52/14.00 sources, GoldHEN releases, encrypted PUP blocks",
+      "summary": "## Technical research - Pin Scene-Collective PS4-HEN commit `d077fb4`, compare FW 13.52 and FW14 designated initializer offsets, verify `MAX_FW=1400` and the actual `case 1400` dispatch. Preserve field-by-field JSON audit, sentinel checks. - Audit **official** GoldHEN releases metadata separately from PS4-HEN open-source support: GoldHEN's upstream repository does not contain full 2.4b18.x source, and HEN FW14 tables do not supply a kernel exploit. - Compare Sony 13.52/14.00 verified encrypted PUP entries using 16 KiB ciphertext SHA-256 block maps, counting identity at the same position or any position. **NO decryption, no dump of proprietary kernel, no redistribution of firmware, no payloads**. - Explain exact blocker and why forcing 13.52 kernel patch offsets onto FW14 is unsafe. ## Tests HEN source/release CI: https://github.com/DanieleDellUomo/ps4-exploit-launcher/actions/runs/392914",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/11",
+      "updated_at": "2026-10-19T17:12:02Z",
+      "source": "GitHub",
+      "score": 39,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "offset",
+        "rop",
+        "exploit",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
+      "id": "issue:5928268886",
+      "type": "pull_request",
+      "title": "R&D FW14: inspect public GoldHEN and PS4-HEN payloads and document PUP block diff",
+      "summary": "Measured **actual public binary payloads** without running them: Raw13G-hosted `goldhen.bin` (293,120 B, sha256 df3f27c1...) and Scene-Collective `hen.bin` prerelease-182 (500,448 B, sha256 c05f6097...). Records sizes, SHA-256, header signatures and selected version strings, without sharing payloads or inferring FW14 jailbreak. Documents two distinct projects and limitations of static metadata. Adds actual Sony PUP 13.52 vs 14.00 encrypted 16 KiB block counts: entry1 545/19900 equal, entry2 20/10821 equal; no claim that these are kernel instruction patch rates. **CI verified:** https://github.com/DanieleDellUomo/ps4-exploit-launcher/actions/runs/39292331439 **PUP count verified:** https://github.com/DanieleDellUomo/ps4-exploit-launcher/actions/runs/39292062992",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/12",
+      "updated_at": "2026-10-19T17:16:14Z",
+      "source": "GitHub",
+      "score": 31,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit",
+        "payload",
+        "jailbreak",
+        "hen",
+        "goldhen"
+      ]
+    },
     {
       "id": "issue:5924542109",
       "type": "pull_request",
