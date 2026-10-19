@@ -1,9 +1,47 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-19T10:44:53.146343+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-10-19T11:14:55.642459+00:00",
+  "new_items_this_run": 2,
+  "new_items": [
+    {
+      "id": "issue:5922791368",
+      "type": "pull_request",
+      "title": "Add safe runtime tests and PS4 13.52→14.00 firmware research",
+      "summary": "Aggiunge una pagina di test funzionali **non invasivi** per il browser PS4 Slim 14.00 (TypedArray/DataView, Promise, Fetch stesso host, Worker, eccezioni), asset locali di prova e script di controllo PUP per PC. Documenta la differenza fra Relapse/AIO Multi Cancel pubblico su FW 13.52 e supporto HEN 14.00 senza kernel exploit pubblico. I PUP non sono inclusi e non sono stati scaricati nell'ambiente di analisi. Verifica offline dei controlli puri JS, nessuna prova ancora su console per questi nuovi test. Nessun payload, exploit, scansione memoria o telemetria. Il collegamento ai test è su diagnostics.html.",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/2",
+      "updated_at": "2026-10-19T11:13:36Z",
+      "source": "GitHub",
+      "score": 27,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit",
+        "payload",
+        "hen"
+      ]
+    },
+    {
+      "id": "issue:5922551811",
+      "type": "pull_request",
+      "title": "Add safe PS4 browser diagnostics (FW 14.00)",
+      "summary": "## Obiettivo Aggiunge una pagina di **diagnostica non invasiva** per provare il browser di una PS4 (in particolare firmware 14.00) senza fingere che l'exploit kernel sia disponibile. ## Modifiche - `diagnostics.html`: interfaccia leggera, compatibile col browser PS4. - `diagnostics.js`: ES5, lettura dell'User-Agent e semplice disponibilità delle API Web. - `tests/test-diagnostics.js`: test del rilevamento firmware e delle funzionalità elencate. - `index.html`: link alla pagina diagnostica. ## Test locali - `node --check diagnostics.js`: OK. - `node tests/test-diagnostics.js`: **9 verifiche superate**. - Verificata identità SHA dei due file JS testati rispetto agli oggetti GitHub. ## Sicurezza, limiti, privacy Nessun exploit, payload, scansione memoria, alterazione kernel o trasmissione di telemetria. La pagina non può distinguere affidabilmente Slim, Fat e Pro. **Firmware 14.00 resta sen",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/1",
+      "updated_at": "2026-10-19T10:56:44Z",
+      "source": "GitHub",
+      "score": 25,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit",
+        "payload"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -27,6 +65,25 @@
       ]
     },
     {
+      "id": "issue:5922791368",
+      "type": "pull_request",
+      "title": "Add safe runtime tests and PS4 13.52→14.00 firmware research",
+      "summary": "Aggiunge una pagina di test funzionali **non invasivi** per il browser PS4 Slim 14.00 (TypedArray/DataView, Promise, Fetch stesso host, Worker, eccezioni), asset locali di prova e script di controllo PUP per PC. Documenta la differenza fra Relapse/AIO Multi Cancel pubblico su FW 13.52 e supporto HEN 14.00 senza kernel exploit pubblico. I PUP non sono inclusi e non sono stati scaricati nell'ambiente di analisi. Verifica offline dei controlli puri JS, nessuna prova ancora su console per questi nuovi test. Nessun payload, exploit, scansione memoria o telemetria. Il collegamento ai test è su diagnostics.html.",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/2",
+      "updated_at": "2026-10-19T11:13:36Z",
+      "source": "GitHub",
+      "score": 27,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit",
+        "payload",
+        "hen"
+      ]
+    },
+    {
       "id": "issue:5786972801",
       "type": "issue",
       "title": "Goldhen 14.00",
@@ -44,6 +101,24 @@
         "goldhen",
         "14.0",
         "firmware"
+      ]
+    },
+    {
+      "id": "issue:5922551811",
+      "type": "pull_request",
+      "title": "Add safe PS4 browser diagnostics (FW 14.00)",
+      "summary": "## Obiettivo Aggiunge una pagina di **diagnostica non invasiva** per provare il browser di una PS4 (in particolare firmware 14.00) senza fingere che l'exploit kernel sia disponibile. ## Modifiche - `diagnostics.html`: interfaccia leggera, compatibile col browser PS4. - `diagnostics.js`: ES5, lettura dell'User-Agent e semplice disponibilità delle API Web. - `tests/test-diagnostics.js`: test del rilevamento firmware e delle funzionalità elencate. - `index.html`: link alla pagina diagnostica. ## Test locali - `node --check diagnostics.js`: OK. - `node tests/test-diagnostics.js`: **9 verifiche superate**. - Verificata identità SHA dei due file JS testati rispetto agli oggetti GitHub. ## Sicurezza, limiti, privacy Nessun exploit, payload, scansione memoria, alterazione kernel o trasmissione di telemetria. La pagina non può distinguere affidabilmente Slim, Fat e Pro. **Firmware 14.00 resta sen",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/1",
+      "updated_at": "2026-10-19T10:56:44Z",
+      "source": "GitHub",
+      "score": 25,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit",
+        "payload"
       ]
     },
     {
