@@ -1,50 +1,51 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-19T12:17:58.832105+00:00",
-  "new_items_this_run": 2,
+  "updated_at": "2026-10-19T13:05:42.633442+00:00",
+  "new_items_this_run": 1,
   "new_items": [
     {
-      "id": "issue:5923625826",
+      "id": "issue:5923862356",
       "type": "pull_request",
-      "title": "Research: identify FW14 kernel exploit blockers before active testing",
-      "summary": "## Obiettivo Preparare una ricerca riproducibile sulle routine AIO, senza lanciare exploit 13.52 non compatibili sulla PS4 Slim 14.00. ## Risultati - Documentazione **go/no-go** basata sul codice di Raw13G, sulle tabelle HEN 14.00 e sull'audit del prototipo `ps4-suid-scanner` (che lascia l'exploit userland non implementato). - Nuovo `tools/compare_aio_disassembly.py`: confronta le disassemblazioni di `aio_multi_wait`, `aio_multi_cancel`, ecc. *solo quando avremo i binari kernel decifrati e correttamente identificati*. - Test sintetici e GitHub Actions, nessuna modifica alla console. ## Limitazioni dichiarate I pacchetti PUP non permettono da soli di confermare la patch di Relapse. Nessun exploit kernel 14.00 è stato costruito, caricato o eseguito; nessun test pericoloso è avviato.",
+      "title": "Add read-only AIO baseline for future PS4 14.00 native testing",
+      "summary": "## Scopo Rispondere alla richiesta di provare la disponibilità delle API AIO **senza fingere accesso al kernel dal browser**. ### Implementazione - `native/aio_read_probe.c`: apre soltanto un file regolare esistente in modalità read-only ed esegue una singola lettura asincrona POSIX (massimo 16 byte). Niente race, brute force, scritture del kernel o patch. - `docs/FW14_AIO_READ_PROBE.md`: differenza tra AIO di libreria, syscall proprietarie PS4 e vulnerabilità Relapse; condizioni per un futuro test nativo. - `.github/workflows/native-aio-probe.yml`: compila e verifica il programma **su Linux**. ### Test Workflow GitHub Actions Linux completato con successo: https://github.com/DanieleDellUomo/ps4-exploit-launcher/actions/runs/39252329286 ### Limitazioni Non compilato né eseguito sulla PS4 Slim 14.00. Il browser PS4 non può chiamare syscall 662/663/664/666/669 in modo diretto. Un `aio_read",
       "author": "DanieleDellUomo",
-      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/5",
-      "updated_at": "2026-10-19T12:13:40Z",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/6",
+      "updated_at": "2026-10-19T12:29:41Z",
       "source": "GitHub",
-      "score": 22,
+      "score": 30,
       "reasons": [
         "PS4",
         "14.00",
         "kernel",
-        "exploit",
-        "hen"
-      ]
-    },
-    {
-      "id": "issue:5923326038",
-      "type": "pull_request",
-      "title": "Research: compare PS4 13.52 and 14.00 PUP outer metadata",
-      "summary": "## Scope The uploaded PUPs are large and the current ChatGPT container could not read them; this PR adds a repeatable **read-only** comparator for local files. Also adds a GitHub Actions workflow that attempts to download matching official Sony packages and publish **JSON metadata only**. - SLB2 outer entry parser, SHA-256 of nested *encrypted* segments, whole-file MD5/SHA256 and exact sizes - Cross-check MD5 against the publicly documented firmware hashes - Three offline synthetic-container unit tests (all pass in GitHub Actions on the research branch) - Docs outlining that no kernel diff/decryption or Relapse patch confirmation can follow from encrypted-container metadata alone No Sony firmware binaries or exploit payloads are committed. This is not an FW 14.00 jailbreak.",
-      "author": "DanieleDellUomo",
-      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/4",
-      "updated_at": "2026-10-19T11:53:50Z",
-      "source": "GitHub",
-      "score": 27,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "kernel",
-        "exploit",
-        "payload",
-        "jailbreak"
+        "rop",
+        "syscall",
+        "exploit"
       ]
     }
   ],
   "searches_performed": 16,
   "errors": [],
   "items": [
+    {
+      "id": "issue:5923862356",
+      "type": "pull_request",
+      "title": "Add read-only AIO baseline for future PS4 14.00 native testing",
+      "summary": "## Scopo Rispondere alla richiesta di provare la disponibilità delle API AIO **senza fingere accesso al kernel dal browser**. ### Implementazione - `native/aio_read_probe.c`: apre soltanto un file regolare esistente in modalità read-only ed esegue una singola lettura asincrona POSIX (massimo 16 byte). Niente race, brute force, scritture del kernel o patch. - `docs/FW14_AIO_READ_PROBE.md`: differenza tra AIO di libreria, syscall proprietarie PS4 e vulnerabilità Relapse; condizioni per un futuro test nativo. - `.github/workflows/native-aio-probe.yml`: compila e verifica il programma **su Linux**. ### Test Workflow GitHub Actions Linux completato con successo: https://github.com/DanieleDellUomo/ps4-exploit-launcher/actions/runs/39252329286 ### Limitazioni Non compilato né eseguito sulla PS4 Slim 14.00. Il browser PS4 non può chiamare syscall 662/663/664/666/669 in modo diretto. Un `aio_read",
+      "author": "DanieleDellUomo",
+      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/6",
+      "updated_at": "2026-10-19T12:29:41Z",
+      "source": "GitHub",
+      "score": 30,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "rop",
+        "syscall",
+        "exploit"
+      ]
+    },
     {
       "id": "repo:1385557683",
       "type": "repository",
