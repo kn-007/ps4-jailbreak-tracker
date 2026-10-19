@@ -1,29 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-19T13:57:28.389690+00:00",
-  "new_items_this_run": 1,
-  "new_items": [
-    {
-      "id": "issue:5924542109",
-      "type": "pull_request",
-      "title": "Research FW14 Slopkit JSScope regression with one-shot PS4 browser test",
-      "summary": "## Risultato della ricerca Fonti PS4 Dev Wiki indicano che la **primitiva JSScope di Slopkit** non restituisce più l'oggetto interno a partire dal firmware **14.00** (verifica attribuita a ufm42, 20 settembre 2026). Questo contraddice l'ipotesi, presente in alcuni repository sperimentali, che gli entry point WebKit precedenti siano sicuramente ancora validi. ## Implementazione - `webkit-regression.html`: pagina PS4 a esecuzione manuale, con gate firmware 14.00. - `webkit-regression.js`: riproduce **solo una chiamata** alla piccola funzione `leakScopeObject` da Raw13G; verifica il tipo del risultato, **senza** l'ulteriore manipolazione dell'oggetto, heap spray, primitive R/W, syscall o payload. - `tests/test-webkit-regression.js`: 11 verifiche di comportamento e di sicurezza su V8. - `docs/FW14_SLOPKIT_JSSCOPE_FINDINGS.md`: evidenze, fonti e limiti. - `index.html`: link alla nuova pagina.",
-      "author": "DanieleDellUomo",
-      "url": "https://github.com/DanieleDellUomo/ps4-exploit-launcher/pull/7",
-      "updated_at": "2026-10-19T13:14:33Z",
-      "source": "GitHub",
-      "score": 30,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "webkit",
-        "primitive",
-        "syscall",
-        "payload"
-      ]
-    }
-  ],
+  "updated_at": "2026-10-19T14:49:36.373310+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
