@@ -1,11 +1,18 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-21T12:58:17.092918+00:00",
+  "updated_at": "2026-10-21T13:51:04.232897+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
-  "errors": [],
+  "errors": [
+    "issue: PS4 14.00 jailbreak: HTTP Error 403: Forbidden",
+    "issue: PS4 14.00 WebKit: HTTP Error 403: Forbidden",
+    "issue: PS4 14.00 kernel: HTTP Error 403: Forbidden",
+    "issue: PS4 14.00 offset: HTTP Error 403: Forbidden",
+    "issue: PS4 14.00 primitive: HTTP Error 403: Forbidden",
+    "issue: PS4 14.00 payload: HTTP Error 403: Forbidden"
+  ],
   "items": [
     {
       "id": "issue:5928196213",
@@ -303,7 +310,7 @@
       "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Add regression tests for SYSENT consistency and unresolved C/header includes. - Publish the audit report in the workflow summary and as an artifact. - Remove unsupported claims that FW 14.00 gadget offsets are fully verified or that a complete 14.00 chain is ready. - Trace SYSENT provenance to an immutable upstream source while clearly separating source provenance from binary verification. - Document missing C build dependencies and SDK/toolchain questions without copying upstream headers before provenance/license review. - Correct the CVE-2026-49415 analysis: it is a real upstream FreeBSD advisory, but this does not establish that the same vulnerable code path exists or is reachable on PS4 FW 14.00. - Add `PUBLIC_RESEARCH_REVIEW.md`, reviewing the public FW 14.00 CVE claims against official FreeBSD advisories an",
       "author": "REFRESHD21",
       "url": "https://github.com/REFRESHD21/ps4-suid-scanner/pull/1",
-      "updated_at": "2026-10-21T12:55:21Z",
+      "updated_at": "2026-10-21T13:23:25Z",
       "source": "GitHub",
       "score": 20,
       "reasons": [
