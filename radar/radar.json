@@ -1,31 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-21T09:45:46.082632+00:00",
-  "new_items_this_run": 1,
-  "new_items": [
-    {
-      "id": "issue:5958087435",
-      "type": "pull_request",
-      "title": "[Draft] Audit and correct PS4 FW 14.00 research claims",
-      "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Document current FW 14.00 evidence gaps in `FW14_AUDIT.md` and `FW14_FINDINGS.md`. - Correct README claims that implied the exploit chain/gadgets were fully verified. ## Known findings - `exploit.html` explicitly lacks an integrated WebKit primitive. - `jordy_stage2_1400.js` contains unresolved address/primitive placeholders. - `1400.c` and `1400_offsets.txt` disagree on `SYSENT` (`0x01102B70` vs `0x0110A760`). Neither value should be treated as independently verified. - Required C include files were not present at the expected paths in the inspected repository tree. ## Validation status The audit workflow has not yet been confirmed passing. This PR does not claim a working FW 14.00 jailbreak; it improves reproducibility and reporting only. Do not merge until CI output is reviewed.",
-      "author": "REFRESHD21",
-      "url": "https://github.com/REFRESHD21/ps4-suid-scanner/pull/1",
-      "updated_at": "2026-10-21T09:45:05Z",
-      "source": "GitHub",
-      "score": 37,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "webkit",
-        "offset",
-        "primitive",
-        "chain",
-        "exploit",
-        "jailbreak"
-      ]
-    }
-  ],
+  "updated_at": "2026-10-21T10:18:01.027454+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -49,27 +27,6 @@
         "payload",
         "hen",
         "goldhen"
-      ]
-    },
-    {
-      "id": "issue:5958087435",
-      "type": "pull_request",
-      "title": "[Draft] Audit and correct PS4 FW 14.00 research claims",
-      "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Document current FW 14.00 evidence gaps in `FW14_AUDIT.md` and `FW14_FINDINGS.md`. - Correct README claims that implied the exploit chain/gadgets were fully verified. ## Known findings - `exploit.html` explicitly lacks an integrated WebKit primitive. - `jordy_stage2_1400.js` contains unresolved address/primitive placeholders. - `1400.c` and `1400_offsets.txt` disagree on `SYSENT` (`0x01102B70` vs `0x0110A760`). Neither value should be treated as independently verified. - Required C include files were not present at the expected paths in the inspected repository tree. ## Validation status The audit workflow has not yet been confirmed passing. This PR does not claim a working FW 14.00 jailbreak; it improves reproducibility and reporting only. Do not merge until CI output is reviewed.",
-      "author": "REFRESHD21",
-      "url": "https://github.com/REFRESHD21/ps4-suid-scanner/pull/1",
-      "updated_at": "2026-10-21T09:45:05Z",
-      "source": "GitHub",
-      "score": 37,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "webkit",
-        "offset",
-        "primitive",
-        "chain",
-        "exploit",
-        "jailbreak"
       ]
     },
     {
@@ -148,6 +105,25 @@
         "primitive",
         "memory corruption",
         "vulnerability"
+      ]
+    },
+    {
+      "id": "issue:5958087435",
+      "type": "pull_request",
+      "title": "[Draft] FW 14.00 research audit and evidence ledger",
+      "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Add isolated regression tests for SYSENT mismatch reporting and avoiding a false positive on ordinary `return 0;` statements. - Publish the audit report in the workflow summary and upload it as an artifact even if a later step fails. - Remove unsupported README claims that FW 14.00 gadget offsets are fully verified or that a complete 14.00 chain is ready. - Correct the SYSENT provenance note based on the immutable upstream source commit. ## SYSENT evidence - Upstream: [Al-Azif/ps4-hen `d077fb4031cf0e089fb7a233cebeebcd1ed3c68e`](https://github.com/Al-Azif/ps4-hen/blob/d077fb4031cf0e089fb7a233cebeebcd1ed3c68e/kpayload/source/offsets/1400.c) - The cited source uses `SYSENT=0x01102B70`; the alternative `0x0110A760` is contradicted by that source. - This is source provenance, not independent validation against a genui",
+      "author": "REFRESHD21",
+      "url": "https://github.com/REFRESHD21/ps4-suid-scanner/pull/1",
+      "updated_at": "2026-10-21T10:13:26Z",
+      "source": "GitHub",
+      "score": 27,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "offset",
+        "chain",
+        "payload",
+        "hen"
       ]
     },
     {
