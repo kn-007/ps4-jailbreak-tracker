@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-21T10:52:43.319373+00:00",
+  "updated_at": "2026-10-21T11:44:58.321527+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -111,10 +111,10 @@
       "id": "issue:5958087435",
       "type": "pull_request",
       "title": "[Draft] FW 14.00 research audit and evidence ledger",
-      "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Add isolated regression tests for SYSENT mismatch reporting and avoiding a false positive on ordinary `return 0;` statements. - Publish the audit report in the workflow summary and upload it as an artifact even if a later step fails. - Remove unsupported README claims that FW 14.00 gadget offsets are fully verified or that a complete 14.00 chain is ready. - Correct the SYSENT provenance note based on the immutable upstream source commit. ## SYSENT evidence - Upstream: [Al-Azif/ps4-hen `d077fb4031cf0e089fb7a233cebeebcd1ed3c68e`](https://github.com/Al-Azif/ps4-hen/blob/d077fb4031cf0e089fb7a233cebeebcd1ed3c68e/kpayload/source/offsets/1400.c) - The cited source uses `SYSENT=0x01102B70`; the alternative `0x0110A760` is contradicted by that source. - This is source provenance, not independent validation against a genui",
+      "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Add isolated regression tests for SYSENT mismatch reporting across the notes, C source, and stage-two JavaScript, and avoid a false positive on ordinary `return 0;` statements. - Inventory actual quoted includes in the C/header files and test that unresolved local dependencies are reported as blocked. - Publish the audit report in the workflow summary and upload it as an artifact even if a later step fails. - Remove unsupported README claims that FW 14.00 gadget offsets are fully verified or that a complete 14.00 chain is ready. - Correct the SYSENT provenance note based on the immutable upstream source commit. ## SYSENT evidence - Upstream: [Al-Azif/ps4-hen `d077fb4031cf0e089fb7a233cebeebcd1ed3c68e`](https://github.com/Al-Azif/ps4-hen/blob/d077fb4031cf0e089fb7a233cebeebcd1ed3c68e/kpayload/source/offsets/1400.c) ",
       "author": "REFRESHD21",
       "url": "https://github.com/REFRESHD21/ps4-suid-scanner/pull/1",
-      "updated_at": "2026-10-21T10:13:26Z",
+      "updated_at": "2026-10-21T11:32:38Z",
       "source": "GitHub",
       "score": 27,
       "reasons": [
