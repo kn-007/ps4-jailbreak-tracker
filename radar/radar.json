@@ -1,9 +1,31 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-21T08:49:02.172335+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-10-21T09:45:46.082632+00:00",
+  "new_items_this_run": 1,
+  "new_items": [
+    {
+      "id": "issue:5958087435",
+      "type": "pull_request",
+      "title": "[Draft] Audit and correct PS4 FW 14.00 research claims",
+      "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Document current FW 14.00 evidence gaps in `FW14_AUDIT.md` and `FW14_FINDINGS.md`. - Correct README claims that implied the exploit chain/gadgets were fully verified. ## Known findings - `exploit.html` explicitly lacks an integrated WebKit primitive. - `jordy_stage2_1400.js` contains unresolved address/primitive placeholders. - `1400.c` and `1400_offsets.txt` disagree on `SYSENT` (`0x01102B70` vs `0x0110A760`). Neither value should be treated as independently verified. - Required C include files were not present at the expected paths in the inspected repository tree. ## Validation status The audit workflow has not yet been confirmed passing. This PR does not claim a working FW 14.00 jailbreak; it improves reproducibility and reporting only. Do not merge until CI output is reviewed.",
+      "author": "REFRESHD21",
+      "url": "https://github.com/REFRESHD21/ps4-suid-scanner/pull/1",
+      "updated_at": "2026-10-21T09:45:05Z",
+      "source": "GitHub",
+      "score": 37,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "offset",
+        "primitive",
+        "chain",
+        "exploit",
+        "jailbreak"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -27,6 +49,27 @@
         "payload",
         "hen",
         "goldhen"
+      ]
+    },
+    {
+      "id": "issue:5958087435",
+      "type": "pull_request",
+      "title": "[Draft] Audit and correct PS4 FW 14.00 research claims",
+      "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Document current FW 14.00 evidence gaps in `FW14_AUDIT.md` and `FW14_FINDINGS.md`. - Correct README claims that implied the exploit chain/gadgets were fully verified. ## Known findings - `exploit.html` explicitly lacks an integrated WebKit primitive. - `jordy_stage2_1400.js` contains unresolved address/primitive placeholders. - `1400.c` and `1400_offsets.txt` disagree on `SYSENT` (`0x01102B70` vs `0x0110A760`). Neither value should be treated as independently verified. - Required C include files were not present at the expected paths in the inspected repository tree. ## Validation status The audit workflow has not yet been confirmed passing. This PR does not claim a working FW 14.00 jailbreak; it improves reproducibility and reporting only. Do not merge until CI output is reviewed.",
+      "author": "REFRESHD21",
+      "url": "https://github.com/REFRESHD21/ps4-suid-scanner/pull/1",
+      "updated_at": "2026-10-21T09:45:05Z",
+      "source": "GitHub",
+      "score": 37,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "offset",
+        "primitive",
+        "chain",
+        "exploit",
+        "jailbreak"
       ]
     },
     {
