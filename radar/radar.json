@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-22T00:05:44.111905+00:00",
+  "updated_at": "2026-10-22T00:55:53.145836+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -303,7 +303,7 @@
       "summary": "## Summary - Add a non-invasive static audit and GitHub Actions workflow. - Add regression tests for SYSENT consistency and unresolved C/header includes. - Publish the audit report in the workflow summary and as an artifact. - Remove unsupported claims that FW 14.00 gadget offsets are fully verified or that a complete 14.00 chain is ready. - Trace SYSENT provenance to an immutable upstream source while clearly separating source provenance from binary verification. - Document missing C build dependencies and SDK/toolchain questions without copying upstream headers before provenance/license review. - Correct the CVE-2026-49415 analysis: it is a real upstream FreeBSD advisory, but this does not establish that the same vulnerable code path exists or is reachable on PS4 FW 14.00. - Add `PUBLIC_RESEARCH_REVIEW.md`, reviewing the public FW 14.00 CVE claims against official FreeBSD advisories an",
       "author": "REFRESHD21",
       "url": "https://github.com/REFRESHD21/ps4-suid-scanner/pull/1",
-      "updated_at": "2026-10-21T13:23:25Z",
+      "updated_at": "2026-10-22T00:27:46Z",
       "source": "GitHub",
       "score": 20,
       "reasons": [
