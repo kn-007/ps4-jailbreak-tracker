@@ -1,34 +1,11 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-26T18:22:25.873964+00:00",
-  "new_items_this_run": 1,
-  "new_items": [
-    {
-      "id": "repo:1434761636",
-      "type": "repository",
-      "title": "Mikadolebg/ps4-1400-research",
-      "summary": "PS4 14.00 security research: proven userland exploit chain (SSV entry, arbitrary R/W, base leak, verified ROP, arbitrary syscalls), measured kernel attack-surface map, closed leads with evidence, ranked open leads.",
-      "author": "Mikadolebg",
-      "url": "https://github.com/Mikadolebg/ps4-1400-research",
-      "updated_at": "2026-10-26T18:12:53Z",
-      "source": "GitHub",
-      "score": 35,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "kernel",
-        "rop",
-        "chain",
-        "syscall",
-        "exploit"
-      ]
-    }
-  ],
+  "updated_at": "2026-10-26T19:26:51.443133+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
-  "errors": [
-    "repo: PS4 14.00: HTTP Error 502: Bad Gateway"
-  ],
+  "errors": [],
   "items": [
     {
       "id": "issue:5928196213",
@@ -59,7 +36,7 @@
       "summary": "PS4 14.00 security research: proven userland exploit chain (SSV entry, arbitrary R/W, base leak, verified ROP, arbitrary syscalls), measured kernel attack-surface map, closed leads with evidence, ranked open leads.",
       "author": "Mikadolebg",
       "url": "https://github.com/Mikadolebg/ps4-1400-research",
-      "updated_at": "2026-10-26T18:12:53Z",
+      "updated_at": "2026-10-26T19:22:26Z",
       "source": "GitHub",
       "score": 35,
       "reasons": [
