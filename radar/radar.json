@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-26T19:26:51.443133+00:00",
+  "updated_at": "2026-10-26T20:13:38.360642+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -36,7 +36,7 @@
       "summary": "PS4 14.00 security research: proven userland exploit chain (SSV entry, arbitrary R/W, base leak, verified ROP, arbitrary syscalls), measured kernel attack-surface map, closed leads with evidence, ranked open leads.",
       "author": "Mikadolebg",
       "url": "https://github.com/Mikadolebg/ps4-1400-research",
-      "updated_at": "2026-10-26T19:22:26Z",
+      "updated_at": "2026-10-26T20:01:08Z",
       "source": "GitHub",
       "score": 35,
       "reasons": [
