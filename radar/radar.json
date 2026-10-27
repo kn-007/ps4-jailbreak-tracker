@@ -1,11 +1,12 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-27T12:20:11.898180+00:00",
+  "updated_at": "2026-10-27T13:33:50.749665+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
   "errors": [
+    "repo: \"PS4 14.00\": HTTP Error 403: Forbidden",
     "issue: PS4 14.00: HTTP Error 403: Forbidden",
     "issue: \"PS4\" \"14.00\": HTTP Error 403: Forbidden",
     "issue: PS4 firmware 14.00: HTTP Error 403: Forbidden",
@@ -47,7 +48,7 @@
       "summary": "PS4 14.00 security research: proven userland exploit chain (SSV entry, arbitrary R/W, base leak, verified ROP, arbitrary syscalls), measured kernel attack-surface map, closed leads with evidence, ranked open leads.",
       "author": "Mikadolebg",
       "url": "https://github.com/Mikadolebg/ps4-1400-research",
-      "updated_at": "2026-10-27T00:15:12Z",
+      "updated_at": "2026-10-27T12:37:57Z",
       "source": "GitHub",
       "score": 35,
       "reasons": [
