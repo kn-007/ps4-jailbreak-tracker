@@ -1,29 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-28T01:09:49.065841+00:00",
-  "new_items_this_run": 1,
-  "new_items": [
-    {
-      "id": "issue:6070438505",
-      "type": "issue",
-      "title": "trying g to use the exploiter",
-      "summary": "when I type I the web address, it doesn't let me choose a payloader so I cant jailbreak it. my ps4 in firmware 14.00",
-      "author": "animalvideogames-cpu",
-      "url": "https://github.com/xmaksxyt-code/XEMIXJB2/issues/1",
-      "updated_at": "2026-10-28T00:53:01Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "exploit",
-        "payload",
-        "jailbreak",
-        "hen"
-      ]
-    }
-  ],
+  "updated_at": "2026-10-28T02:02:59.374256+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
