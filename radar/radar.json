@@ -1,27 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-10-30T02:59:56.206581+00:00",
-  "new_items_this_run": 1,
-  "new_items": [
-    {
-      "id": "repo:1439099228",
-      "type": "repository",
-      "title": "iHaiDeeZ/PupDecrypt-PS4",
-      "summary": "Decrypt PS4 firmware update files (PUP) on your own console: payload with offsets up to 14.00, built on Windows with MSYS2 clang, plus a .NET pup_unpack",
-      "author": "iHaiDeeZ",
-      "url": "https://github.com/iHaiDeeZ/PupDecrypt-PS4",
-      "updated_at": "2026-10-30T02:07:47Z",
-      "source": "GitHub",
-      "score": 20,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "offset",
-        "payload"
-      ]
-    }
-  ],
+  "updated_at": "2026-10-30T10:01:25.260796+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -360,7 +342,7 @@
       "summary": "Decrypt PS4 firmware update files (PUP) on your own console: payload with offsets up to 14.00, built on Windows with MSYS2 clang, plus a .NET pup_unpack",
       "author": "iHaiDeeZ",
       "url": "https://github.com/iHaiDeeZ/PupDecrypt-PS4",
-      "updated_at": "2026-10-30T02:07:47Z",
+      "updated_at": "2026-10-30T05:14:56Z",
       "source": "GitHub",
       "score": 20,
       "reasons": [
