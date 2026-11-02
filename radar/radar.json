@@ -1,9 +1,47 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-02T10:00:09.258314+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-11-02T20:23:15.780120+00:00",
+  "new_items_this_run": 2,
+  "new_items": [
+    {
+      "id": "repo:1443394652",
+      "type": "repository",
+      "title": "well0nez/afterglow-web",
+      "summary": "PS4 kernel exploit for firmware 14.00 with ps4-hen and GoldHEN",
+      "author": "well0nez",
+      "url": "https://github.com/well0nez/afterglow-web",
+      "updated_at": "2026-11-02T20:09:05Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
+      "id": "repo:1443252728",
+      "type": "repository",
+      "title": "CovrigCuGaura/ps4",
+      "summary": "vpup enjoy from romania ps4 14.00 goldhen webkit",
+      "author": "CovrigCuGaura",
+      "url": "https://github.com/CovrigCuGaura/ps4",
+      "updated_at": "2026-11-02T19:38:37Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "hen",
+        "goldhen"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -224,6 +262,25 @@
       ]
     },
     {
+      "id": "repo:1443394652",
+      "type": "repository",
+      "title": "well0nez/afterglow-web",
+      "summary": "PS4 kernel exploit for firmware 14.00 with ps4-hen and GoldHEN",
+      "author": "well0nez",
+      "url": "https://github.com/well0nez/afterglow-web",
+      "updated_at": "2026-11-02T20:09:05Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
       "id": "issue:6070438505",
       "type": "issue",
       "title": "trying g to use the exploiter",
@@ -404,6 +461,24 @@
         "14.00",
         "offset",
         "payload"
+      ]
+    },
+    {
+      "id": "repo:1443252728",
+      "type": "repository",
+      "title": "CovrigCuGaura/ps4",
+      "summary": "vpup enjoy from romania ps4 14.00 goldhen webkit",
+      "author": "CovrigCuGaura",
+      "url": "https://github.com/CovrigCuGaura/ps4",
+      "updated_at": "2026-11-02T19:38:37Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "hen",
+        "goldhen"
       ]
     },
     {
