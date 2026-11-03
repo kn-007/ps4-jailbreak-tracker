@@ -1,44 +1,50 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-02T20:23:15.780120+00:00",
+  "updated_at": "2026-11-03T02:41:04.029056+00:00",
   "new_items_this_run": 2,
   "new_items": [
     {
-      "id": "repo:1443394652",
+      "id": "repo:1443417978",
       "type": "repository",
-      "title": "well0nez/afterglow-web",
-      "summary": "PS4 kernel exploit for firmware 14.00 with ps4-hen and GoldHEN",
-      "author": "well0nez",
-      "url": "https://github.com/well0nez/afterglow-web",
-      "updated_at": "2026-11-02T20:09:05Z",
+      "title": "NanospeedGamerYT/WebKitPS4Nano",
+      "summary": "PS4 kernel exploit for firmware 14.00, run from the console's own browser - kernel R/W, uid 0, RWX mmap, syscall 11 kexec gate; ships ps4-hen (14.00 address fix) and GoldHEN",
+      "author": "NanospeedGamerYT",
+      "url": "https://github.com/NanospeedGamerYT/WebKitPS4Nano",
+      "updated_at": "2026-11-02T20:26:56Z",
       "source": "GitHub",
-      "score": 24,
+      "score": 34,
       "reasons": [
         "PS4",
         "14.00",
+        "webkit",
         "kernel",
+        "syscall",
         "exploit",
         "hen",
         "goldhen"
       ]
     },
     {
-      "id": "repo:1443252728",
-      "type": "repository",
-      "title": "CovrigCuGaura/ps4",
-      "summary": "vpup enjoy from romania ps4 14.00 goldhen webkit",
-      "author": "CovrigCuGaura",
-      "url": "https://github.com/CovrigCuGaura/ps4",
-      "updated_at": "2026-11-02T19:38:37Z",
+      "id": "issue:6173776467",
+      "type": "pull_request",
+      "title": "feat: port upstream 14.00 hx1400 chain + optimizations",
+      "summary": "Ports the latest upstream silverps4hen features (commits through 2026-11-02) into this host, keeping the flat layout, the ZALWEBPLOIT rebrand, and this repo's performance work. ## What's new from upstream - **PS4 14.00 support** — the full hx1400 chain: `hx1400_port.js` (route-leak kbase discovery), `hx_kevent.js` (stage2 leak scan + stages 3-10, hen.bin launch, `?goldhen=1` direct entry), `hx_tables.js` (measured 14.00 kernel tables), `hen.bin` payload, `patches/1400.bin` - **Low-RAM memory profiles** (`?mem=1..5`) + early release of captured string / history graph / addrof objects in `core.js` (less GC pressure mid-exploit) - **RAM/heap HUD** (`#ramBox`) on jb.html - **Probe mode** (`?probe=1` — stops before any kernel write, probes mount reachability) - **NONPS4-DEBUG page** — desktop browsers now get a diagnostic view instead of a dead page - **adviseRestart** — on failure, tries `re",
+      "author": "AldySan",
+      "url": "https://github.com/AldySan/zalps-webploit.github.io/pull/3",
+      "updated_at": "2026-11-03T00:40:12Z",
       "source": "GitHub",
-      "score": 19,
+      "score": 36,
       "reasons": [
         "PS4",
         "14.00",
-        "webkit",
+        "kernel",
+        "chain",
+        "exploit",
+        "payload",
         "hen",
-        "goldhen"
+        "goldhen",
+        "debug"
       ]
     }
   ],
@@ -68,6 +74,28 @@
       ]
     },
     {
+      "id": "issue:6173776467",
+      "type": "pull_request",
+      "title": "feat: port upstream 14.00 hx1400 chain + optimizations",
+      "summary": "Ports the latest upstream silverps4hen features (commits through 2026-11-02) into this host, keeping the flat layout, the ZALWEBPLOIT rebrand, and this repo's performance work. ## What's new from upstream - **PS4 14.00 support** — the full hx1400 chain: `hx1400_port.js` (route-leak kbase discovery), `hx_kevent.js` (stage2 leak scan + stages 3-10, hen.bin launch, `?goldhen=1` direct entry), `hx_tables.js` (measured 14.00 kernel tables), `hen.bin` payload, `patches/1400.bin` - **Low-RAM memory profiles** (`?mem=1..5`) + early release of captured string / history graph / addrof objects in `core.js` (less GC pressure mid-exploit) - **RAM/heap HUD** (`#ramBox`) on jb.html - **Probe mode** (`?probe=1` — stops before any kernel write, probes mount reachability) - **NONPS4-DEBUG page** — desktop browsers now get a diagnostic view instead of a dead page - **adviseRestart** — on failure, tries `re",
+      "author": "AldySan",
+      "url": "https://github.com/AldySan/zalps-webploit.github.io/pull/3",
+      "updated_at": "2026-11-03T00:40:12Z",
+      "source": "GitHub",
+      "score": 36,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "chain",
+        "exploit",
+        "payload",
+        "hen",
+        "goldhen",
+        "debug"
+      ]
+    },
+    {
       "id": "repo:1434761636",
       "type": "repository",
       "title": "Mikadolebg/ps4-1400-research",
@@ -85,6 +113,27 @@
         "chain",
         "syscall",
         "exploit"
+      ]
+    },
+    {
+      "id": "repo:1443417978",
+      "type": "repository",
+      "title": "NanospeedGamerYT/WebKitPS4Nano",
+      "summary": "PS4 kernel exploit for firmware 14.00, run from the console's own browser - kernel R/W, uid 0, RWX mmap, syscall 11 kexec gate; ships ps4-hen (14.00 address fix) and GoldHEN",
+      "author": "NanospeedGamerYT",
+      "url": "https://github.com/NanospeedGamerYT/WebKitPS4Nano",
+      "updated_at": "2026-11-02T20:26:56Z",
+      "source": "GitHub",
+      "score": 34,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "kernel",
+        "syscall",
+        "exploit",
+        "hen",
+        "goldhen"
       ]
     },
     {
@@ -210,7 +259,7 @@
       "summary": "A Blu-ray Disc (BD-J) jailbreak image for PlayStation 4 consoles running System Software 14.00. This project leverages the BD-JB vulnerability to achieve userland code execution and load a Homebrew Enabler (HEN) via a crafted Blu-ray disc.",
       "author": "OptiTronOffical",
       "url": "https://github.com/OptiTronOffical/PS4-14.00-BD-JB",
-      "updated_at": "2026-11-02T07:13:51Z",
+      "updated_at": "2026-11-03T01:53:52Z",
       "source": "GitHub",
       "score": 26,
       "reasons": [
