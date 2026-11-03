@@ -1,52 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-03T17:52:14.492259+00:00",
-  "new_items_this_run": 2,
-  "new_items": [
-    {
-      "id": "issue:6187172186",
-      "type": "issue",
-      "title": "14.00 (CUH-2016A, Belize): payload wedges console, no kexec handoff (v25.2)",
-      "summary": "**Console:** PS4 Slim CUH-2016A (Belize), retail FW **14.00** **GoldHEN:** 2.4b18.13 **Loader:** v25.2 (2026-10-31) ### What happens Launching the Linux payload immediately: - HDMI loses signal - GoldHEN services die (FTP 2121, BinLoader 9090, klog 3232 all closed) - the console still answers ICMP, but there is no DHCP, no telnet, and no netconsole output - only a power cycle recovers; Orbis is unaffected afterwards Tested with: - `linux-1024mb.elf` run from GoldHEN's payloader - `linux-1024mb.bin` sent to GoldHEN's binloader on 9090 Same result both ways. With `netconsole=...` plus a static `ip=` in `bootargs.txt`, a listener on the LAN received **0 bytes**, so I do not think the kernel ever starts. This looks like a failed kexec handoff, the same symptom as #11 (13.52, Belize), where the resolution was to boot from a **USB drive** because internal `/data/linux/boot` was not being used.",
-      "author": "mexht",
-      "url": "https://github.com/ps4-linux/ps4-linux-loader/issues/15",
-      "updated_at": "2026-11-03T16:50:48Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "kernel",
-        "payload",
-        "hen",
-        "goldhen"
-      ]
-    },
-    {
-      "id": "issue:6185298201",
-      "type": "pull_request",
-      "title": "add native PS4 14.00 support",
-      "summary": "## Summary Adds PS4 firmware **14.00** as a first-class entry, the same way the existing 13.02-13.52 versions work: a real row in the offsets table, not an alias hack. ## What changed - **`js/ps4_offsets.js`** - new `PS4[\"14.00\"]` row. Reuses the 13.52 WebKit gadgets and module offsets (14.00 ships the same WebKit), carries **no kernel addresses of its own**, and declares `own_kernel_stage: true`, `kpatch: \"1400.bin\"`, `payload: undefined`. Adds `own_kernel_stage` to `OPTIONAL_KEYS`. - **`js/afterglow.js`** (new) - the 14.00 kernel stage, ported from [`well0nez/afterglow-web`](https://github.com/well0nez/afterglow-web) (AGPL, attribution and provenance kept in the file header). It brings its own kernel primitives instead of reusing the 13.x chain. - **`js/jb.js`** - when a row sets `own_kernel_stage`, hand off to afterglow once the WebKit primitive, module bases and syscall stubs are up,",
-      "author": "GamerReady",
-      "url": "https://github.com/GamerReady/op1/pull/7",
-      "updated_at": "2026-11-03T15:07:03Z",
-      "source": "GitHub",
-      "score": 47,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "webkit",
-        "kernel",
-        "offset",
-        "primitive",
-        "chain",
-        "syscall",
-        "payload",
-        "hen"
-      ]
-    }
-  ],
+  "updated_at": "2026-11-03T23:24:00.365132+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -281,7 +238,7 @@
       "summary": "A Blu-ray Disc (BD-J) jailbreak image for PlayStation 4 consoles running System Software 14.00. This project leverages the BD-JB vulnerability to achieve userland code execution and load a Homebrew Enabler (HEN) via a crafted Blu-ray disc.",
       "author": "OptiTronOffical",
       "url": "https://github.com/OptiTronOffical/PS4-14.00-BD-JB",
-      "updated_at": "2026-11-03T08:17:00Z",
+      "updated_at": "2026-11-03T22:49:18Z",
       "source": "GitHub",
       "score": 26,
       "reasons": [
@@ -339,7 +296,7 @@
       "summary": "**Console:** PS4 Slim CUH-2016A (Belize), retail FW **14.00** **GoldHEN:** 2.4b18.13 **Loader:** v25.2 (2026-10-31) ### What happens Launching the Linux payload immediately: - HDMI loses signal - GoldHEN services die (FTP 2121, BinLoader 9090, klog 3232 all closed) - the console still answers ICMP, but there is no DHCP, no telnet, and no netconsole output - only a power cycle recovers; Orbis is unaffected afterwards Tested with: - `linux-1024mb.elf` run from GoldHEN's payloader - `linux-1024mb.bin` sent to GoldHEN's binloader on 9090 Same result both ways. With `netconsole=...` plus a static `ip=` in `bootargs.txt`, a listener on the LAN received **0 bytes**, so I do not think the kernel ever starts. This looks like a failed kexec handoff, the same symptom as #11 (13.52, Belize), where the resolution was to boot from a **USB drive** because internal `/data/linux/boot` was not being used.",
       "author": "mexht",
       "url": "https://github.com/ps4-linux/ps4-linux-loader/issues/15",
-      "updated_at": "2026-11-03T16:50:48Z",
+      "updated_at": "2026-11-03T23:19:11Z",
       "source": "GitHub",
       "score": 24,
       "reasons": [
