@@ -1,47 +1,45 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-04T03:20:44.939219+00:00",
+  "updated_at": "2026-11-04T11:37:18.374291+00:00",
   "new_items_this_run": 2,
   "new_items": [
     {
-      "id": "issue:6193433282",
-      "type": "pull_request",
-      "title": "add native PS4 10.01-12.52 support (lapse + poops stages)",
-      "summary": "Rows below 13.00 carry WebKit gadgets and syscall stubs but **not** the ten kernel RVAs `js/jb.js`'s chain reads, so that chain cannot run them — it soft-fails at `kernel-table-present` after looking supported. They are driven by two complete exploits instead, ported from [rawgame4](https://github.com/rawgame4/rawgame4.github.io/): | firmware | stage | file | |---|---|---| | 10.01 – 12.02 | lapse | `js/chain_lapse.js` | | 12.50 – 12.52 | poops | `js/chain_poops.js` | | 13.00 – 13.52 | this repo's chain | `js/jb.js` | | 14.00 | afterglow | `js/afterglow.js` | **13.00 deliberately does not hand off.** Its row already has the full kernel table and is proven through the aio chain this repo runs; routing it to poops would be a regression. Only rows that genuinely lack the kernel table move. ### The ordering constraint that shapes this The handoff runs **before** `jb.js` builds its primitive. ",
-      "author": "GamerReady",
-      "url": "https://github.com/GamerReady/op1/pull/9",
-      "updated_at": "2026-11-04T00:05:21Z",
+      "id": "repo:1445360399",
+      "type": "repository",
+      "title": "nhoxboo/ps4-exploit-host",
+      "summary": "PS4 Exploit Host VN: Bộ kích hoạt GoldHEN & Jailbreak đa phiên bản (5.05 - 14.00) tối ưu nạp Cache Offline và Việt hoá 100% cho PlayStation 4",
+      "author": "nhoxboo",
+      "url": "https://github.com/nhoxboo/ps4-exploit-host",
+      "updated_at": "2026-11-04T08:50:01Z",
       "source": "GitHub",
-      "score": 40,
+      "score": 21,
       "reasons": [
         "PS4",
         "14.00",
-        "webkit",
-        "kernel",
-        "primitive",
-        "chain",
-        "syscall",
-        "exploit"
+        "exploit",
+        "jailbreak",
+        "hen",
+        "goldhen"
       ]
     },
     {
-      "id": "issue:6193291681",
+      "id": "issue:6198753599",
       "type": "pull_request",
-      "title": "Add external PS4 firmware 14.00 test hosts",
-      "summary": "## Cambios - Muestra en la advertencia de firmware 14.00 los dos hosts enviados: FeedChats Web14 y Sentrix Raw13. - Mantiene deshabilitado el inicio interno de H4SENSI para 14.00; los enlaces se abren como servicios externos independientes. - Aclara que el código de esos dominios no está alojado ni controlado por este repositorio. - Documenta que el código público relacionado con Raw13 marca la ruta 14.00 como `14.00-hx1400-dev`, y que GoldHEN b18.13 beta y el exploit son componentes distintos. - Actualiza la caché y agrega comprobaciones para conservar los dos enlaces y la advertencia. No se copiaron ni ejecutaron exploits externos, ni se modificaron offsets o binarios.",
-      "author": "H4SENSI",
-      "url": "https://github.com/H4SENSI/GOLD-HEN_H4SENSI/pull/5",
-      "updated_at": "2026-11-03T23:50:18Z",
+      "title": "feat: suporte completo a FW 14.00, GoldHEN v2.4b18.13, ps4debug-NG, F…",
+      "summary": "…an Threshold e CI - Implementa cadeia de exploit completa para PS4 FW 14.00 via rota HX / kevent UAF - Adiciona Anti-Panic Kevent Guard para neutralizar Fatal Trap 12 em falhas de spray - Atualiza o container com GoldHEN v2.4b18.13 (ponto de entrada 0x11653) e patches AIO - Integra ferramentas pós-exploit: ps4debug-NG v1.3.3 e Fan Threshold (60/70/80/85 °C) - Ativa logs de execução na TV por padrão e sincroniza manifesto offline (v79) - Adiciona para compatibilidade estática direta com o GitHub Pages - Adiciona workflow de CI no GitHub Actions e suíte com 81 testes unitários aprovados - Atualiza documentação, matriz de compatibilidade e análises técnicas de segurança",
+      "author": "cost-12",
+      "url": "https://github.com/cost-12/raw13g.github.io/pull/1",
+      "updated_at": "2026-11-04T07:52:56Z",
       "source": "GitHub",
-      "score": 24,
+      "score": 21,
       "reasons": [
         "PS4",
         "14.00",
-        "offset",
         "exploit",
         "hen",
-        "goldhen"
+        "goldhen",
+        "debug"
       ]
     }
   ],
@@ -500,6 +498,44 @@
         "kernel",
         "offset",
         "hen"
+      ]
+    },
+    {
+      "id": "repo:1445360399",
+      "type": "repository",
+      "title": "nhoxboo/ps4-exploit-host",
+      "summary": "PS4 Exploit Host VN: Bộ kích hoạt GoldHEN & Jailbreak đa phiên bản (5.05 - 14.00) tối ưu nạp Cache Offline và Việt hoá 100% cho PlayStation 4",
+      "author": "nhoxboo",
+      "url": "https://github.com/nhoxboo/ps4-exploit-host",
+      "updated_at": "2026-11-04T08:50:01Z",
+      "source": "GitHub",
+      "score": 21,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "exploit",
+        "jailbreak",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
+      "id": "issue:6198753599",
+      "type": "pull_request",
+      "title": "feat: suporte completo a FW 14.00, GoldHEN v2.4b18.13, ps4debug-NG, F…",
+      "summary": "…an Threshold e CI - Implementa cadeia de exploit completa para PS4 FW 14.00 via rota HX / kevent UAF - Adiciona Anti-Panic Kevent Guard para neutralizar Fatal Trap 12 em falhas de spray - Atualiza o container com GoldHEN v2.4b18.13 (ponto de entrada 0x11653) e patches AIO - Integra ferramentas pós-exploit: ps4debug-NG v1.3.3 e Fan Threshold (60/70/80/85 °C) - Ativa logs de execução na TV por padrão e sincroniza manifesto offline (v79) - Adiciona para compatibilidade estática direta com o GitHub Pages - Adiciona workflow de CI no GitHub Actions e suíte com 81 testes unitários aprovados - Atualiza documentação, matriz de compatibilidade e análises técnicas de segurança",
+      "author": "cost-12",
+      "url": "https://github.com/cost-12/raw13g.github.io/pull/1",
+      "updated_at": "2026-11-04T07:52:56Z",
+      "source": "GitHub",
+      "score": 21,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "exploit",
+        "hen",
+        "goldhen",
+        "debug"
       ]
     },
     {
