@@ -1,45 +1,24 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-04T11:37:18.374291+00:00",
-  "new_items_this_run": 2,
+  "updated_at": "2026-11-04T18:53:56.803389+00:00",
+  "new_items_this_run": 1,
   "new_items": [
     {
-      "id": "repo:1445360399",
+      "id": "repo:1445710529",
       "type": "repository",
-      "title": "nhoxboo/ps4-exploit-host",
-      "summary": "PS4 Exploit Host VN: Bộ kích hoạt GoldHEN & Jailbreak đa phiên bản (5.05 - 14.00) tối ưu nạp Cache Offline và Việt hoá 100% cho PlayStation 4",
-      "author": "nhoxboo",
-      "url": "https://github.com/nhoxboo/ps4-exploit-host",
-      "updated_at": "2026-11-04T08:50:01Z",
+      "title": "soapgrovee/14",
+      "summary": "PS4 Web Exploit FROM 7.00 TO 14.00 BASED ON GAMERHACK WEBKIT",
+      "author": "soapgrovee",
+      "url": "https://github.com/soapgrovee/14",
+      "updated_at": "2026-11-04T14:34:51Z",
       "source": "GitHub",
-      "score": 21,
+      "score": 20,
       "reasons": [
         "PS4",
         "14.00",
-        "exploit",
-        "jailbreak",
-        "hen",
-        "goldhen"
-      ]
-    },
-    {
-      "id": "issue:6198753599",
-      "type": "pull_request",
-      "title": "feat: suporte completo a FW 14.00, GoldHEN v2.4b18.13, ps4debug-NG, F…",
-      "summary": "…an Threshold e CI - Implementa cadeia de exploit completa para PS4 FW 14.00 via rota HX / kevent UAF - Adiciona Anti-Panic Kevent Guard para neutralizar Fatal Trap 12 em falhas de spray - Atualiza o container com GoldHEN v2.4b18.13 (ponto de entrada 0x11653) e patches AIO - Integra ferramentas pós-exploit: ps4debug-NG v1.3.3 e Fan Threshold (60/70/80/85 °C) - Ativa logs de execução na TV por padrão e sincroniza manifesto offline (v79) - Adiciona para compatibilidade estática direta com o GitHub Pages - Adiciona workflow de CI no GitHub Actions e suíte com 81 testes unitários aprovados - Atualiza documentação, matriz de compatibilidade e análises técnicas de segurança",
-      "author": "cost-12",
-      "url": "https://github.com/cost-12/raw13g.github.io/pull/1",
-      "updated_at": "2026-11-04T07:52:56Z",
-      "source": "GitHub",
-      "score": 21,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "exploit",
-        "hen",
-        "goldhen",
-        "debug"
+        "webkit",
+        "exploit"
       ]
     }
   ],
@@ -141,7 +120,7 @@
       "summary": "PS4 14.00 security research: proven userland exploit chain (SSV entry, arbitrary R/W, base leak, verified ROP, arbitrary syscalls), measured kernel attack-surface map, closed leads with evidence, ranked open leads.",
       "author": "Mikadolebg",
       "url": "https://github.com/Mikadolebg/ps4-1400-research",
-      "updated_at": "2026-11-01T17:11:18Z",
+      "updated_at": "2026-11-04T18:41:57Z",
       "source": "GitHub",
       "score": 35,
       "reasons": [
@@ -574,6 +553,23 @@
         "offset",
         "14.0",
         "firmware"
+      ]
+    },
+    {
+      "id": "repo:1445710529",
+      "type": "repository",
+      "title": "soapgrovee/14",
+      "summary": "PS4 Web Exploit FROM 7.00 TO 14.00 BASED ON GAMERHACK WEBKIT",
+      "author": "soapgrovee",
+      "url": "https://github.com/soapgrovee/14",
+      "updated_at": "2026-11-04T14:34:51Z",
+      "source": "GitHub",
+      "score": 20,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "exploit"
       ]
     },
     {
