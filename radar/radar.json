@@ -1,24 +1,27 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-04T18:53:56.803389+00:00",
+  "updated_at": "2026-11-05T00:24:00.120750+00:00",
   "new_items_this_run": 1,
   "new_items": [
     {
-      "id": "repo:1445710529",
+      "id": "repo:1443339667",
       "type": "repository",
-      "title": "soapgrovee/14",
-      "summary": "PS4 Web Exploit FROM 7.00 TO 14.00 BASED ON GAMERHACK WEBKIT",
-      "author": "soapgrovee",
-      "url": "https://github.com/soapgrovee/14",
-      "updated_at": "2026-11-04T14:34:51Z",
+      "title": "X-F1REBALL-X/ps4-13.52-14.00",
+      "summary": "PS4 13.52 / 14.00 WebKit + kernel jailbreak host (GoldHEN)",
+      "author": "X-F1REBALL-X",
+      "url": "https://github.com/X-F1REBALL-X/ps4-13.52-14.00",
+      "updated_at": "2026-11-05T00:03:12Z",
       "source": "GitHub",
-      "score": 20,
+      "score": 26,
       "reasons": [
         "PS4",
         "14.00",
         "webkit",
-        "exploit"
+        "kernel",
+        "jailbreak",
+        "hen",
+        "goldhen"
       ]
     }
   ],
@@ -268,6 +271,26 @@
         "exploit",
         "payload",
         "hen"
+      ]
+    },
+    {
+      "id": "repo:1443339667",
+      "type": "repository",
+      "title": "X-F1REBALL-X/ps4-13.52-14.00",
+      "summary": "PS4 13.52 / 14.00 WebKit + kernel jailbreak host (GoldHEN)",
+      "author": "X-F1REBALL-X",
+      "url": "https://github.com/X-F1REBALL-X/ps4-13.52-14.00",
+      "updated_at": "2026-11-05T00:03:12Z",
+      "source": "GitHub",
+      "score": 26,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "kernel",
+        "jailbreak",
+        "hen",
+        "goldhen"
       ]
     },
     {
