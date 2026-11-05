@@ -1,26 +1,24 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-05T07:26:44.854354+00:00",
+  "updated_at": "2026-11-05T15:50:49.839554+00:00",
   "new_items_this_run": 1,
   "new_items": [
     {
-      "id": "repo:1446395029",
+      "id": "repo:1446695116",
       "type": "repository",
-      "title": "Pauloxzak/atlas-trophy-tool",
-      "summary": "On-console PS4 homebrew trophy viewer for firmware 14.00 and GoldHEN",
-      "author": "Pauloxzak",
-      "url": "https://github.com/Pauloxzak/atlas-trophy-tool",
-      "updated_at": "2026-11-05T02:17:23Z",
+      "title": "Vaisah/ps4-14-afterglow",
+      "summary": "Kernel exploit for the PlayStation 4 on firmware 13.52 and 14.00, run from the console's own browser.",
+      "author": "Vaisah",
+      "url": "https://github.com/Vaisah/ps4-14-afterglow",
+      "updated_at": "2026-11-05T07:46:50Z",
       "source": "GitHub",
-      "score": 21,
+      "score": 20,
       "reasons": [
         "PS4",
         "14.00",
-        "rop",
-        "hen",
-        "goldhen",
-        "homebrew"
+        "kernel",
+        "exploit"
       ]
     }
   ],
@@ -508,7 +506,7 @@
       "summary": "On-console PS4 homebrew trophy viewer for firmware 14.00 and GoldHEN",
       "author": "Pauloxzak",
       "url": "https://github.com/Pauloxzak/atlas-trophy-tool",
-      "updated_at": "2026-11-05T02:17:23Z",
+      "updated_at": "2026-11-05T14:39:38Z",
       "source": "GitHub",
       "score": 21,
       "reasons": [
@@ -527,7 +525,7 @@
       "summary": "PS4 Exploit Host VN: Bộ kích hoạt GoldHEN & Jailbreak đa phiên bản (5.05 - 14.00) tối ưu nạp Cache Offline và Việt hoá 100% cho PlayStation 4",
       "author": "nhoxboo",
       "url": "https://github.com/nhoxboo/ps4-exploit-host",
-      "updated_at": "2026-11-04T08:50:01Z",
+      "updated_at": "2026-11-05T13:51:26Z",
       "source": "GitHub",
       "score": 21,
       "reasons": [
@@ -594,6 +592,23 @@
         "offset",
         "14.0",
         "firmware"
+      ]
+    },
+    {
+      "id": "repo:1446695116",
+      "type": "repository",
+      "title": "Vaisah/ps4-14-afterglow",
+      "summary": "Kernel exploit for the PlayStation 4 on firmware 13.52 and 14.00, run from the console's own browser.",
+      "author": "Vaisah",
+      "url": "https://github.com/Vaisah/ps4-14-afterglow",
+      "updated_at": "2026-11-05T07:46:50Z",
+      "source": "GitHub",
+      "score": 20,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "exploit"
       ]
     },
     {
