@@ -1,27 +1,26 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-05T00:24:00.120750+00:00",
+  "updated_at": "2026-11-05T07:26:44.854354+00:00",
   "new_items_this_run": 1,
   "new_items": [
     {
-      "id": "repo:1443339667",
+      "id": "repo:1446395029",
       "type": "repository",
-      "title": "X-F1REBALL-X/ps4-13.52-14.00",
-      "summary": "PS4 13.52 / 14.00 WebKit + kernel jailbreak host (GoldHEN)",
-      "author": "X-F1REBALL-X",
-      "url": "https://github.com/X-F1REBALL-X/ps4-13.52-14.00",
-      "updated_at": "2026-11-05T00:03:12Z",
+      "title": "Pauloxzak/atlas-trophy-tool",
+      "summary": "On-console PS4 homebrew trophy viewer for firmware 14.00 and GoldHEN",
+      "author": "Pauloxzak",
+      "url": "https://github.com/Pauloxzak/atlas-trophy-tool",
+      "updated_at": "2026-11-05T02:17:23Z",
       "source": "GitHub",
-      "score": 26,
+      "score": 21,
       "reasons": [
         "PS4",
         "14.00",
-        "webkit",
-        "kernel",
-        "jailbreak",
+        "rop",
         "hen",
-        "goldhen"
+        "goldhen",
+        "homebrew"
       ]
     }
   ],
@@ -276,11 +275,11 @@
     {
       "id": "repo:1443339667",
       "type": "repository",
-      "title": "X-F1REBALL-X/ps4-13.52-14.00",
+      "title": "X-F1REBALL-X/ps4-jb",
       "summary": "PS4 13.52 / 14.00 WebKit + kernel jailbreak host (GoldHEN)",
       "author": "X-F1REBALL-X",
-      "url": "https://github.com/X-F1REBALL-X/ps4-13.52-14.00",
-      "updated_at": "2026-11-05T00:03:12Z",
+      "url": "https://github.com/X-F1REBALL-X/ps4-jb",
+      "updated_at": "2026-11-05T07:07:35Z",
       "source": "GitHub",
       "score": 26,
       "reasons": [
@@ -500,6 +499,25 @@
         "kernel",
         "offset",
         "hen"
+      ]
+    },
+    {
+      "id": "repo:1446395029",
+      "type": "repository",
+      "title": "Pauloxzak/atlas-trophy-tool",
+      "summary": "On-console PS4 homebrew trophy viewer for firmware 14.00 and GoldHEN",
+      "author": "Pauloxzak",
+      "url": "https://github.com/Pauloxzak/atlas-trophy-tool",
+      "updated_at": "2026-11-05T02:17:23Z",
+      "source": "GitHub",
+      "score": 21,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "rop",
+        "hen",
+        "goldhen",
+        "homebrew"
       ]
     },
     {
