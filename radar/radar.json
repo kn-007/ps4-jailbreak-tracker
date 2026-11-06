@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-06T09:56:17.648712+00:00",
+  "updated_at": "2026-11-06T17:30:47.260597+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -253,6 +253,26 @@
       ]
     },
     {
+      "id": "repo:1440266998",
+      "type": "repository",
+      "title": "OptiTronOffical/PS4-14.00-BD-JB",
+      "summary": "A Blu-ray Disc (BD-J) jailbreak image for PlayStation 4 consoles running System Software 14.00. This project leverages the BD-JB vulnerability to achieve userland code execution and load a Homebrew Enabler (HEN) via a crafted Blu-ray disc.",
+      "author": "OptiTronOffical",
+      "url": "https://github.com/OptiTronOffical/PS4-14.00-BD-JB",
+      "updated_at": "2026-11-06T17:12:06Z",
+      "source": "GitHub",
+      "score": 26,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "vulnerability",
+        "bd-jb",
+        "jailbreak",
+        "hen",
+        "homebrew"
+      ]
+    },
+    {
       "id": "repo:1443339667",
       "type": "repository",
       "title": "X-F1REBALL-X/ps4-jb",
@@ -270,26 +290,6 @@
         "jailbreak",
         "hen",
         "goldhen"
-      ]
-    },
-    {
-      "id": "repo:1440266998",
-      "type": "repository",
-      "title": "OptiTronOffical/PS4-14.00-BD-JB",
-      "summary": "A Blu-ray Disc (BD-J) jailbreak image for PlayStation 4 consoles running System Software 14.00. This project leverages the BD-JB vulnerability to achieve userland code execution and load a Homebrew Enabler (HEN) via a crafted Blu-ray disc.",
-      "author": "OptiTronOffical",
-      "url": "https://github.com/OptiTronOffical/PS4-14.00-BD-JB",
-      "updated_at": "2026-11-03T22:49:18Z",
-      "source": "GitHub",
-      "score": 26,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "vulnerability",
-        "bd-jb",
-        "jailbreak",
-        "hen",
-        "homebrew"
       ]
     },
     {
@@ -488,7 +488,7 @@
       "summary": "On-console PS4 homebrew trophy tool for firmware 14.00 and GoldHEN",
       "author": "Pauloxzak",
       "url": "https://github.com/Pauloxzak/atlas-trophy-tool",
-      "updated_at": "2026-11-06T09:47:23Z",
+      "updated_at": "2026-11-06T10:37:22Z",
       "source": "GitHub",
       "score": 21,
       "reasons": [
