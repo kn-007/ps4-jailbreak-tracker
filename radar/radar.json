@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-06T02:27:03.480451+00:00",
+  "updated_at": "2026-11-06T09:56:17.648712+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -488,7 +488,7 @@
       "summary": "On-console PS4 homebrew trophy tool for firmware 14.00 and GoldHEN",
       "author": "Pauloxzak",
       "url": "https://github.com/Pauloxzak/atlas-trophy-tool",
-      "updated_at": "2026-11-06T01:27:03Z",
+      "updated_at": "2026-11-06T09:47:23Z",
       "source": "GitHub",
       "score": 21,
       "reasons": [
