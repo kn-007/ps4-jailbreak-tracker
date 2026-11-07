@@ -1,9 +1,47 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-07T15:43:01.930545+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-11-07T19:39:42.279186+00:00",
+  "new_items_this_run": 2,
+  "new_items": [
+    {
+      "id": "repo:1449560379",
+      "type": "repository",
+      "title": "oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
+      "summary": "CYBER-FORGE v5.0 // PS5 (Relapse 7.00-13.60 / Y2JB / UMTX2) & PS4 (GoldHEN 5.05-14.00) WebKit Exploit Host, Offline PWA Autoloader, Live Scene Radar & PSX Wasm Emulator.",
+      "author": "oscarlaradev",
+      "url": "https://github.com/oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
+      "updated_at": "2026-11-07T18:57:08Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "exploit",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
+      "id": "repo:1384378209",
+      "type": "repository",
+      "title": "CODEOGH/multi",
+      "summary": "🕹️ Custom Retro-Gaming & Neon Orange exploit host for PS4 (7.00 - 14.00). 100% Offline Cache,, and smart success/failed screens. Powered by GoldHEN.",
+      "author": "CODEOGH",
+      "url": "https://github.com/CODEOGH/multi",
+      "updated_at": "2026-11-07T15:50:18Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "exploit",
+        "hen",
+        "goldhen"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -331,6 +369,25 @@
       ]
     },
     {
+      "id": "repo:1449560379",
+      "type": "repository",
+      "title": "oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
+      "summary": "CYBER-FORGE v5.0 // PS5 (Relapse 7.00-13.60 / Y2JB / UMTX2) & PS4 (GoldHEN 5.05-14.00) WebKit Exploit Host, Offline PWA Autoloader, Live Scene Radar & PSX Wasm Emulator.",
+      "author": "oscarlaradev",
+      "url": "https://github.com/oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
+      "updated_at": "2026-11-07T18:57:08Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "exploit",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
       "id": "issue:6193291681",
       "type": "pull_request",
       "title": "Add external PS4 firmware 14.00 test hosts",
@@ -446,6 +503,24 @@
       ]
     },
     {
+      "id": "issue:5783655726",
+      "type": "pull_request",
+      "title": "Harden scanner bounds checks and correct research evidence",
+      "summary": "## Summary - Validate getdents entry lengths before reading names or advancing through the native buffer. - Reject overlong paths before copying into native buffers. - Abort scanning cleanly when required native functions are unavailable. - Detect incomplete USB report writes. - Correct documentation that overstates CVE/Orbis applicability; add public FreeBSD advisory and upstream-source references. - Mark PS4-specific kernel and MP4 claims as unconfirmed where the repository lacks reproducible evidence. - Preserve the current upstream README scope, including the 14.00 research files. ## Validation status Static review only. No CI workflow or runnable test suite was found in the public repository, and the BD-J scanner has not been run on target hardware. The ABI-specific stat field offsets still require verification against the exact firmware. The change does not add or improve kernel ex",
+      "author": "ayoubnoob543-lab",
+      "url": "https://github.com/adri22235/ps4-suid-scanner/pull/4",
+      "updated_at": "2026-11-07T17:40:34Z",
+      "source": "GitHub",
+      "score": 22,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "offset",
+        "hen"
+      ]
+    },
+    {
       "id": "issue:5923625826",
       "type": "pull_request",
       "title": "Research: identify FW14 kernel exploit blockers before active testing",
@@ -460,24 +535,6 @@
         "14.00",
         "kernel",
         "exploit",
-        "hen"
-      ]
-    },
-    {
-      "id": "issue:5783655726",
-      "type": "pull_request",
-      "title": "Harden scanner bounds checks and correct research evidence",
-      "summary": "## Summary - Validate getdents entry lengths before reading names or advancing through the native buffer. - Reject overlong paths before copying into native buffers. - Abort scanning cleanly when required native functions are unavailable. - Detect incomplete USB report writes. - Correct documentation that overstates CVE/Orbis applicability; add public FreeBSD advisory and upstream-source references. - Mark PS4-specific kernel and MP4 claims as unconfirmed where the repository lacks reproducible evidence. - Preserve the current upstream README scope, including the 14.00 research files. ## Validation status Static review only. No CI workflow or runnable test suite was found in the public repository, and the BD-J scanner has not been run on target hardware. The ABI-specific stat field offsets still require verification against the exact firmware. The change does not add or improve kernel ex",
-      "author": "ayoubnoob543-lab",
-      "url": "https://github.com/adri22235/ps4-suid-scanner/pull/4",
-      "updated_at": "2026-10-09T20:19:13Z",
-      "source": "GitHub",
-      "score": 22,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "kernel",
-        "offset",
         "hen"
       ]
     },
@@ -659,6 +716,24 @@
         "14.00",
         "offset",
         "payload"
+      ]
+    },
+    {
+      "id": "repo:1384378209",
+      "type": "repository",
+      "title": "CODEOGH/multi",
+      "summary": "🕹️ Custom Retro-Gaming & Neon Orange exploit host for PS4 (7.00 - 14.00). 100% Offline Cache,, and smart success/failed screens. Powered by GoldHEN.",
+      "author": "CODEOGH",
+      "url": "https://github.com/CODEOGH/multi",
+      "updated_at": "2026-11-07T15:50:18Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "exploit",
+        "hen",
+        "goldhen"
       ]
     },
     {
