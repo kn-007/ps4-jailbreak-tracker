@@ -1,47 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-07T19:39:42.279186+00:00",
-  "new_items_this_run": 2,
-  "new_items": [
-    {
-      "id": "repo:1449560379",
-      "type": "repository",
-      "title": "oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
-      "summary": "CYBER-FORGE v5.0 // PS5 (Relapse 7.00-13.60 / Y2JB / UMTX2) & PS4 (GoldHEN 5.05-14.00) WebKit Exploit Host, Offline PWA Autoloader, Live Scene Radar & PSX Wasm Emulator.",
-      "author": "oscarlaradev",
-      "url": "https://github.com/oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
-      "updated_at": "2026-11-07T18:57:08Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "webkit",
-        "exploit",
-        "hen",
-        "goldhen"
-      ]
-    },
-    {
-      "id": "repo:1384378209",
-      "type": "repository",
-      "title": "CODEOGH/multi",
-      "summary": "🕹️ Custom Retro-Gaming & Neon Orange exploit host for PS4 (7.00 - 14.00). 100% Offline Cache,, and smart success/failed screens. Powered by GoldHEN.",
-      "author": "CODEOGH",
-      "url": "https://github.com/CODEOGH/multi",
-      "updated_at": "2026-11-07T15:50:18Z",
-      "source": "GitHub",
-      "score": 19,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "exploit",
-        "hen",
-        "goldhen"
-      ]
-    }
-  ],
+  "updated_at": "2026-11-07T23:03:33.203335+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
