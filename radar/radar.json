@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-08T09:30:31.174072+00:00",
+  "updated_at": "2026-11-08T16:22:02.814232+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -687,7 +687,7 @@
       "summary": "PS4 Bluetooth Audio payload for streaming game audio directly to Bluetooth headphones and speakers. Includes HDMI audio optimizations, adjustable audio settings, and improved streaming stability. Tested on PS4 firmware 14.00 with GoldHEN.",
       "author": "vypr",
       "url": "https://github.com/vypr/ps4-bluetooth-audio",
-      "updated_at": "2026-11-08T00:25:22Z",
+      "updated_at": "2026-11-08T12:58:51Z",
       "source": "GitHub",
       "score": 19,
       "reasons": [
