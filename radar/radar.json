@@ -1,9 +1,46 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-08T16:22:02.814232+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-11-08T20:47:56.744163+00:00",
+  "new_items_this_run": 2,
+  "new_items": [
+    {
+      "id": "issue:6273266275",
+      "type": "pull_request",
+      "title": "Add reproducible host validation artifact",
+      "summary": "## What this delivers - Adds a GitHub Actions workflow that configures and builds the portable C++ core and phone-service host on Ubuntu 24.04. - Runs the full CTest suite and uploads a downloadable Linux x86_64 host test bundle on success. - Adds a one-command local host validation script and documents artifact retrieval. ## Explicit boundary The uploaded bundle contains desktop Linux binaries only. It is not a PS4 ELF/FSELF/PKG and does not claim firmware 14.00 or GoldHEN compatibility. The PS4-native entry point, UI, Orbis dependency/toolchain integration and installer handoff remain separate work. <!-- This is an auto-generated comment: release notes by coderabbit.ai --> <!-- coderabbit-ai-generated:v1 --> ## Summary by CodeRabbit * **Chores** * Added automated host-build validation for selected code updates, including test execution and a downloadable Linux x86_64 build bundle. * Va",
+      "author": "codingscenes2-cyber",
+      "url": "https://github.com/codingscenes2-cyber/Ps4pkg-installer/pull/32",
+      "updated_at": "2026-11-08T16:58:46Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "chain",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
+      "id": "issue:6273024179",
+      "type": "pull_request",
+      "title": "Generate phone pairing QR codes locally",
+      "summary": "## Summary - Vendor Project Nayuki's C++ QR Code generator under its MIT license, preserving upstream copyright and permission notices. - Add a bounded wrapper that encodes the phone pairing URL with quartile error correction and emits self-contained SVG geometry. - Enforce payload length, module scale and quiet-zone bounds; no external QR service or network call is used. - Add QR generation tests and document how the native console UI should combine the pairing URL and SVG generator. ## Boundaries - This creates a QR SVG asset but does not yet render it in the native PS4 UI; the caller must pass the URL from `make_phone_pairing_url`. - The pairing link uses HTTP and remains appropriate only for a trusted isolated LAN in this build. - Host CI does not certify the Orbis toolchain or firmware 14.00 hardware.",
+      "author": "codingscenes2-cyber",
+      "url": "https://github.com/codingscenes2-cyber/Ps4pkg-installer/pull/24",
+      "updated_at": "2026-11-08T16:28:06Z",
+      "source": "GitHub",
+      "score": 25,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "rop",
+        "chain",
+        "payload"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -259,7 +296,7 @@
       "summary": "A Blu-ray Disc (BD-J) jailbreak image for PlayStation 4 consoles running System Software 14.00. This project leverages the BD-JB vulnerability to achieve userland code execution and load a Homebrew Enabler (HEN) via a crafted Blu-ray disc.",
       "author": "OptiTronOffical",
       "url": "https://github.com/OptiTronOffical/PS4-14.00-BD-JB",
-      "updated_at": "2026-11-06T17:12:06Z",
+      "updated_at": "2026-11-08T20:07:06Z",
       "source": "GitHub",
       "score": 26,
       "reasons": [
@@ -310,6 +347,24 @@
         "goldhen",
         "14.0",
         "firmware"
+      ]
+    },
+    {
+      "id": "issue:6273024179",
+      "type": "pull_request",
+      "title": "Generate phone pairing QR codes locally",
+      "summary": "## Summary - Vendor Project Nayuki's C++ QR Code generator under its MIT license, preserving upstream copyright and permission notices. - Add a bounded wrapper that encodes the phone pairing URL with quartile error correction and emits self-contained SVG geometry. - Enforce payload length, module scale and quiet-zone bounds; no external QR service or network call is used. - Add QR generation tests and document how the native console UI should combine the pairing URL and SVG generator. ## Boundaries - This creates a QR SVG asset but does not yet render it in the native PS4 UI; the caller must pass the URL from `make_phone_pairing_url`. - The pairing link uses HTTP and remains appropriate only for a trusted isolated LAN in this build. - Host CI does not certify the Orbis toolchain or firmware 14.00 hardware.",
+      "author": "codingscenes2-cyber",
+      "url": "https://github.com/codingscenes2-cyber/Ps4pkg-installer/pull/24",
+      "updated_at": "2026-11-08T16:28:06Z",
+      "source": "GitHub",
+      "score": 25,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "rop",
+        "chain",
+        "payload"
       ]
     },
     {
@@ -678,6 +733,24 @@
         "14.00",
         "offset",
         "payload"
+      ]
+    },
+    {
+      "id": "issue:6273266275",
+      "type": "pull_request",
+      "title": "Add reproducible host validation artifact",
+      "summary": "## What this delivers - Adds a GitHub Actions workflow that configures and builds the portable C++ core and phone-service host on Ubuntu 24.04. - Runs the full CTest suite and uploads a downloadable Linux x86_64 host test bundle on success. - Adds a one-command local host validation script and documents artifact retrieval. ## Explicit boundary The uploaded bundle contains desktop Linux binaries only. It is not a PS4 ELF/FSELF/PKG and does not claim firmware 14.00 or GoldHEN compatibility. The PS4-native entry point, UI, Orbis dependency/toolchain integration and installer handoff remain separate work. <!-- This is an auto-generated comment: release notes by coderabbit.ai --> <!-- coderabbit-ai-generated:v1 --> ## Summary by CodeRabbit * **Chores** * Added automated host-build validation for selected code updates, including test execution and a downloadable Linux x86_64 build bundle. * Va",
+      "author": "codingscenes2-cyber",
+      "url": "https://github.com/codingscenes2-cyber/Ps4pkg-installer/pull/32",
+      "updated_at": "2026-11-08T16:58:46Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "chain",
+        "hen",
+        "goldhen"
       ]
     },
     {
