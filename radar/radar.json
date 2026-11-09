@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-09T06:27:42.986295+00:00",
+  "updated_at": "2026-11-09T16:53:37.736905+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -259,7 +259,7 @@
       "summary": "A Blu-ray Disc (BD-J) jailbreak image for PlayStation 4 consoles running System Software 14.00. This project leverages the BD-JB vulnerability to achieve userland code execution and load a Homebrew Enabler (HEN) via a crafted Blu-ray disc.",
       "author": "OptiTronOffical",
       "url": "https://github.com/OptiTronOffical/PS4-14.00-BD-JB",
-      "updated_at": "2026-11-08T20:07:06Z",
+      "updated_at": "2026-11-09T08:55:15Z",
       "source": "GitHub",
       "score": 26,
       "reasons": [
