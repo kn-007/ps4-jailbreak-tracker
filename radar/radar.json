@@ -1,43 +1,25 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-08T20:47:56.744163+00:00",
-  "new_items_this_run": 2,
+  "updated_at": "2026-11-09T00:08:06.503410+00:00",
+  "new_items_this_run": 1,
   "new_items": [
     {
-      "id": "issue:6273266275",
+      "id": "issue:6276759183",
       "type": "pull_request",
-      "title": "Add reproducible host validation artifact",
-      "summary": "## What this delivers - Adds a GitHub Actions workflow that configures and builds the portable C++ core and phone-service host on Ubuntu 24.04. - Runs the full CTest suite and uploads a downloadable Linux x86_64 host test bundle on success. - Adds a one-command local host validation script and documents artifact retrieval. ## Explicit boundary The uploaded bundle contains desktop Linux binaries only. It is not a PS4 ELF/FSELF/PKG and does not claim firmware 14.00 or GoldHEN compatibility. The PS4-native entry point, UI, Orbis dependency/toolchain integration and installer handoff remain separate work. <!-- This is an auto-generated comment: release notes by coderabbit.ai --> <!-- coderabbit-ai-generated:v1 --> ## Summary by CodeRabbit * **Chores** * Added automated host-build validation for selected code updates, including test execution and a downloadable Linux x86_64 build bundle. * Va",
-      "author": "codingscenes2-cyber",
-      "url": "https://github.com/codingscenes2-cyber/Ps4pkg-installer/pull/32",
-      "updated_at": "2026-11-08T16:58:46Z",
+      "title": "Add Spelunky 2 cheats — CUSA20602 v01.28",
+      "summary": "Adds GoldHEN JSON cheats for Spelunky 2, CUSA20602, version 01.28. Included options: - Infinite bombs - Infinite ropes - No fall damage - Disable timer-triggered Ghost - Disable ghost-pot-triggered Ghost - Bomb pickups give 99 - Rope pickups give 99 - Infinite health - Invincibility — normal damage shield Tested on a physical PS4 running firmware 14.00 with GoldHEN. With all options enabled together, infinite bombs and ropes worked, enemies did not cause damage, lava did not cause damage, and fall protection worked. Known limitation: crushing can still kill the player. The options were tested together, so individual coverage and interactions have not all been independently verified. Ghost suppression and the 99-resource pickup options still need separate confirmation. Created and console-tested by DawyM, with ChatGPT assistance for binary analysis and patch development. Only the cheat JS",
+      "author": "DawyM",
+      "url": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository/pull/723",
+      "updated_at": "2026-11-08T23:06:39Z",
       "source": "GitHub",
       "score": 19,
       "reasons": [
         "PS4",
         "14.00",
-        "chain",
+        "rop",
         "hen",
         "goldhen"
-      ]
-    },
-    {
-      "id": "issue:6273024179",
-      "type": "pull_request",
-      "title": "Generate phone pairing QR codes locally",
-      "summary": "## Summary - Vendor Project Nayuki's C++ QR Code generator under its MIT license, preserving upstream copyright and permission notices. - Add a bounded wrapper that encodes the phone pairing URL with quartile error correction and emits self-contained SVG geometry. - Enforce payload length, module scale and quiet-zone bounds; no external QR service or network call is used. - Add QR generation tests and document how the native console UI should combine the pairing URL and SVG generator. ## Boundaries - This creates a QR SVG asset but does not yet render it in the native PS4 UI; the caller must pass the URL from `make_phone_pairing_url`. - The pairing link uses HTTP and remains appropriate only for a trusted isolated LAN in this build. - Host CI does not certify the Orbis toolchain or firmware 14.00 hardware.",
-      "author": "codingscenes2-cyber",
-      "url": "https://github.com/codingscenes2-cyber/Ps4pkg-installer/pull/24",
-      "updated_at": "2026-11-08T16:28:06Z",
-      "source": "GitHub",
-      "score": 25,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "rop",
-        "chain",
-        "payload"
       ]
     }
   ],
@@ -736,6 +718,42 @@
       ]
     },
     {
+      "id": "issue:6276759183",
+      "type": "pull_request",
+      "title": "Add Spelunky 2 cheats — CUSA20602 v01.28",
+      "summary": "Adds GoldHEN JSON cheats for Spelunky 2, CUSA20602, version 01.28. Included options: - Infinite bombs - Infinite ropes - No fall damage - Disable timer-triggered Ghost - Disable ghost-pot-triggered Ghost - Bomb pickups give 99 - Rope pickups give 99 - Infinite health - Invincibility — normal damage shield Tested on a physical PS4 running firmware 14.00 with GoldHEN. With all options enabled together, infinite bombs and ropes worked, enemies did not cause damage, lava did not cause damage, and fall protection worked. Known limitation: crushing can still kill the player. The options were tested together, so individual coverage and interactions have not all been independently verified. Ghost suppression and the 99-resource pickup options still need separate confirmation. Created and console-tested by DawyM, with ChatGPT assistance for binary analysis and patch development. Only the cheat JS",
+      "author": "DawyM",
+      "url": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository/pull/723",
+      "updated_at": "2026-11-08T23:06:39Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "rop",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
+      "id": "repo:1449844939",
+      "type": "repository",
+      "title": "vypr/ps4-bluetooth-audio",
+      "summary": "PS4 Bluetooth Audio payload for streaming game audio directly to Bluetooth headphones and speakers. Includes HDMI audio optimizations, adjustable audio settings, and improved streaming stability. Tested on PS4 firmware 14.00 with GoldHEN.",
+      "author": "vypr",
+      "url": "https://github.com/vypr/ps4-bluetooth-audio",
+      "updated_at": "2026-11-08T22:08:32Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
       "id": "issue:6273266275",
       "type": "pull_request",
       "title": "Add reproducible host validation artifact",
@@ -749,24 +767,6 @@
         "PS4",
         "14.00",
         "chain",
-        "hen",
-        "goldhen"
-      ]
-    },
-    {
-      "id": "repo:1449844939",
-      "type": "repository",
-      "title": "vypr/ps4-bluetooth-audio",
-      "summary": "PS4 Bluetooth Audio payload for streaming game audio directly to Bluetooth headphones and speakers. Includes HDMI audio optimizations, adjustable audio settings, and improved streaming stability. Tested on PS4 firmware 14.00 with GoldHEN.",
-      "author": "vypr",
-      "url": "https://github.com/vypr/ps4-bluetooth-audio",
-      "updated_at": "2026-11-08T12:58:51Z",
-      "source": "GitHub",
-      "score": 19,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "payload",
         "hen",
         "goldhen"
       ]
