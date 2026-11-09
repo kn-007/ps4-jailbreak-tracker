@@ -1,28 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-09T00:08:06.503410+00:00",
-  "new_items_this_run": 1,
-  "new_items": [
-    {
-      "id": "issue:6276759183",
-      "type": "pull_request",
-      "title": "Add Spelunky 2 cheats — CUSA20602 v01.28",
-      "summary": "Adds GoldHEN JSON cheats for Spelunky 2, CUSA20602, version 01.28. Included options: - Infinite bombs - Infinite ropes - No fall damage - Disable timer-triggered Ghost - Disable ghost-pot-triggered Ghost - Bomb pickups give 99 - Rope pickups give 99 - Infinite health - Invincibility — normal damage shield Tested on a physical PS4 running firmware 14.00 with GoldHEN. With all options enabled together, infinite bombs and ropes worked, enemies did not cause damage, lava did not cause damage, and fall protection worked. Known limitation: crushing can still kill the player. The options were tested together, so individual coverage and interactions have not all been independently verified. Ghost suppression and the 99-resource pickup options still need separate confirmation. Created and console-tested by DawyM, with ChatGPT assistance for binary analysis and patch development. Only the cheat JS",
-      "author": "DawyM",
-      "url": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository/pull/723",
-      "updated_at": "2026-11-08T23:06:39Z",
-      "source": "GitHub",
-      "score": 19,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "rop",
-        "hen",
-        "goldhen"
-      ]
-    }
-  ],
+  "updated_at": "2026-11-09T06:27:42.986295+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -724,7 +705,7 @@
       "summary": "Adds GoldHEN JSON cheats for Spelunky 2, CUSA20602, version 01.28. Included options: - Infinite bombs - Infinite ropes - No fall damage - Disable timer-triggered Ghost - Disable ghost-pot-triggered Ghost - Bomb pickups give 99 - Rope pickups give 99 - Infinite health - Invincibility — normal damage shield Tested on a physical PS4 running firmware 14.00 with GoldHEN. With all options enabled together, infinite bombs and ropes worked, enemies did not cause damage, lava did not cause damage, and fall protection worked. Known limitation: crushing can still kill the player. The options were tested together, so individual coverage and interactions have not all been independently verified. Ghost suppression and the 99-resource pickup options still need separate confirmation. Created and console-tested by DawyM, with ChatGPT assistance for binary analysis and patch development. Only the cheat JS",
       "author": "DawyM",
       "url": "https://github.com/GoldHEN/GoldHEN_Cheat_Repository/pull/723",
-      "updated_at": "2026-11-08T23:06:39Z",
+      "updated_at": "2026-11-09T00:17:00Z",
       "source": "GitHub",
       "score": 19,
       "reasons": [
