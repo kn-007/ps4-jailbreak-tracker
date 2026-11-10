@@ -1,9 +1,29 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-10T07:46:59.810545+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-11-10T15:51:05.168798+00:00",
+  "new_items_this_run": 1,
+  "new_items": [
+    {
+      "id": "issue:6307753500",
+      "type": "issue",
+      "title": "[v0.84] Base PS4 - App closes on every loading screen, log ends after skipping pipeline ec9f33dc77ef7436",
+      "summary": "Title: [v0.84] Base PS4 - App closes on every loading screen, log ends after skipping pipeline ec9f33dc77ef7436 Summary: On base PS4, v0.84 runs at ∼30fps, saves normally, then closes to dashboard on every loading screen. Log has no ERROR / FATAL. Last lines are repeated skips of the same missing pipeline, then log ends. 1. Environment: Port: v0.84 Experimental, Unleashed-Recomp.pkg Console: PS4 Base, NOT Pro From log: CPU: about 1.59 GHz measured (kernel says 1600 MHz); PS4 Pro: no, Pro mode: no Firmware / Jailbreak: User reports version 14.00 / latest - needs confirmation in Settings > System > System Information, as official PS4 firmware 14.00 Game: Sonic Unleashed (Europe) (En,Ja,Fr,De,Es,It).iso Title Update in use: TU_19KA20I_000000C000000.00000000000G3, Media ID 77A0CF1B, Europe SE-2066 Install path: /data/UnleashedRecomp/Install/ 2. Repro: Clean install v0.84 ISO Europe + TU G3 i",
+      "author": "OSouEd",
+      "url": "https://github.com/neiove/Sonic-Unleashed-Recompiled-Ps4/issues/4",
+      "updated_at": "2026-11-10T13:29:43Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "rop",
+        "jailbreak",
+        "hen"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -346,6 +366,25 @@
         "kernel",
         "exploit",
         "payload"
+      ]
+    },
+    {
+      "id": "issue:6307753500",
+      "type": "issue",
+      "title": "[v0.84] Base PS4 - App closes on every loading screen, log ends after skipping pipeline ec9f33dc77ef7436",
+      "summary": "Title: [v0.84] Base PS4 - App closes on every loading screen, log ends after skipping pipeline ec9f33dc77ef7436 Summary: On base PS4, v0.84 runs at ∼30fps, saves normally, then closes to dashboard on every loading screen. Log has no ERROR / FATAL. Last lines are repeated skips of the same missing pipeline, then log ends. 1. Environment: Port: v0.84 Experimental, Unleashed-Recomp.pkg Console: PS4 Base, NOT Pro From log: CPU: about 1.59 GHz measured (kernel says 1600 MHz); PS4 Pro: no, Pro mode: no Firmware / Jailbreak: User reports version 14.00 / latest - needs confirmation in Settings > System > System Information, as official PS4 firmware 14.00 Game: Sonic Unleashed (Europe) (En,Ja,Fr,De,Es,It).iso Title Update in use: TU_19KA20I_000000C000000.00000000000G3, Media ID 77A0CF1B, Europe SE-2066 Install path: /data/UnleashedRecomp/Install/ 2. Repro: Clean install v0.84 ISO Europe + TU G3 i",
+      "author": "OSouEd",
+      "url": "https://github.com/neiove/Sonic-Unleashed-Recompiled-Ps4/issues/4",
+      "updated_at": "2026-11-10T13:29:43Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "rop",
+        "jailbreak",
+        "hen"
       ]
     },
     {
