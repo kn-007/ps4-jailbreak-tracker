@@ -1,9 +1,28 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-09T16:53:37.736905+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-11-10T00:42:54.205644+00:00",
+  "new_items_this_run": 1,
+  "new_items": [
+    {
+      "id": "issue:6293133801",
+      "type": "issue",
+      "title": "Nothing happen",
+      "summary": "My Dualsense Edge is connected to my PS4 with bluetooth but i cant use it at all, i followed the guid. I installed the pgk, lunched it, restarted my ps4, enabled GoldHEN and waited until the OneFamily payload loaded but i still cant use my Dualsense Edge. Im on HEN 14.00 GoldHEN v2.4b18.13",
+      "author": "Mzrcin",
+      "url": "https://github.com/ChiricoG/OneFamily/issues/69",
+      "updated_at": "2026-11-09T19:27:46Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -696,6 +715,24 @@
         "14.00",
         "offset",
         "payload"
+      ]
+    },
+    {
+      "id": "issue:6293133801",
+      "type": "issue",
+      "title": "Nothing happen",
+      "summary": "My Dualsense Edge is connected to my PS4 with bluetooth but i cant use it at all, i followed the guid. I installed the pgk, lunched it, restarted my ps4, enabled GoldHEN and waited until the OneFamily payload loaded but i still cant use my Dualsense Edge. Im on HEN 14.00 GoldHEN v2.4b18.13",
+      "author": "Mzrcin",
+      "url": "https://github.com/ChiricoG/OneFamily/issues/69",
+      "updated_at": "2026-11-09T19:27:46Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "payload",
+        "hen",
+        "goldhen"
       ]
     },
     {
