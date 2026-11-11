@@ -1,86 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-10T21:49:25.446410+00:00",
-  "new_items_this_run": 4,
-  "new_items": [
-    {
-      "id": "issue:6312875224",
-      "type": "pull_request",
-      "title": "PS4: validate 14.00 (fw 0x14008001) support",
-      "summary": "## What Records validated PS4 **14.00** (fw \\`0x14008001\\`) support and adds the CI plumbing used to verify it. ## Finding No payload source change was needed. The existing runtime layout scanner in \\`payload/src/platform/ps4/system/layout.c\\` already matches 14.00: the \\`kern_ptrace\\` allow/policy gate signatures and the Avcap export ABI are unchanged from 11.xx. Hardware run on fw \\`0x14008001\\` (dumper + 0.4.0 stream payload, loaded via GoldHEN LaunchPad): - \\`kernel layout status=discovered\\` — acmgr \\`+0x3b3830\\`, gates \\`+0x3673f5\\` (\\`77 1c\\`→\\`eb 1c\\`) / \\`+0x3678e1\\` (\\`48 8b 41 08 44\\`→\\`e9 ...\\`), 15 Avcap/libc/libkernel exports resolved, \\`failures=0\\`. - \\`gates: armed\\` → \\`cred: ptrace identity adopted\\` → Avcap \\`Init\\`/\\`OpenVideoEx\\`/\\`Start\\` all \\`0x0\\`. - \\`PBS streaming ready: 1280x720 60 HTTP port=9999\\`, keyframes + H.264 packets flowing. klog clean, no panic. The",
-      "author": "interverti",
-      "url": "https://github.com/seregonwar/PBS-Payload/pull/4",
-      "updated_at": "2026-11-10T20:21:30Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "kernel",
-        "payload",
-        "hen",
-        "goldhen"
-      ]
-    },
-    {
-      "id": "issue:6313182152",
-      "type": "issue",
-      "title": "Title: PS4 Gets Stuck on a Black Screen When Launching EmuFive",
-      "summary": "Hello, I'm trying to launch EmuFive on my PS4 Slim (CUH-2116A) running firmware 14.00 with GoldHEN. I followed the installation instructions and placed the required files in the correct USB directories. However, when I launch the Linux payload (Linux-2048MB.bin), the console restarts and gets stuck on a black screen. My TV displays \"No Signal\". The PS4's power indicator stays solid white, but no video output returns. I would appreciate some help identifying the cause of this issue. Device information: Console: PS4 Slim (CUH-2116A) Firmware: 14.00 Exploit: GoldHEN Payload: Linux-2048MB.bin USB format: FAT32 Is this a known compatibility issue, or am I missing an installation step? Thank you!",
-      "author": "korayy889",
-      "url": "https://github.com/blue0x1/EmuFive/issues/4",
-      "updated_at": "2026-11-10T18:25:42Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "exploit",
-        "payload",
-        "hen",
-        "goldhen"
-      ]
-    },
-    {
-      "id": "issue:6312753056",
-      "type": "pull_request",
-      "title": "PS4: validate 14.00 (fw 0x14008001) support",
-      "summary": "## What Records validated PS4 **14.00** (fw \\`0x14008001\\`) support and adds the CI plumbing used to verify it. ## Finding No payload source change was needed. The existing runtime layout scanner in \\`payload/src/platform/ps4/system/layout.c\\` already matches 14.00: the \\`kern_ptrace\\` allow/policy gate signatures and the Avcap export ABI are unchanged from 11.xx. Hardware run on fw \\`0x14008001\\` (dumper + 0.4.0 stream payload, loaded via GoldHEN LaunchPad): - \\`kernel layout status=discovered\\` — acmgr \\`+0x3b3830\\`, gates \\`+0x3673f5\\` (\\`77 1c\\`→\\`eb 1c\\`) / \\`+0x3678e1\\` (\\`48 8b 41 08 44\\`→\\`e9 ...\\`), 15 Avcap/libc/libkernel exports resolved, \\`failures=0\\`. - \\`gates: armed\\` → \\`cred: ptrace identity adopted\\` → Avcap \\`Init\\`/\\`OpenVideoEx\\`/\\`Start\\` all \\`0x0\\`. - \\`PBS streaming ready: 1280x720 60 HTTP port=9999\\`, keyframes + H.264 packets flowing. klog clean, no panic. The",
-      "author": "interverti",
-      "url": "https://github.com/interverti/PBS-Payload/pull/1",
-      "updated_at": "2026-11-10T18:09:18Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "kernel",
-        "payload",
-        "hen",
-        "goldhen"
-      ]
-    },
-    {
-      "id": "issue:6311272521",
-      "type": "issue",
-      "title": "[Bug] False Positive Cyber Flag on PS4 GoldHEN Screen Recording Payload",
-      "summary": "**Bug Description** How is this cyber, im just adapting a payload for GoldHEN to record my screen though a socket on PS4 14.00, i think i just got flag cause he though that i wanted to do it on ps5 14.00 that has no public jailbreak yet **Environment Info** - Platform: linux - Terminal: kitty - Version: 2.1.321 - Feedback ID: 9e8eeff9-5631-40b1-b9c5-ed8f68a8caf8",
-      "author": "interverti",
-      "url": "https://github.com/anthropics/claude-code/issues/108841",
-      "updated_at": "2026-11-10T16:36:43Z",
-      "source": "GitHub",
-      "score": 21,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "payload",
-        "jailbreak",
-        "hen",
-        "goldhen"
-      ]
-    }
-  ],
+  "updated_at": "2026-11-11T01:57:09.818592+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -426,6 +349,25 @@
       ]
     },
     {
+      "id": "issue:6313182152",
+      "type": "issue",
+      "title": "Title: PS4 Gets Stuck on a Black Screen When Launching EmuFive",
+      "summary": "Hello, I'm trying to launch EmuFive on my PS4 Slim (CUH-2116A) running firmware 14.00 with GoldHEN. I followed the installation instructions and placed the required files in the correct USB directories. However, when I launch the Linux payload (Linux-2048MB.bin), the console restarts and gets stuck on a black screen. My TV displays \"No Signal\". The PS4's power indicator stays solid white, but no video output returns. I would appreciate some help identifying the cause of this issue. Device information: Console: PS4 Slim (CUH-2116A) Firmware: 14.00 Exploit: GoldHEN Payload: Linux-2048MB.bin USB format: FAT32 Is this a known compatibility issue, or am I missing an installation step? Thank you!",
+      "author": "korayy889",
+      "url": "https://github.com/blue0x1/EmuFive/issues/4",
+      "updated_at": "2026-11-11T00:03:25Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "exploit",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
       "id": "issue:6312875224",
       "type": "pull_request",
       "title": "PS4: validate 14.00 (fw 0x14008001) support",
@@ -439,25 +381,6 @@
         "PS4",
         "14.00",
         "kernel",
-        "payload",
-        "hen",
-        "goldhen"
-      ]
-    },
-    {
-      "id": "issue:6313182152",
-      "type": "issue",
-      "title": "Title: PS4 Gets Stuck on a Black Screen When Launching EmuFive",
-      "summary": "Hello, I'm trying to launch EmuFive on my PS4 Slim (CUH-2116A) running firmware 14.00 with GoldHEN. I followed the installation instructions and placed the required files in the correct USB directories. However, when I launch the Linux payload (Linux-2048MB.bin), the console restarts and gets stuck on a black screen. My TV displays \"No Signal\". The PS4's power indicator stays solid white, but no video output returns. I would appreciate some help identifying the cause of this issue. Device information: Console: PS4 Slim (CUH-2116A) Firmware: 14.00 Exploit: GoldHEN Payload: Linux-2048MB.bin USB format: FAT32 Is this a known compatibility issue, or am I missing an installation step? Thank you!",
-      "author": "korayy889",
-      "url": "https://github.com/blue0x1/EmuFive/issues/4",
-      "updated_at": "2026-11-10T18:25:42Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "exploit",
         "payload",
         "hen",
         "goldhen"
