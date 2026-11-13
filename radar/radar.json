@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-12T20:55:38.169856+00:00",
+  "updated_at": "2026-11-13T01:50:46.047300+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -800,7 +800,7 @@
       "summary": "The title. I'm running it on a PS4 Pro 14.00 Goldhen. I've tried 3 times and everytime the same simptoms. The white light stays on and after pluggin the DS4 via cable and pressing the home button, the PS4 shuts itself off. I waited way longer than 3 minutes and nothing. Everything is in the right place. I'm not using any external usb periferal, should I?",
       "author": "FilipeCaps",
       "url": "https://github.com/blue0x1/EmuFive/issues/14",
-      "updated_at": "2026-11-12T20:34:04Z",
+      "updated_at": "2026-11-12T22:32:13Z",
       "source": "GitHub",
       "score": 19,
       "reasons": [
