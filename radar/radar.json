@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-13T17:24:37.865856+00:00",
+  "updated_at": "2026-11-13T22:55:07.300921+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -355,7 +355,7 @@
       "summary": "Hello, I'm trying to launch EmuFive on my PS4 Slim (CUH-2116A) running firmware 14.00 with GoldHEN. I followed the installation instructions and placed the required files in the correct USB directories. However, when I launch the Linux payload (Linux-2048MB.bin), the console restarts and gets stuck on a black screen. My TV displays \"No Signal\". The PS4's power indicator stays solid white, but no video output returns. I would appreciate some help identifying the cause of this issue. Device information: Console: PS4 Slim (CUH-2116A) Firmware: 14.00 Exploit: GoldHEN Payload: Linux-2048MB.bin USB format: FAT32 Is this a known compatibility issue, or am I missing an installation step? Thank you!",
       "author": "korayy889",
       "url": "https://github.com/blue0x1/EmuFive/issues/4",
-      "updated_at": "2026-11-12T13:52:47Z",
+      "updated_at": "2026-11-13T22:37:52Z",
       "source": "GitHub",
       "score": 24,
       "reasons": [
@@ -800,7 +800,7 @@
       "summary": "The title. I'm running it on a PS4 Pro 14.00 Goldhen. I've tried 3 times and everytime the same simptoms. The white light stays on and after pluggin the DS4 via cable and pressing the home button, the PS4 shuts itself off. I waited way longer than 3 minutes and nothing. Everything is in the right place. I'm not using any external usb periferal, should I?",
       "author": "FilipeCaps",
       "url": "https://github.com/blue0x1/EmuFive/issues/14",
-      "updated_at": "2026-11-13T09:26:56Z",
+      "updated_at": "2026-11-13T18:31:10Z",
       "source": "GitHub",
       "score": 19,
       "reasons": [
