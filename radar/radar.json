@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-13T22:55:07.300921+00:00",
+  "updated_at": "2026-11-14T03:16:29.168540+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -355,7 +355,7 @@
       "summary": "Hello, I'm trying to launch EmuFive on my PS4 Slim (CUH-2116A) running firmware 14.00 with GoldHEN. I followed the installation instructions and placed the required files in the correct USB directories. However, when I launch the Linux payload (Linux-2048MB.bin), the console restarts and gets stuck on a black screen. My TV displays \"No Signal\". The PS4's power indicator stays solid white, but no video output returns. I would appreciate some help identifying the cause of this issue. Device information: Console: PS4 Slim (CUH-2116A) Firmware: 14.00 Exploit: GoldHEN Payload: Linux-2048MB.bin USB format: FAT32 Is this a known compatibility issue, or am I missing an installation step? Thank you!",
       "author": "korayy889",
       "url": "https://github.com/blue0x1/EmuFive/issues/4",
-      "updated_at": "2026-11-13T22:37:52Z",
+      "updated_at": "2026-11-14T03:02:38Z",
       "source": "GitHub",
       "score": 24,
       "reasons": [
