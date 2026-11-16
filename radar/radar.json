@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-16T07:19:45.707490+00:00",
+  "updated_at": "2026-11-16T17:29:09.577008+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -800,7 +800,7 @@
       "summary": "What happened? Orbit Store 0.0.2 Beta fails to start its download service on my PS4 Slim running firmware 14.00 with GoldHEN. I tried launching the ELF manually using the GoldHEN payload loader and ELF loader. The ELF file was successfully transferred to port 9021, but the Orbit service never started listening on port 34177. The connection test returned: \"Connection refused\" The ELF loader on port 9021 remained accessible, but the Orbit download service was unavailable. Steps to reproduce 1. Enable GoldHEN's PayLoader Server on a PS4 running firmware 14.00. 2. Send \"elfldr.bin\" through port 9090. 3. Send \"orbit_store.elf\" through the ELF loader on port 9021. 4. Wait for the service to initialize. 5. Attempt to connect to the PS4 on port 34177. 6. The connection is refused and the service does not start. What did you expect? I expected Orbit's download service to initialize successfully a",
       "author": "rwsrx",
       "url": "https://github.com/saawant12/orbit-store-ps4/issues/3",
-      "updated_at": "2026-11-16T01:46:24Z",
+      "updated_at": "2026-11-16T11:09:50Z",
       "source": "GitHub",
       "score": 19,
       "reasons": [
