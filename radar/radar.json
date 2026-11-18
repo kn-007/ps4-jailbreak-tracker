@@ -1,26 +1,46 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-17T18:35:46.411678+00:00",
-  "new_items_this_run": 1,
+  "updated_at": "2026-11-18T01:21:02.981937+00:00",
+  "new_items_this_run": 2,
   "new_items": [
     {
-      "id": "issue:6443343195",
-      "type": "issue",
-      "title": "There is a minor bug when running the 14.00 Afterglow exploit",
-      "summary": "On FW 14.00 (tested on PS4 Slim 2216A), using the WebKit exploit causes the page to unexpectedly open twice, and the success rate counter registers two attempts despite only running it once (Auto Retry already OFF). While this is a minor bug and doesn't impact jailbreak stability, I hope this can be addressed on next update. Thank you for your continued support and contributions to the community!\" <img width=\"1917\" height=\"1078\" alt=\"image\" src=\"https://github.com/user-attachments/assets/eb0a6314-c9cc-433f-a6f0-fb73dd1d53fc\" />",
-      "author": "dandypandjukang",
-      "url": "https://github.com/ArabPixel/WebKitty/issues/47",
-      "updated_at": "2026-11-17T11:18:29Z",
+      "id": "repo:1462031311",
+      "type": "repository",
+      "title": "silasbp-hue/s4-jb-host",
+      "summary": "Self-hosted WebKitty exploit host + GoldHEN payload injector for PS4 FW 14.00 (Home Assistant add-on)",
+      "author": "silasbp-hue",
+      "url": "https://github.com/silasbp-hue/s4-jb-host",
+      "updated_at": "2026-11-17T22:15:34Z",
       "source": "GitHub",
-      "score": 24,
+      "score": 29,
       "reasons": [
         "PS4",
         "14.00",
         "webkit",
         "exploit",
-        "jailbreak",
-        "hen"
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
+      "id": "issue:6453165190",
+      "type": "pull_request",
+      "title": "BX-HEN: strict firmware reporting and monitor lifecycle safeguards",
+      "summary": "## Segunda etapa — diagnóstico e monitor - Firmware exibido por `bx-hen-browser.js` e Compatibility Center passa a exigir um formato canônico com dois dígitos decimais (`13.53`, `14.00`, `14.02`), evitando resultados inconsistentes para entradas como `14.0` e `14.002`. - Monitor de histórico do CI cancela `XMLHttpRequest` e timeout em `pagehide`, retoma após retorno real do BFCache, preserva os dados existentes diante de erro e corrige pluralização da mensagem. - Testes de regressão para identificação, PS4 14+, armazenamento, eventos tardios, timeout e navegação; documentação em `STABILITY.md`. ## Escopo UI/diagnóstico somente. Nenhum componente GoldHEN, firmware, kernel, payload ou cadeia de desbloqueio foi alterado. CI da PR deve passar antes de merge e publicação.",
+      "author": "CT7-BX",
+      "url": "https://github.com/CT7-BX/BX-CT7.github.io/pull/9",
+      "updated_at": "2026-11-17T20:11:28Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "payload",
+        "hen",
+        "goldhen"
       ]
     }
   ],
@@ -235,6 +255,26 @@
       ]
     },
     {
+      "id": "repo:1462031311",
+      "type": "repository",
+      "title": "silasbp-hue/s4-jb-host",
+      "summary": "Self-hosted WebKitty exploit host + GoldHEN payload injector for PS4 FW 14.00 (Home Assistant add-on)",
+      "author": "silasbp-hue",
+      "url": "https://github.com/silasbp-hue/s4-jb-host",
+      "updated_at": "2026-11-17T22:15:34Z",
+      "source": "GitHub",
+      "score": 29,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "exploit",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
       "id": "issue:5923326038",
       "type": "pull_request",
       "title": "Research: compare PS4 13.52 and 14.00 PUP outer metadata",
@@ -375,7 +415,7 @@
       "summary": "On FW 14.00 (tested on PS4 Slim 2216A), using the WebKit exploit causes the page to unexpectedly open twice, and the success rate counter registers two attempts despite only running it once (Auto Retry already OFF). While this is a minor bug and doesn't impact jailbreak stability, I hope this can be addressed on next update. Thank you for your continued support and contributions to the community!\" <img width=\"1917\" height=\"1078\" alt=\"image\" src=\"https://github.com/user-attachments/assets/eb0a6314-c9cc-433f-a6f0-fb73dd1d53fc\" />",
       "author": "dandypandjukang",
       "url": "https://github.com/ArabPixel/WebKitty/issues/47",
-      "updated_at": "2026-11-17T11:18:29Z",
+      "updated_at": "2026-11-17T22:01:11Z",
       "source": "GitHub",
       "score": 24,
       "reasons": [
@@ -385,6 +425,25 @@
         "exploit",
         "jailbreak",
         "hen"
+      ]
+    },
+    {
+      "id": "issue:6453165190",
+      "type": "pull_request",
+      "title": "BX-HEN: strict firmware reporting and monitor lifecycle safeguards",
+      "summary": "## Segunda etapa — diagnóstico e monitor - Firmware exibido por `bx-hen-browser.js` e Compatibility Center passa a exigir um formato canônico com dois dígitos decimais (`13.53`, `14.00`, `14.02`), evitando resultados inconsistentes para entradas como `14.0` e `14.002`. - Monitor de histórico do CI cancela `XMLHttpRequest` e timeout em `pagehide`, retoma após retorno real do BFCache, preserva os dados existentes diante de erro e corrige pluralização da mensagem. - Testes de regressão para identificação, PS4 14+, armazenamento, eventos tardios, timeout e navegação; documentação em `STABILITY.md`. ## Escopo UI/diagnóstico somente. Nenhum componente GoldHEN, firmware, kernel, payload ou cadeia de desbloqueio foi alterado. CI da PR deve passar antes de merge e publicação.",
+      "author": "CT7-BX",
+      "url": "https://github.com/CT7-BX/BX-CT7.github.io/pull/9",
+      "updated_at": "2026-11-17T20:11:28Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "payload",
+        "hen",
+        "goldhen"
       ]
     },
     {
