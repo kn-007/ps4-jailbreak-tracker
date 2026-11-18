@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-18T09:11:24.554974+00:00",
+  "updated_at": "2026-11-18T18:05:22.710794+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -375,7 +375,7 @@
       "summary": "On FW 14.00 (tested on PS4 Slim 2216A), using the WebKit exploit causes the page to unexpectedly open twice, and the success rate counter registers two attempts despite only running it once (Auto Retry already OFF). While this is a minor bug and doesn't impact jailbreak stability, I hope this can be addressed on next update. Thank you for your continued support and contributions to the community!\" <img width=\"1917\" height=\"1078\" alt=\"image\" src=\"https://github.com/user-attachments/assets/eb0a6314-c9cc-433f-a6f0-fb73dd1d53fc\" />",
       "author": "dandypandjukang",
       "url": "https://github.com/ArabPixel/WebKitty/issues/47",
-      "updated_at": "2026-11-18T06:57:25Z",
+      "updated_at": "2026-11-18T17:10:59Z",
       "source": "GitHub",
       "score": 24,
       "reasons": [
