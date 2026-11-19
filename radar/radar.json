@@ -1,7 +1,7 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-19T17:24:34.307725+00:00",
+  "updated_at": "2026-11-19T23:52:29.899315+00:00",
   "new_items_this_run": 0,
   "new_items": [],
   "searches_performed": 16,
@@ -369,13 +369,32 @@
       ]
     },
     {
+      "id": "repo:1449560379",
+      "type": "repository",
+      "title": "oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
+      "summary": "CYBER-FORGE v5.0 // PS5 (Relapse 7.00-13.60 / Y2JB / UMTX2) & PS4 (GoldHEN 5.05-14.00) WebKit Exploit Host, Offline PWA Autoloader, Live Scene Radar & PSX Wasm Emulator.",
+      "author": "oscarlaradev",
+      "url": "https://github.com/oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
+      "updated_at": "2026-11-19T19:11:14Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "webkit",
+        "exploit",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
       "id": "issue:6479021171",
       "type": "issue",
       "title": "Belize2 A0 support on PS4 Slim CUH-2115B — black screen when launching Linux",
       "summary": "Belize2 A0 support on PS4 Slim CUH-2115B — black screen when launching Linux Hello! I'm trying to run PS4 Multiboot v1.5.0-beta-5 on a PS4 Slim CUH-2115B, firmware 14.00, using GoldHEN v2.4b18.13. My PS4 System Information reports: - Southbridge: Belize2 A0 (40100) - Console: PS4 Slim CUH-2115B - Firmware: 14.00 I copied the required files and Debian 13 rootfs according to the README. The Linux payload launches, but the display eventually goes black. The console stays powered on with a solid white light and the fan running. I waited over three minutes before shutting it down. I verified the downloaded beta 5 files against the official SHA256SUMS. I also removed `quiet loglevel=1` from bootargs.txt to expose boot messages. Could you confirm whether Belize2 A0 is supported by the current kernel and initramfs?** Is there anything specific I should change or check before attempting another b",
       "author": "aeubanks096-oss",
       "url": "https://github.com/blue0x1/ps4-multiboot/issues/10",
-      "updated_at": "2026-11-19T13:47:05Z",
+      "updated_at": "2026-11-19T17:55:41Z",
       "source": "GitHub",
       "score": 24,
       "reasons": [
@@ -499,25 +518,6 @@
         "rop",
         "jailbreak",
         "hen"
-      ]
-    },
-    {
-      "id": "repo:1449560379",
-      "type": "repository",
-      "title": "oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
-      "summary": "CYBER-FORGE v5.0 // PS5 (Relapse 7.00-13.60 / Y2JB / UMTX2) & PS4 (GoldHEN 5.05-14.00) WebKit Exploit Host, Offline PWA Autoloader, Live Scene Radar & PSX Wasm Emulator.",
-      "author": "oscarlaradev",
-      "url": "https://github.com/oscarlaradev/cyber-forge-ps5-ps4-exploit-host",
-      "updated_at": "2026-11-07T18:57:08Z",
-      "source": "GitHub",
-      "score": 24,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "webkit",
-        "exploit",
-        "hen",
-        "goldhen"
       ]
     },
     {
