@@ -1,9 +1,29 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-18T18:05:22.710794+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-11-19T00:23:29.145331+00:00",
+  "new_items_this_run": 1,
+  "new_items": [
+    {
+      "id": "issue:6479021171",
+      "type": "issue",
+      "title": "Belize2 A0 support on PS4 Slim CUH-2115B — black screen when launching Linux",
+      "summary": "Belize2 A0 support on PS4 Slim CUH-2115B — black screen when launching Linux Hello! I'm trying to run PS4 Multiboot v1.5.0-beta-5 on a PS4 Slim CUH-2115B, firmware 14.00, using GoldHEN v2.4b18.13. My PS4 System Information reports: - Southbridge: Belize2 A0 (40100) - Console: PS4 Slim CUH-2115B - Firmware: 14.00 I copied the required files and Debian 13 rootfs according to the README. The Linux payload launches, but the display eventually goes black. The console stays powered on with a solid white light and the fan running. I waited over three minutes before shutting it down. I verified the downloaded beta 5 files against the official SHA256SUMS. I also removed `quiet loglevel=1` from bootargs.txt to expose boot messages. Could you confirm whether Belize2 A0 is supported by the current kernel and initramfs?** Is there anything specific I should change or check before attempting another b",
+      "author": "aeubanks096-oss",
+      "url": "https://github.com/blue0x1/ps4-multiboot/issues/10",
+      "updated_at": "2026-11-19T00:10:01Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -369,13 +389,32 @@
       ]
     },
     {
+      "id": "issue:6479021171",
+      "type": "issue",
+      "title": "Belize2 A0 support on PS4 Slim CUH-2115B — black screen when launching Linux",
+      "summary": "Belize2 A0 support on PS4 Slim CUH-2115B — black screen when launching Linux Hello! I'm trying to run PS4 Multiboot v1.5.0-beta-5 on a PS4 Slim CUH-2115B, firmware 14.00, using GoldHEN v2.4b18.13. My PS4 System Information reports: - Southbridge: Belize2 A0 (40100) - Console: PS4 Slim CUH-2115B - Firmware: 14.00 I copied the required files and Debian 13 rootfs according to the README. The Linux payload launches, but the display eventually goes black. The console stays powered on with a solid white light and the fan running. I waited over three minutes before shutting it down. I verified the downloaded beta 5 files against the official SHA256SUMS. I also removed `quiet loglevel=1` from bootargs.txt to expose boot messages. Could you confirm whether Belize2 A0 is supported by the current kernel and initramfs?** Is there anything specific I should change or check before attempting another b",
+      "author": "aeubanks096-oss",
+      "url": "https://github.com/blue0x1/ps4-multiboot/issues/10",
+      "updated_at": "2026-11-19T00:10:01Z",
+      "source": "GitHub",
+      "score": 24,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "kernel",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    },
+    {
       "id": "issue:6443343195",
       "type": "issue",
       "title": "There is a minor bug when running the 14.00 Afterglow exploit",
       "summary": "On FW 14.00 (tested on PS4 Slim 2216A), using the WebKit exploit causes the page to unexpectedly open twice, and the success rate counter registers two attempts despite only running it once (Auto Retry already OFF). While this is a minor bug and doesn't impact jailbreak stability, I hope this can be addressed on next update. Thank you for your continued support and contributions to the community!\" <img width=\"1917\" height=\"1078\" alt=\"image\" src=\"https://github.com/user-attachments/assets/eb0a6314-c9cc-433f-a6f0-fb73dd1d53fc\" />",
       "author": "dandypandjukang",
       "url": "https://github.com/ArabPixel/WebKitty/issues/47",
-      "updated_at": "2026-11-18T17:10:59Z",
+      "updated_at": "2026-11-18T21:59:59Z",
       "source": "GitHub",
       "score": 24,
       "reasons": [
