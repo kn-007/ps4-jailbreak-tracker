@@ -1,32 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-21T11:50:09.774078+00:00",
-  "new_items_this_run": 1,
-  "new_items": [
-    {
-      "id": "issue:6525813924",
-      "type": "pull_request",
-      "title": "Ps4HardwareProbe: read-only hardware probe payload for every PS4 model and firmware",
-      "summary": "## Summary A standalone, read-only GoldHEN payload (PS4 Payload SDK) that identifies the console from hardware identities and reports every diagnostic as OK / UNSUPPORTED / SKIPPED (safety) / FAILED to a PC receiver. No dependency on Linux, EDK II, OpenCore or Directboot. - **Models:** console family from the GPU id (0x9920 / 0x9922 Fat, 0x9923 Slim, 0x9924 Pro); southbridge backends for Aeolia, Belize and Baikal chosen by PCI device id; unknown or mixed hardware gets limited discovery. - **Firmware:** version from `libc.sprx`, then two independent profiles checked against the live kernel: the DMAP offset table (35 versions incl. point releases) and OpenGoldHEN identity profiles (33 versions; 14.00 from an unofficial GoldHEN BD-J build, cross-checked). Unknown versions use no kernel offsets. - **Loaders:** kexec syscall per loader and version (GoldHEN 11, WebKitty psfree-lapse 11, WebKit",
-      "author": "theJetsetlife",
-      "url": "https://github.com/theJetsetlife/Escape-Velocity-II/pull/2",
-      "updated_at": "2026-11-21T07:10:32Z",
-      "source": "GitHub",
-      "score": 39,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "webkit",
-        "kernel",
-        "offset",
-        "syscall",
-        "payload",
-        "hen",
-        "goldhen"
-      ]
-    }
-  ],
+  "updated_at": "2026-11-21T19:16:18.984762+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
