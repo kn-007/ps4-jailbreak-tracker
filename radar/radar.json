@@ -1,44 +1,9 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-23T22:04:11.815014+00:00",
-  "new_items_this_run": 2,
-  "new_items": [
-    {
-      "id": "issue:6564604255",
-      "type": "pull_request",
-      "title": "Add firmware 14.00 and 14.02 support",
-      "summary": "This PR adds support for PS4 firmware 14.00 and 14.02 to Android TV for PS4. ## Changes - `releases/release-1.0/loader-source/linux/magic.h`: added `PS4_14_00` and `PS4_14_02` offset blocks (22 firmware builds total, up from 20). - `releases/release-1.0/build-kexec.py`: firmware-count assertion 20 → 22. - `releases/release-1.0/source/boot-payload.c`: the prebuilt `linux.elf` payload (pinned v25.1) has no 14.00/14.02 entries in its `find_offsets_by_fw()` table, so matching `fw_offsets_t` entries (64-byte layout, identical to upstream) are defined locally and supplied through `g_fw` for those two versions. The 13.52 build path is untouched. ## Testing - Static validation: 22 unique firmware defines, all required `kern_off_*` symbols present in both new blocks, `fw_offsets_t` struct is 64 bytes matching the upstream layout. - **Not yet tested on real hardware.** Only 13.52 is console-confir",
-      "author": "urn1234",
-      "url": "https://github.com/odiecay/android-tv-ps4/pull/105",
-      "updated_at": "2026-11-23T17:12:11Z",
-      "source": "GitHub",
-      "score": 20,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "offset",
-        "payload"
-      ]
-    },
-    {
-      "id": "issue:6562245394",
-      "type": "pull_request",
-      "title": "Fix Afterglow 14.00/14.02 loading and unify Liquid Glass cache UI",
-      "summary": "## Summary - Add the firmware-specific Afterglow kernel patchset blobs for PS4 14.00 and 14.02 at the paths used by the loader. - Include both patchsets in the 14.00–14.02 offline cache manifest. - Unify the cache-page boot-step lists, progress panels, status labels and progress indicators with the MODXX4 Liquid Glass card design through the shared stylesheet. - Refresh the relevant Application Cache manifests so PS4 browsers invalidate the older cached stylesheet and retrieve the updated UI. ## Cache UI coverage - PS4 5.05, 6.72, 7.00–8.52, 9.00 (both cache manifests), 13.52, and 14.00–14.02. - Changes are limited to shared cache presentation styles and manifest version comments; cache loader event handling and firmware payload logic are not intentionally changed. ## Validation / limitations - Verified the updated shared stylesheet and refreshed manifest headers on the PR branch. - Veri",
-      "author": "p4jb",
-      "url": "https://github.com/p4jb/p4jb.github.io/pull/1",
-      "updated_at": "2026-11-23T15:15:04Z",
-      "source": "GitHub",
-      "score": 20,
-      "reasons": [
-        "PS4",
-        "14.00",
-        "kernel",
-        "payload"
-      ]
-    }
-  ],
+  "updated_at": "2026-11-24T06:03:16.212315+00:00",
+  "new_items_this_run": 0,
+  "new_items": [],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -849,7 +814,7 @@
       "summary": "This PR adds support for PS4 firmware 14.00 and 14.02 to Android TV for PS4. ## Changes - `releases/release-1.0/loader-source/linux/magic.h`: added `PS4_14_00` and `PS4_14_02` offset blocks (22 firmware builds total, up from 20). - `releases/release-1.0/build-kexec.py`: firmware-count assertion 20 → 22. - `releases/release-1.0/source/boot-payload.c`: the prebuilt `linux.elf` payload (pinned v25.1) has no 14.00/14.02 entries in its `find_offsets_by_fw()` table, so matching `fw_offsets_t` entries (64-byte layout, identical to upstream) are defined locally and supplied through `g_fw` for those two versions. The 13.52 build path is untouched. ## Testing - Static validation: 22 unique firmware defines, all required `kern_off_*` symbols present in both new blocks, `fw_offsets_t` struct is 64 bytes matching the upstream layout. - **Not yet tested on real hardware.** Only 13.52 is console-confir",
       "author": "urn1234",
       "url": "https://github.com/odiecay/android-tv-ps4/pull/105",
-      "updated_at": "2026-11-23T17:12:11Z",
+      "updated_at": "2026-11-24T01:33:24Z",
       "source": "GitHub",
       "score": 20,
       "reasons": [
