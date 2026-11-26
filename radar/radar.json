@@ -1,9 +1,28 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-26T12:34:22.195004+00:00",
-  "new_items_this_run": 0,
-  "new_items": [],
+  "updated_at": "2026-11-26T21:58:12.684211+00:00",
+  "new_items_this_run": 1,
+  "new_items": [
+    {
+      "id": "issue:6635455078",
+      "type": "issue",
+      "title": "App nativa de PS4: validar arranque y mando en hardware",
+      "summary": "## Alcance La app del icono Lodestar usa VideoOut, Pad y el teclado de sistema. La interfaz consume la API local del payload en el puerto 8770. Ya se ha compilado el PKG y probado el cliente HTTP en host. Falta validar la integración con la consola. ## Prueba en PS4 - [ ] Instalar `lodestar-panel.pkg` de una compilación que incluya la app nativa. Probar tanto una instalación limpia como una actualización del icono anterior. - [ ] Abrir sin el payload, cargar Lodestar y comprobar que la biblioteca vuelve a estar disponible sin reiniciar la app. - [ ] Recorrer biblioteca, filtros, carátulas y fichas con el mando. Abrir y cancelar el teclado con △. Comprobar que ○ vuelve y cierra la app desde biblioteca. - [ ] Con paquetes de prueba, comprobar escaneo, confirmación de quitar/restaurar, guardado de ajustes y encolado de un enlace con destino elegido. - [ ] Comprobar 13.52 y 14.00 con GoldHEN",
+      "author": "felipebasurto",
+      "url": "https://github.com/felipebasurto/Lodestar-PS4/issues/13",
+      "updated_at": "2026-11-26T21:34:59Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "payload",
+        "hen",
+        "goldhen"
+      ]
+    }
+  ],
   "searches_performed": 16,
   "errors": [],
   "items": [
@@ -924,6 +943,24 @@
         "14.00",
         "offset",
         "payload"
+      ]
+    },
+    {
+      "id": "issue:6635455078",
+      "type": "issue",
+      "title": "App nativa de PS4: validar arranque y mando en hardware",
+      "summary": "## Alcance La app del icono Lodestar usa VideoOut, Pad y el teclado de sistema. La interfaz consume la API local del payload en el puerto 8770. Ya se ha compilado el PKG y probado el cliente HTTP en host. Falta validar la integración con la consola. ## Prueba en PS4 - [ ] Instalar `lodestar-panel.pkg` de una compilación que incluya la app nativa. Probar tanto una instalación limpia como una actualización del icono anterior. - [ ] Abrir sin el payload, cargar Lodestar y comprobar que la biblioteca vuelve a estar disponible sin reiniciar la app. - [ ] Recorrer biblioteca, filtros, carátulas y fichas con el mando. Abrir y cancelar el teclado con △. Comprobar que ○ vuelve y cierra la app desde biblioteca. - [ ] Con paquetes de prueba, comprobar escaneo, confirmación de quitar/restaurar, guardado de ajustes y encolado de un enlace con destino elegido. - [ ] Comprobar 13.52 y 14.00 con GoldHEN",
+      "author": "felipebasurto",
+      "url": "https://github.com/felipebasurto/Lodestar-PS4/issues/13",
+      "updated_at": "2026-11-26T21:34:59Z",
+      "source": "GitHub",
+      "score": 19,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "payload",
+        "hen",
+        "goldhen"
       ]
     },
     {
