@@ -1,25 +1,26 @@
 {
   "version": 4,
   "target_firmware": "14.00",
-  "updated_at": "2026-11-26T21:58:12.684211+00:00",
+  "updated_at": "2026-11-27T04:16:51.864466+00:00",
   "new_items_this_run": 1,
   "new_items": [
     {
-      "id": "issue:6635455078",
+      "id": "issue:6636448796",
       "type": "issue",
-      "title": "App nativa de PS4: validar arranque y mando en hardware",
-      "summary": "## Alcance La app del icono Lodestar usa VideoOut, Pad y el teclado de sistema. La interfaz consume la API local del payload en el puerto 8770. Ya se ha compilado el PKG y probado el cliente HTTP en host. Falta validar la integración con la consola. ## Prueba en PS4 - [ ] Instalar `lodestar-panel.pkg` de una compilación que incluya la app nativa. Probar tanto una instalación limpia como una actualización del icono anterior. - [ ] Abrir sin el payload, cargar Lodestar y comprobar que la biblioteca vuelve a estar disponible sin reiniciar la app. - [ ] Recorrer biblioteca, filtros, carátulas y fichas con el mando. Abrir y cancelar el teclado con △. Comprobar que ○ vuelve y cierra la app desde biblioteca. - [ ] Con paquetes de prueba, comprobar escaneo, confirmación de quitar/restaurar, guardado de ajustes y encolado de un enlace con destino elegido. - [ ] Comprobar 13.52 y 14.00 con GoldHEN",
-      "author": "felipebasurto",
-      "url": "https://github.com/felipebasurto/Lodestar-PS4/issues/13",
-      "updated_at": "2026-11-26T21:34:59Z",
+      "title": "Archive.org downloads fail with HTTP 401 despite being signed in",
+      "summary": "Archive.org downloads fail with HTTP 401 despite being signed in Environment - Application: FPKGi+ - PS4 firmware: 14.00 - Jailbreak: GoldHEN - Download destination: Console - Connections per download: 4 - Populate via web: Enabled - Archive.org account status: Signed in Description FPKGi+ consistently fails to download packages from Archive.org with HTTP error 401, despite the application reporting that my Archive.org account is signed in. The content catalogues populate successfully, including game titles and cover art. Homebrew downloads also work without issues. Steps to reproduce 1. Launch FPKGi+. 2. Sign into an Archive.org account through Settings. 3. Verify that the account status displays \"Signed in\". 4. Load a compatible content catalogue. 5. Attempt to download a package hosted on Archive.org that the account can access. Expected behaviour FPKGi+ should authenticate the downlo",
+      "author": "Dkdavidlp",
+      "url": "https://github.com/jw-notes/FPKGiPLUS-PS4/issues/2",
+      "updated_at": "2026-11-26T22:57:49Z",
       "source": "GitHub",
-      "score": 19,
+      "score": 18,
       "reasons": [
         "PS4",
         "14.00",
-        "payload",
+        "jailbreak",
         "hen",
-        "goldhen"
+        "goldhen",
+        "homebrew"
       ]
     }
   ],
@@ -1140,6 +1141,25 @@
         "14.00",
         "jailbreak",
         "14.0"
+      ]
+    },
+    {
+      "id": "issue:6636448796",
+      "type": "issue",
+      "title": "Archive.org downloads fail with HTTP 401 despite being signed in",
+      "summary": "Archive.org downloads fail with HTTP 401 despite being signed in Environment - Application: FPKGi+ - PS4 firmware: 14.00 - Jailbreak: GoldHEN - Download destination: Console - Connections per download: 4 - Populate via web: Enabled - Archive.org account status: Signed in Description FPKGi+ consistently fails to download packages from Archive.org with HTTP error 401, despite the application reporting that my Archive.org account is signed in. The content catalogues populate successfully, including game titles and cover art. Homebrew downloads also work without issues. Steps to reproduce 1. Launch FPKGi+. 2. Sign into an Archive.org account through Settings. 3. Verify that the account status displays \"Signed in\". 4. Load a compatible content catalogue. 5. Attempt to download a package hosted on Archive.org that the account can access. Expected behaviour FPKGi+ should authenticate the downlo",
+      "author": "Dkdavidlp",
+      "url": "https://github.com/jw-notes/FPKGiPLUS-PS4/issues/2",
+      "updated_at": "2026-11-26T22:57:49Z",
+      "source": "GitHub",
+      "score": 18,
+      "reasons": [
+        "PS4",
+        "14.00",
+        "jailbreak",
+        "hen",
+        "goldhen",
+        "homebrew"
       ]
     },
     {
